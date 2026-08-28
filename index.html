@@ -20,7 +20,7 @@
     --line:rgba(22,24,28,.11); --line2:rgba(22,24,28,.22);
     --ink:#16181C; --muted:#4B545E; --faint:#7B838D;
     --signal:#B4720E; --lit:#D89623; --cool:#5C6B7E;
-    --gr:250,249,246; --selink:#FFFFFF;
+    --gr:250,249,246; --selink:#FFFFFF; --ir:22,24,28; --sr:180,114,14;
     --sans:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
     --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
     color-scheme:light
@@ -31,9 +31,25 @@
     --line:rgba(233,238,242,.09); --line2:rgba(233,238,242,.18);
     --ink:#F2F5F8; --muted:#BAC2CB; --faint:#8E969F;
     --signal:#F0B33F; --lit:#FFC85E; --cool:#4E5C6E;
-    --gr:11,12,14; --selink:#0B0C0E;
+    --gr:11,12,14; --selink:#0B0C0E; --ir:233,238,242; --sr:240,179,63;
     color-scheme:dark
   }
+  /* the JS-drawn illustrations hardcode dark-theme attribute colors; CSS attribute
+     selectors outrank SVG presentation attributes, so remap them per theme here */
+  [stroke="#F0B33F"]{stroke:var(--signal)}
+  [fill="#F0B33F"]{fill:var(--signal)}
+  [fill="#1C2025"]{fill:var(--raise2)}
+  [fill="#666D76"]{fill:var(--faint)}
+  [stroke="rgba(233,238,242,.12)"]{stroke:rgba(var(--ir),.12)}
+  [stroke="rgba(233,238,242,.13)"]{stroke:rgba(var(--ir),.13)}
+  [stroke="rgba(233,238,242,.18)"]{stroke:rgba(var(--ir),.18)}
+  [stroke="rgba(233,238,242,.22)"]{stroke:rgba(var(--ir),.22)}
+  [stroke="rgba(233,238,242,.3)"]{stroke:rgba(var(--ir),.3)}
+  [fill="rgba(233,238,242,.2)"]{fill:rgba(var(--ir),.2)}
+  [stroke="rgba(240,179,63,.5)"]{stroke:rgba(var(--sr),.5)}
+  [fill="rgba(240,179,63,.35)"]{fill:rgba(var(--sr),.35)}
+  [fill="rgba(240,179,63,.09)"]{fill:rgba(var(--sr),.09)}
+  [fill="rgba(240,179,63,.08)"]{fill:rgba(var(--sr),.08)}
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth;background:var(--ground)}
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -142,10 +158,10 @@
   .btn{display:inline-flex;align-items:center;gap:10px;font-family:inherit;font-size:15px;font-weight:650;
     padding:16px 28px;border:1px solid transparent;cursor:pointer;white-space:nowrap;
     transition:transform .16s,background .16s,border-color .16s,box-shadow .16s}
-  .btn-primary{background:var(--signal);color:#141010}
+  .btn-primary{background:var(--signal);color:var(--selink)}
   .btn-primary:hover{background:var(--lit);transform:translate(-2px,-2px);box-shadow:4px 4px 0 rgba(240,179,63,.34)}
   .btn-ghost{border-color:var(--line2);color:var(--ink)}
-  .btn-ghost:hover{border-color:var(--ink);transform:translate(-2px,-2px);box-shadow:4px 4px 0 rgba(237,240,243,.14)}
+  .btn-ghost:hover{border-color:var(--ink);transform:translate(-2px,-2px);box-shadow:4px 4px 0 rgba(var(--ir),.14)}
   .btn-sm{font-size:14px;padding:11px 19px}
   @media (prefers-reduced-motion:reduce){.btn:hover{transform:none;box-shadow:none}}
 
@@ -248,7 +264,7 @@
   .stg h3{font-size:25px;font-weight:800;letter-spacing:-.04em;margin:12px 0 6px}
   .stg .wl{font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.08em}
   .stg p{font-size:15.5px;color:var(--muted);margin-top:14px}
-  .stg .out{margin-top:16px;padding-top:14px;border-top:1px dotted rgba(233,238,242,.14);font-size:14px;color:var(--ink)}
+  .stg .out{margin-top:16px;padding-top:14px;border-top:1px dotted rgba(var(--ir),.14);font-size:14px;color:var(--ink)}
   .stg .out b{color:var(--signal);font-weight:600;display:block;font-family:var(--mono);font-size:9.5px;
     letter-spacing:.18em;text-transform:uppercase;margin-bottom:6px}
 
@@ -313,7 +329,7 @@
     padding:16px 0;border-bottom:1px solid var(--line)}
   .hrow .n{font-size:15.5px;color:var(--muted)}
   .hrow.hot .n{color:var(--ink);font-weight:650}
-  .bar{height:7px;background:rgba(237,240,243,.05)}
+  .bar{height:7px;background:rgba(var(--ir),.07)}
   .bar i{display:block;height:100%;width:0;background:var(--cool);transition:width 1.1s cubic-bezier(.2,.8,.3,1)}
   .hrow.hot .bar i{background:var(--signal)}
   .hrow .p{font-family:var(--mono);font-size:12.5px;color:var(--faint);text-align:right;font-variant-numeric:tabular-nums}
