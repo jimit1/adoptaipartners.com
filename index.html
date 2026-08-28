@@ -398,6 +398,7 @@
       <div class="mn" id="mn-sys"><button class="mnb" aria-expanded="false">Systems <span class="cv">&#9660;</span></button><div class="mega"><div class="megain" id="mega-sys"></div></div></div>
       <div class="mn" id="mn-ind"><button class="mnb" aria-expanded="false">Industries <span class="cv">&#9660;</span></button><div class="mega"><div class="megain" id="mega-ind"></div></div></div>
       <a class="mnb" href="#/approach">Approach</a>
+      <a class="mnb" href="/blog/">Insights</a>
     </nav>
     <button class="burger" id="burger" aria-expanded="false">MENU</button>
     <a href="#/contact" class="btn btn-primary btn-sm" id="navcta" style="margin-left:16px">Start a conversation</a>
@@ -417,7 +418,7 @@
     </div>
     <div><h6>Systems</h6><div id="f-sys"></div></div>
     <div><h6>Industries</h6><div id="f-ind"></div></div>
-    <div><h6>Firm</h6><a href="#/approach">Approach</a><a href="#/systems">All systems</a><a href="#/industries">All industries</a><a href="#/contact">Contact</a></div>
+    <div><h6>Firm</h6><a href="#/approach">Approach</a><a href="#/systems">All systems</a><a href="#/industries">All industries</a><a href="/blog/">Insights</a><a href="#/contact">Contact</a></div>
   </div>
   <div class="fbot"><span>ADOPT AI</span><span>HELLO@ADOPTAI.COM</span></div>
 </div></footer>
@@ -1443,7 +1444,8 @@ document.getElementById('mega-sys').innerHTML=
     return '<a class="mitem" href="#/s/'+o.s+'">'+gi(o.ic,18)+'<span><span class="mt">'+esc(o.n)+'</span><span class="md">'+esc(o.blurb)+'</span></span></a>';}).join('')+'</div>'+
   '<div class="mgroup"><h6>Everything</h6>'+
   '<a class="mitem" href="#/systems">'+gi('node',18)+'<span><span class="mt" style="color:var(--signal)">All systems</span><span class="md">The systems we deploy, side by side.</span></span></a>'+
-  '<a class="mitem" href="#/approach">'+gi('flag',18)+'<span><span class="mt">Approach</span><span class="md">How an engagement runs.</span></span></a></div>';
+  '<a class="mitem" href="#/approach">'+gi('flag',18)+'<span><span class="mt">Approach</span><span class="md">How an engagement runs.</span></span></a>'+
+  '<a class="mitem" href="/blog/">'+gi('doc',18)+'<span><span class="mt">Insights</span><span class="md">AI adoption, in practice.</span></span></a></div>';
 document.getElementById('mega-ind').innerHTML=groupBy(IND).map(function(p){
   return '<div class="mgroup"><h6>'+esc(p[0])+'</h6>'+p[1].map(function(o){
     return '<a class="mitem" href="#/i/'+o.s+'">'+gi(o.ic,18)+'<span><span class="mt">'+esc(o.n)+'</span><span class="md">'+esc(o.h)+'</span></span></a>';}).join('')+'</div>';
