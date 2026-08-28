@@ -148,6 +148,12 @@
 
   .hero{padding:132px 0 118px;position:relative;overflow:hidden;isolation:isolate}
   #crystal{position:absolute;inset:0;width:100%;height:100%;z-index:0;display:block;cursor:crosshair;touch-action:pan-y}
+  /* departure-board headline: words stay whole, characters flap in */
+  #flap .fw{display:inline-block;white-space:nowrap}
+  #flap .ch{display:inline-block;transform-origin:50% 60%}
+  @keyframes flapIn{0%{transform:rotateX(-90deg);opacity:0}60%{transform:rotateX(14deg);opacity:1}100%{transform:rotateX(0);opacity:1}}
+  #flap .ch.in{animation:flapIn .34s cubic-bezier(.25,.8,.35,1) both}
+  @media (prefers-reduced-motion:reduce){#flap .ch.in{animation:none}}
   .hint{position:absolute;right:26px;bottom:22px;z-index:2;display:flex;align-items:center;gap:10px;
     font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--faint);
     pointer-events:none;transition:opacity .6s ease}
@@ -610,8 +616,8 @@ function home(){
   '<div class="hint" id="hint"><i></i>Move the field / click to send a pulse</div>'+
   '<div class="wrap hgrid"><div>'+
     '<span class="kick">AI deployment for the enterprise</span>'+
-    '<h1>AI your business <em>actually adopts.</em></h1>'+
-    '<p class="dek">We have launched AI agents into production for enterprise clients. We find the work AI should be doing in your business, build it in your environment, and stay until the benefit shows up in your numbers.</p>'+
+    '<h1>AI for <em id="flap">invoice processing<span class="ch">.</span></em></h1>'+
+    '<p class="dek">We embed in your business, build AI agents that run real work in production, and stay until your team owns them and the numbers move.</p>'+
     '<div class="acts"><a href="#/contact" class="btn btn-primary">Start a conversation</a>'+
     '<a href="#/systems" class="btn btn-ghost">What we deploy</a></div>'+
     '<p class="fine">Any industry / any process / vendor neutral / measured before launch</p>'+
@@ -824,6 +830,7 @@ function wire(r){
   }
   var cry=document.getElementById('crystal');
   if(cry)mountCrystal(cry);
+  startFlap();
   if(document.getElementById('diagram'))runDiagram();
   app.querySelectorAll('.vis').forEach(buildVis);
   var q=document.getElementById('queue');
@@ -853,7 +860,7 @@ function splitHeadings(){
             sp.style.transitionDelay=(i*52)+'ms';i++;frag.appendChild(sp);
           });
           node.replaceChild(frag,n);
-        } else if(n.nodeType===1 && !n.classList.contains('w')) chop(n);
+        } else if(n.nodeType===1 && !n.classList.contains('w') && n.id!=='flap') chop(n);
       });
     }
     chop(h);
@@ -1201,6 +1208,27 @@ function mountCrystal(canvas){
   id=requestAnimationFrame(frame);rafs.push(id);
 }
 
+
+/* ================= departure-board headline ================= */
+var FLAP=['invoice processing','customer support','claims handling','supply chains','manufacturing','document review','healthcare admin','underwriting','order management','compliance evidence','your back office'];
+function startFlap(){
+  var el=document.getElementById('flap');if(!el)return;
+  var i=0;
+  function render(term,anim){
+    var k=0;
+    var html=term.split(' ').map(function(w){
+      return '<span class="fw">'+w.split('').map(function(c){
+        return '<span class="ch'+(anim?' in':'')+'"'+(anim?' style="animation-delay:'+(k++*26)+'ms"':'')+'>'+esc(c)+'</span>';
+      }).join('')+'</span>';
+    }).join(' ');
+    html+='<span class="ch'+(anim?' in':'')+'"'+(anim?' style="animation-delay:'+(k*26)+'ms"':'')+'>.</span>';
+    el.innerHTML=html;
+  }
+  if(reduce){render(FLAP[0],false);return;}
+  render(FLAP[0],true);
+  function next(){i=(i+1)%FLAP.length;render(FLAP[i],true);later(next,2600);}
+  later(next,2400);
+}
 
 /* ================= hero diagram ================= */
 function runDiagram(){
