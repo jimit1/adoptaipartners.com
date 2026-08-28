@@ -6,6 +6,7 @@
 <title>Adopt AI Partners</title>
 <meta name="description" content="Adopt AI Partners helps enterprises adopt AI and see measured benefit: production AI agents built in your environment, in any industry, owned by your people.">
 <meta name="theme-color" content="#FAF9F6">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='11' r='6' fill='%23F0B33F'/%3E%3Ccircle cx='9' cy='30' r='5' fill='%23B4720E'/%3E%3Ccircle cx='31' cy='30' r='5' fill='%23B4720E'/%3E%3Cpath d='M20 17 L11 26 M20 17 L29 26 M14 30 L26 30' stroke='%23B4720E' stroke-width='2.4'/%3E%3C/svg%3E">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem('adopt-theme')==='dark'?'dark':'light'}catch(e){document.documentElement.dataset.theme='light'}</script>
 <meta property="og:title" content="Adopt AI Partners">
 <meta property="og:description" content="AI systems that do the work.">
@@ -126,6 +127,18 @@
   .mnb{font-family:inherit;font-size:15px;font-weight:600;color:var(--muted);background:none;border:0;cursor:pointer;
     padding:10px 14px;display:flex;align-items:center;gap:7px;transition:color .16s}
   .mnb:hover,.mn.open .mnb{color:var(--ink)}
+  .secintro{max-width:62ch;color:var(--muted);margin:-10px 0 30px;font-size:17px}
+  .tgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:18px}
+  @media(max-width:820px){.tgrid{grid-template-columns:1fr}}
+  .tcard{border:1px solid var(--line);background:var(--raise);border-radius:10px;padding:28px;
+    box-shadow:0 24px 50px -40px rgba(0,0,0,.35)}
+  .tcard>p{font-size:17.5px;line-height:1.65;color:var(--ink)}
+  .tcard .twho{margin-top:18px;padding-top:14px;border-top:1px solid var(--line)}
+  .tcard .twho b{display:block;font-size:15px}
+  .tcard .twho span{font-size:13.5px;color:var(--faint)}
+  .tcard .tnum{display:flex;gap:22px;margin-top:14px}
+  .tcard .tnum span{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
+  .tcard .tnum b{color:var(--signal);font-size:15px;letter-spacing:0}
   .tbtn{margin-left:14px;width:34px;height:34px;border-radius:50%;border:1px solid var(--line2);background:none;
     color:var(--muted);font-size:16px;line-height:1;cursor:pointer;flex:none}
   .tbtn:hover{color:var(--ink);border-color:var(--signal)}
@@ -663,6 +676,16 @@ function home(){
     '<h2>Most enterprise AI <em>never leaves the pilot.</em></h2></div>'+
     '<div class="quote rv"><p>Ninety five per cent of enterprise AI pilots never reach the P&amp;L. The failure is rarely the model. Nobody measured the process, nobody defined accurate, and nobody owned adoption after launch.</p>'+
     '<div class="src">MIT, The GenAI Divide 2025, and our operating view</div></div>'+tilesHTML()+'</div></section>'+
+  '<section><div class="wrap"><div class="sechead rv"><span class="kick">Track record</span>'+
+    '<h2>What clients say about <em>our production systems.</em></h2></div>'+
+    '<p class="secintro rv">Adopt AI Partners is founded by the team behind Abmatic AI, an AI revenue platform that runs in production for enterprise clients. This is what those clients say about the systems we build and operate.</p>'+
+    '<div class="tgrid rv">'+
+    '<div class="tcard"><p>&ldquo;Abmatic AI makes our marketing team smarter and our sales team faster. It gives us real-time intent signals and personalized messaging tools that have drastically improved our targeting capabilities and conversion rates. The results speak for themselves.&rdquo;</p>'+
+    '<div class="twho"><b>Stephane Le Mentec</b><span>Head of Demand Generation, Ketch</span></div>'+
+    '<div class="tnum"><span><b>200%</b> increase in signups</span><span><b>2x</b> MQL growth</span></div></div>'+
+    '<div class="tcard"><p>&ldquo;Before Abmatic AI, we were flying blind. Tons of traffic but little visibility into intent. Now, we can see exactly which accounts are engaged, personalize their experience, and convert them into pipeline faster than ever. It is a complete game changer.&rdquo;</p>'+
+    '<div class="twho"><b>VP of Marketing</b><span>B2B SaaS cybersecurity company</span></div></div>'+
+    '</div><p class="fine rv">Client testimonials for Abmatic AI, the platform built and operated by our founding team.</p></div></section>'+
   '<section><div class="wrap"><div class="sechead rv"><span class="kick">Why us</span>'+
     '<h2>We have <em>shipped this before.</em></h2></div>'+
     '<div class="plist rv">'+
@@ -1058,9 +1081,9 @@ function mountCrystal2D(old){
       var py=o.y+Math.cos(t*.47+o.q)*wob*2.2+Math.cos(o.q*2.9)*(1-ez)*H*.03+sy;
       var pulse=.5+.5*Math.sin(t*1.5+o.p);
       var rr=(H/540)*(1.4+2.2*ez)*(.8+.4*pulse);
-      var al=(.10+.34*ez)*(.5+.5*pulse)*o.a*(1+grip*.5);
+      var al=(.10+.34*ez)*(.5+.5*pulse)*o.a*(1+grip*.5)*(window.__dark?1:.45);
       x.beginPath();x.arc(px,py,rr,0,6.283);
-      x.fillStyle='rgba('+(window.__dark?'255,184,77':'146,89,10')+','+Math.min(1,al).toFixed(3)+')';x.fill();
+      x.fillStyle='rgba('+(window.__dark?'255,184,77':'172,128,62')+','+Math.min(1,al).toFixed(3)+')';x.fill();
     }
   }
   if(reduce){draw(t0+8000);return;}
@@ -1161,11 +1184,11 @@ function mountCrystal(canvas){
   '   aura=smoothstep(.30,.0,dm)*.16*(1.+press*1.6);',
   '   aura+=smoothstep(.012,.0,abs(dm-(.22+press*.05)))*.20*(.5+press);}',
   ' float v=main_+far+haze+link+packet+aura;',
-  ' vec3 amber=mix(vec3(.58,.36,.05),vec3(1.,.72,.30),dk);',
+  ' vec3 amber=mix(vec3(.66,.48,.22),vec3(1.,.72,.30),dk);',
   ' vec3 col=amber*v*.95;',
-  ' col+=amber*pow(max(v-.55,0.),2.0)*1.5;',
+  ' col+=amber*pow(max(v-.55,0.),2.0)*mix(.6,1.5,dk);',
   ' col*=mix(.62,1.0,smoothstep(.0,.55,x));',
-  ' gl_FragColor=vec4(col,clamp(v*1.25,0.,1.));',
+  ' gl_FragColor=vec4(col,clamp(v*1.25,0.,1.)*mix(.38,1.,dk));',
   '}'].join('\n');
   function sh(type,src){var s=g.createShader(type);g.shaderSource(s,src);g.compileShader(s);
     if(!g.getShaderParameter(s,g.COMPILE_STATUS)){return null;}return s;}
