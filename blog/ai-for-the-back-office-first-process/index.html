@@ -5,6 +5,7 @@
 <link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-the-back-office-first-process/">
 <meta property="og:title" content="AI for the back office: how to pick your first process"><meta property="og:description" content="A practical guide for COOs, CFOs and transformation leaders on picking the first back office process to automate with AI and getting it to production.">
 <meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-the-back-office-first-process/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200&q=75&auto=format&fit=crop">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
 :root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -44,11 +45,18 @@ article strong{color:var(--text)}
 .pmeta b{color:var(--signal);font-weight:600}
 .post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
 .post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for the back office: how to pick your first process","description":"A practical guide for COOs, CFOs and transformation leaders on picking the first back office process to automate with AI and getting it to production.","datePublished":"2026-08-28","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-the-back-office-first-process/"}</script>
 </head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
 <div class="crumb"><a href="/blog/">Insights</a> / cross industry</div>
-<article><h1>AI for the back office: how to pick your first process</h1><div class="meta">28 August 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div>
+<article><h1>AI for the back office: how to pick your first process</h1><div class="meta">28 August 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600&q=80&auto=format&fit=crop" alt="team meeting around a conference table" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
 <p>Almost every enterprise now has an AI budget. Far fewer have AI adoption. The gap between the two is filled with pilots: demos that impressed a steering committee, proofs of concept that stalled in security review. Most of these pilots never reach production, and the reason is rarely the technology. It is the choice of process. Teams pick something visible instead of something suitable, and six months later they have a slide deck instead of a system.</p>
 <p>If you run operations or finance, the back office is where your first real win lives. It is full of work that is repetitive, rule-shaped, and measurable, and it is far enough from your customers that a controlled rollout carries bounded risk. The question is not whether AI can help your back office. It is which process you should hand it first.</p>
 <h2>What makes a good first candidate</h2>
@@ -64,7 +72,7 @@ article strong{color:var(--text)}
 <p>Avoid processes that are currently broken. If two departments disagree about how the work should be done, or the procedure changes every month, automating it freezes the confusion. AI is an amplifier of process clarity, not a substitute for it. Fix the definition first, then automate the fixed version.</p>
 <p>Avoid anything where the data does not exist yet. If the inputs live in one person's inbox and the outputs in a spreadsheet nobody else can open, you have a data plumbing project first. That is fine, but be honest about the sequencing.</p>
 <p>Finally, avoid the everything-agent that promises to handle procurement, HR queries and finance close all at once. That is a pitch for a pilot that never ends. Narrow scope is what makes production possible.</p>
-<h2>Baseline before you build</h2>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1632152133952-98b268dc4b86?w=1600&q=80&auto=format&fit=crop" alt="papers and a pen on a desk" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Baseline before you build</h2>
 <p>Most teams skip this step, and it is the one that later determines whether anyone believes the results. Before a line of code is written, measure the process as it runs today. You need four numbers.</p>
 <p>First, volume: how many instances arrive per week. Second, handling time: minutes per instance, measured rather than estimated, because self-reported figures are routinely off by half. Third, error rate: sample a few hundred recent cases and have someone senior re-check them; nearly every team discovers its human baseline is lower than assumed. Fourth, cycle time: how long an instance waits end to end, because the queue, not the work, is often what the business actually feels.</p>
 <p>While you are there, collect the exceptions. Pull fifty of the strangest cases from the last quarter: the handwritten invoice, the purchase order in the wrong currency, the supplier whose name matches a sanctioned entity. This becomes your test set, worth more than any vendor benchmark because it is made of your reality.</p>
@@ -78,7 +86,7 @@ article strong{color:var(--text)}
 <p>Aggregate accuracy numbers flatter every system, because most back office volume is easy. If ninety percent of your invoices are clean PDFs from ten large suppliers, a mediocre system scores well by cruising through the easy majority while failing on everything hard.</p>
 <p>So split your measurement. Score the routine cases and the contested cases separately, using the exception set you collected during baselining. The contested set is where the honest conversation happens: it tells you what the agent cannot yet do, which cases must keep routing to people, and where the confidence threshold belongs.</p>
 <p>Review this regularly with the process owner in the room. Sample cases the agent completed autonomously, not just the ones it escalated, because silent errors are the ones that erode trust. And when the agent and the human disagree, resist the assumption that the human is right. In our experience a meaningful share of disagreements, once traced, turn out to be human error or ambiguity in the process definition itself.</p>
-<h2>Where to start this quarter</h2>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1600&q=80&auto=format&fit=crop" alt="colleagues working with laptops at a table" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Where to start this quarter</h2>
 <p>You can go from nothing to a defensible decision in a single quarter without buying anything.</p>
 <p>Spend the first few weeks listing candidate processes and scoring each against the four properties. Involve the people who do the work; they know where the volume and the pain sit, and their early involvement decides whether the system gets used or quietly bypassed.</p>
 <p>Spend the middle of the quarter baselining the top one or two candidates. Spend the final weeks defining production for the winner, in writing: which system of record it writes to, who owns escalations, the starting confidence threshold, and what the audit trail must contain. That one-page definition is the difference between commissioning a production system and commissioning another demo.</p>

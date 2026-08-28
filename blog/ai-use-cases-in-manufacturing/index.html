@@ -5,6 +5,7 @@
 <link rel="canonical" href="https://adoptaipartners.com/blog/ai-use-cases-in-manufacturing/">
 <meta property="og:title" content="AI Use Cases in Manufacturing: What Actually Works on the Plant Floor"><meta property="og:description" content="Practical AI agent use cases for manufacturing plants, from tribal knowledge capture to quality documentation, with notes on where AI fails on the plant floor.">
 <meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-use-cases-in-manufacturing/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1610891015188-5369212db097?w=1200&q=75&auto=format&fit=crop">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
 :root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -44,11 +45,18 @@ article strong{color:var(--text)}
 .pmeta b{color:var(--signal);font-weight:600}
 .post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
 .post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI Use Cases in Manufacturing: What Actually Works on the Plant Floor","description":"Practical AI agent use cases for manufacturing plants, from tribal knowledge capture to quality documentation, with notes on where AI fails on the plant floor.","datePublished":"2026-08-28","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-use-cases-in-manufacturing/"}</script>
 </head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
 <div class="crumb"><a href="/blog/">Insights</a> / manufacturing</div>
-<article><h1>AI Use Cases in Manufacturing: What Actually Works on the Plant Floor</h1><div class="meta">28 August 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div>
+<article><h1>AI Use Cases in Manufacturing: What Actually Works on the Plant Floor</h1><div class="meta">28 August 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1610891015188-5369212db097?w=1600&q=80&auto=format&fit=crop" alt="industrial textile factory with machinery and pipes" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
 <p>Walk any plant floor and you will find the same three problems hiding in plain sight. The people who know why line three surges on humid days are five years from retirement, and nothing they know is written down anywhere useful. Procedures live in binders, laminated sheets, and a shared drive nobody trusts. And quality documentation, the non-conformance reports, the deviations, the audit trails, eats hours of skilled people's time every week while still arriving late and incomplete.</p>
 <p>None of this is news to you. What is new is that AI agents can now do real work against these problems, provided they are built to read your actual systems, follow your actual procedures, and hand control to a person at the right moments. Below are the use cases we see working in production environments, described in enough detail that you can judge whether they fit your operation. No vendor gloss, and a straight section at the end on where AI fails.</p>
 <h2>Capturing tribal knowledge before it walks out the door</h2>
@@ -59,7 +67,7 @@ article strong{color:var(--text)}
 <p>Most plants have work instructions that are technically controlled documents and practically ignored, because updating them is painful and the current revision never quite matches what the line actually does.</p>
 <p>How it works: the agent reads your existing SOPs, engineering change orders, and the deviation records that reveal where reality departs from the document. When an ECO lands, it identifies every affected work instruction, drafts the revision with changes marked, and routes it into your existing document control workflow. It never publishes a controlled document itself. A qualified person reviews, approves, and releases through the same approval chain you use today. What changes is the lag: revisions that took weeks of someone finding the time now arrive as review-ready drafts within a day of the change order.</p>
 <p>On the floor, the same agent answers operators' questions against the current released revision only, and says so when a question falls outside the document rather than guessing.</p>
-<h2>Drafting quality documentation instead of chasing it</h2>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600&q=80&auto=format&fit=crop" alt="team meeting around a conference table" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Drafting quality documentation instead of chasing it</h2>
 <p>Non-conformance reports, deviation write-ups, and CAPA records are where good engineers go to lose their afternoons. The information usually exists at the moment of the event. The cost is in assembling it.</p>
 <p>How it works: when an operator flags a non-conformance, the agent pulls the batch record, the machine parameters from the historian for the relevant window, the operator's short description, and the applicable specification. It drafts the NCR in your quality system's format, pre-fills the containment section with the affected lot range, and proposes a disposition category based on how similar events were dispositioned before. Then it stops. Disposition decisions, use-as-is, rework, scrap, are made by your quality engineer, who edits the draft and signs. The agent writes the approved record back into the QMS and links the supporting data, so the audit trail is complete without anyone copying values between screens.</p>
 <p>The honest gain here is not intelligence, it is assembly speed and completeness. Reports get filed the same day, with the process data attached, which makes the later root cause work dramatically easier.</p>
@@ -69,7 +77,7 @@ article strong{color:var(--text)}
 <h2>Shift handover that survives the shift</h2>
 <p>Handover meetings compress eight or twelve hours of events into five rushed minutes, and whatever is not said gets rediscovered the hard way.</p>
 <p>How it works: the agent reads the shift's production counts, downtime events, quality holds, open work orders, and any notes operators logged. It drafts a structured handover: what ran, what broke, what is on hold, what the incoming shift needs to watch. The outgoing supervisor reviews it, adds what only a person would know, and approves it. The approved handover is posted where the incoming shift already looks, and open items carry forward automatically until someone closes them, so nothing silently disappears between Friday night and Monday morning.</p>
-<h2>Supplier certificates and inbound document checks</h2>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1627309366653-2dedc084cdf1?w=1600&q=80&auto=format&fit=crop" alt="tall shelving units in a distribution warehouse" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Supplier certificates and inbound document checks</h2>
 <p>Certificates of analysis and conformance arrive as PDFs in a dozen formats, and someone in receiving or quality checks them against specifications by eye, or does not.</p>
 <p>How it works: the agent reads each inbound certificate, extracts the reported values, and compares them against the specification for that part and revision in your ERP or QMS. In-spec documents are filed against the receipt automatically, with the extracted values written to the record. Anything out of spec, ambiguous, missing a required test, or referencing a superseded revision is flagged and routed to a person with the discrepancy highlighted. The agent never releases held material. It makes the check consistent and instant, and reserves human attention for the exceptions that deserve it.</p>
 <h2>Root cause support that respects your method</h2>
