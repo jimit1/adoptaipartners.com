@@ -1,0 +1,101 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for fraud review: working the alert queue without losing the analyst | Adopt AI Partners</title>
+<meta name="description" content="How banks use AI agents after an alert fires, assembling cases, gathering evidence, drafting narratives and preparing SARs, with a human deciding every disposition.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-fraud-review/">
+<meta property="og:title" content="AI for fraud review: working the alert queue without losing the analyst"><meta property="og:description" content="How banks use AI agents after an alert fires, assembling cases, gathering evidence, drafting narratives and preparing SARs, with a human deciding every disposition.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-fraud-review/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for fraud review: working the alert queue without losing the analyst","description":"How banks use AI agents after an alert fires, assembling cases, gathering evidence, drafting narratives and preparing SARs, with a human deciding every disposition.","datePublished":"2026-08-29","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-fraud-review/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / banking</div>
+<article><h1>AI for fraud review: working the alert queue without losing the analyst</h1><div class="meta">29 August 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=1600&q=80&auto=format&fit=crop" alt="group of people in a meeting" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>Most conversations about AI and fraud start with the model that spots the fraud. That is the wrong end of the problem for almost every bank we speak to. Between a rules engine, a scoring model and a vendor feed you already generate more alerts than your team can work. The pain is downstream. An analyst opens an alert, then spends twenty minutes pulling transaction history from one system, device data from another, KYC records from a third and prior case history from the case manager. Only then does the thinking start, and it usually takes two minutes.</p>
+<p>That ratio is the opportunity. The useful work for AI agents in fraud is case assembly, evidence gathering, narrative drafting and disposition support, so analysts spend their time deciding rather than fetching. It applies equally to card fraud, payments fraud, application fraud and AML alert review, because all four share a shape: an automated trigger, a manual investigation, a documented outcome, and a regulator who may ask about it years later.</p>
+<h2>The queue is the problem, not the model</h2>
+<p>Ask a fraud operations lead what keeps them up and you will rarely hear "our detection rate". You will hear about backlog, alerts ageing past service levels, analysts leaving because the job is data entry with occasional adrenaline, and false positive volume nobody can reduce because tightening a threshold means accepting risk nobody will sign off.</p>
+<p>The shape varies by product, but most alerts close with no action and the cost of that majority is analyst hours rather than losses. An agent that cuts handling time on the alerts that close as nothing, while leaving genuine cases fully human, changes your unit economics without changing your risk appetite. That is a better first pitch than promising fewer alerts.</p>
+<h2>Case assembly and evidence gathering</h2>
+<p>The first agent to build packs the case file. When an alert lands, it works a defined evidence checklist for that alert type and gathers everything an analyst would gather by hand.</p>
+<p>For a card fraud alert, that means the disputed authorisation, surrounding transaction history, prior history with that merchant, the cardholder's usual geography and spend pattern, device indicators, recent credential changes and open cases on related cards. For an application fraud alert, it means the application data, identity verification responses, velocity checks, links to other applications sharing an address, phone or bank account, and prior declined attempts. For an AML alert, it means the transaction chain either side of the trigger, counterparty details, the expected activity profile captured at onboarding, screening results, and the disposition and rationale of every prior alert on that customer.</p>
+<p>The output is a single case pack with every item sourced. Not a summary saying "the customer has prior alerts", but a line stating that three prior alerts exist, citing their case numbers and how each was dispositioned. Provenance is what makes the pack usable as evidence, and it is what an examiner will test.</p>
+<h3>Getting the plumbing right</h3>
+<p>Most of the build effort goes here, into read access and rate limits across core banking, the card processor, case management and the screening vendor, not into anything clever in the model layer. Where a system is unavailable, the pack must say so rather than present an incomplete picture.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600&q=80&auto=format&fit=crop" alt="team meeting around a conference table" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Drafting the analyst narrative</h2>
+<p>Once the evidence is assembled, the agent drafts the narrative an analyst would otherwise write from scratch: what triggered the alert, what the customer's normal behaviour looks like, how the flagged activity differs, and what corroborating or exculpating evidence the file holds.</p>
+<p>The draft follows your house template and terminology, because a narrative that reads differently from the rest of your case files creates its own review problem. It states facts and cites them. It flags what it could not establish. It does not reach a conclusion, because in a well built process the narrative and the decision are separate artefacts with separate approvals. Analysts edit these drafts, and what they change tells you where the agent is weak more precisely than any offline benchmark.</p>
+<h2>Disposition recommendation with visible reasoning</h2>
+<p>The agent can propose a disposition: close as false positive, escalate to a senior analyst, refer for SAR consideration, block the card, decline the application. What matters is that the recommendation arrives with its reasoning in a form a human can check in seconds: the evidence for it, the evidence against it, the typology the case maps to, and how similar cases were dispositioned historically. A recommendation an analyst has to reverse engineer is worse than none, because it invites rubber stamping.</p>
+<p>Keep the human as the decision maker in the system of record, not just in policy documents. The disposition field should only ever be written by an authenticated human action, with agent output stored separately as a recommendation and the human's acceptance or override recorded against it. Then measure override rate by alert type. That number tells you where the agent has earned trust.</p>
+<h2>SAR and escalation preparation</h2>
+<p>For AML, the agent prepares the suspicious activity report package: structured fields, the activity summary drawn from the case pack, the transaction schedule, subject and counterparty details, supporting documents. A human investigator reviews, edits, decides whether to file, and files.</p>
+<p>Filing decisions carry personal and institutional liability, and the value the agent adds is the two hours of assembly and formatting, not the judgement. The same holds for escalations, law enforcement referrals and customer exit recommendations. Prepare everything, decide nothing.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1600&q=80&auto=format&fit=crop" alt="discussion in a modern office" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Triage and feedback into the alert rules</h2>
+<p>Two further jobs sit either side of the queue. The first is triage: ordering work by case age, exposure at risk, regulatory clock and how strong the assembled evidence looks, so the alerts most likely to matter reach an analyst first rather than in arrival order.</p>
+<p>The second is feedback. Because the agent structures the evidence and the human disposition for every case, you can see which rules and score bands produce nothing but noise, which produce confirmed fraud, and which alerts analysts close repeatedly for the same reason. That is valuable input to threshold tuning, and it should stay an input to a governed review rather than an automatic adjustment.</p>
+<h2>The audit trail an examiner will accept</h2>
+<p>Build the record to be read by someone hostile and unfamiliar.</p>
+<p>Every case should carry a durable log of which systems the agent queried and when, what each returned, which agent version produced each artefact, what it recommended and on what basis, who reviewed it, what they changed and what they decided. Versions matter: if you cannot say which configuration produced a narrative eighteen months ago, you cannot defend that case. Retain the recommendation even when the human overrode it, because override history is your best evidence of effective human control.</p>
+<p>Rehearse the examiner question. Show me a case, show me who decided it, show me what they saw. If that takes more than a minute, the controls are not real.</p>
+<h2>Model risk and governance</h2>
+<p>In a regulated bank, an agent in the alert workflow will attract model risk attention even though it is not scoring risk. Involve model risk management, compliance and internal audit while you are designing, not once you have built.</p>
+<p>Practically, that means documenting intended use and limitations, defining what the agent must never do, ongoing performance monitoring rather than a one time validation, change control for prompts, tools and models, and a fallback so the queue keeps moving manually when the agent is unavailable. Case files hold some of the most sensitive data in the bank, and tipping off rules constrain what can be exposed and to whom.</p>
+<h2>Evaluating before you trust it</h2>
+<p>Do not run a pilot on impressions. Build the evaluation before the agent.</p>
+<p>Take a sample of historically dispositioned alerts, several hundred at minimum and stratified across alert types, and run the agent blind against them. Measure evidence completeness against your checklist, factual accuracy of every cited claim, agreement with the human disposition, and above all the direction of disagreement. An agent that recommends closing cases your analysts escalated is far more serious than one that escalates cases they closed.</p>
+<p>Then run it live in shadow mode, with the agent's output recorded but hidden from analysts. Only then put it in front of the queue, starting with the alert types where it performed best, in draft mode with every output reviewed. Watch handling time, override rate, quality assurance results and analyst feedback together.</p>
+<h2>Where AI fails here</h2>
+<p>Agents are poor at genuine novelty. A typology the institution has not seen, an emerging scam pattern, a case where the evidence is technically clean but something about the story is wrong, these are exactly where an agent will confidently recommend closure. Experienced investigators catch them on instinct, and no amount of case history teaches that reliably. Keep a sampling regime that puts human eyes on cases the agent wanted to close.</p>
+<p>Agents also inherit your history. If past dispositions were inconsistent, or certain customer segments were escalated more readily for reasons that will not survive scrutiny, an agent prompted on that history reproduces the pattern at higher volume. Test for disparate treatment explicitly. Consistency is only a virtue once the thing made consistent is defensible.</p>
+<p>Threshold feedback is harder than it sounds. Using agent assisted dispositions to tune the rules that generate alerts creates a loop that can quietly narrow what you detect. Keep threshold changes on a human governed cadence with model risk oversight, and validate against holdout data rather than the agent's own outputs.</p>
+<p>Finally, an agent will not fix a broken queue. If alerts are poorly specified or nobody agrees what a disposition code means, faster processing gives you the same confusion sooner. That cleanup is a prerequisite, not a phase two.</p>
+<h2>Where to start</h2>
+<p>Pick one alert type with high volume and a high false positive rate, where the investigation steps are documented and the outcome is low controversy. Card fraud alerts on established customers, or a noisy AML scenario, are usually the right first ground. Build the evidence pack agent and stop there for a while: assembly alone removes most of the drudgery and carries almost none of the governance weight. Add narrative drafting once analysts trust the packs, and disposition recommendations last, only where you can show the evaluation numbers to your second line.</p>
+<p>Adopt AI Partners builds these agents inside the client's own systems and stays until the fraud team owns them. Success is not that the agent works. It is that your analysts trust it, your second line signs it off, and both handling time and quality assurance results move the right way.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>

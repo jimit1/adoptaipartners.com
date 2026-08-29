@@ -1,0 +1,100 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for document review: the layers you can hand to an agent, and the ones you cannot | Adopt AI Partners</title>
+<meta name="description" content="How an AI agent handles document review end to end, from intake and extraction through exception routing, human sign off, audit trails, accuracy testing and honest limits.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-document-review/">
+<meta property="og:title" content="AI for document review: the layers you can hand to an agent, and the ones you cannot"><meta property="og:description" content="How an AI agent handles document review end to end, from intake and extraction through exception routing, human sign off, audit trails, accuracy testing and honest limits.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-document-review/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1576414160011-98dfab3aa889?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for document review: the layers you can hand to an agent, and the ones you cannot","description":"How an AI agent handles document review end to end, from intake and extraction through exception routing, human sign off, audit trails, accuracy testing and honest limits.","datePublished":"2026-08-29","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-document-review/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / legal</div>
+<article><h1>AI for document review: the layers you can hand to an agent, and the ones you cannot</h1><div class="meta">29 August 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1576414160011-98dfab3aa889?w=1600&q=80&auto=format&fit=crop" alt="law books on library shelves" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>Document review never appears as a line item and never stops consuming people. It sits inside diligence rooms, discovery sets, claims files, onboarding packs, credit files and regulatory inspections. The work is the same underneath: read a pile of documents, work out what each one is, pull out the facts that matter, check them against a standard, and decide what needs a person's attention.</p>
+<p>That shape makes it a good candidate for AI agents, and also dangerous to automate carelessly. The reading is mechanical. The consequences are not.</p>
+<h2>What document review actually costs you today</h2>
+<p>Ask a team how long review takes and you get the per-document number: eight minutes for a policy file, two hours for a complex claim. That is usually the smallest part of the cost.</p>
+<p>The larger costs sit around it. Queue time, where documents wait days for a reviewer who is booked. Rework, where a file comes back because a schedule was missing or a value came off the wrong page. Inconsistency, where two reviewers reach different conclusions on similar files and nobody notices until an audit does. The seniority tax, where a specialist spends the first half of every file locating information rather than judging it. And the ceiling: volume you decline, samples you shrink, portfolio questions you never ask.</p>
+<p>An agent earns its place here not by being cleverer than a reviewer, but by removing the waiting, the locating and the transcribing so the reviewer starts at the judgement.</p>
+<h2>Intake and classification</h2>
+<p>Every review system starts with a mess at the front door. Documents arrive by email, portal, shared drive and scanner, as native files, exports, photographs of paper and PDFs of PDFs. Half are not named usefully.</p>
+<p>An intake agent normalises formats, runs text recognition on anything scanned, and flags pages where the text layer is too poor to rely on rather than quietly guessing. It splits combined files into component documents, which matters more than people expect, because a sixty page upload is frequently nine documents stapled together.</p>
+<p>It then classifies. Each document gets a type, a party, a date, and a link to the matter, case or entity it belongs to. From there it applies the routing rules you already use informally: this class goes to the standard lane, this one needs a specialist, this one duplicates something already reviewed, this one is a near duplicate with three changed clauses.</p>
+<p>Two more intake jobs pay for themselves quickly: completeness checking, which chases missing items before a reviewer opens anything, and deduplication, which in discovery and diligence sets removes a meaningful share of the volume outright.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1600&q=80&auto=format&fit=crop" alt="colleagues working with laptops at a table" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Extraction and comparison against a standard</h2>
+<p>This is the core of the work. Once a document is identified, the agent extracts the fields that matter for its type and checks them against whatever standard governs the review. The standard varies and the mechanics do not. In diligence it is the buyer's checklist and the definition of a red flag. In regulated file review it is the policy the file must evidence compliance with. In discovery it is relevance, responsiveness and privilege. In supplier or credit review it is your acceptance criteria.</p>
+<p>The output for each document should be a structured record with three parts. What the document says, quoted verbatim, with a citation to the page and clause. What the standard requires. And the gap between them, classified as compliant, non compliant, or unresolved. That third state is the most important design decision in the system. An agent that must always produce an answer will produce a confident wrong one. An agent permitted to say "I could not determine this" turns an accuracy problem into a routing problem, which is far easier to manage.</p>
+<p>Well built extraction also checks for absence. The expensive failure is rarely a wrong value, it is a missing document, an unsigned page, an expired certificate or a clause that should have been there and was not.</p>
+<h2>Exception and escalation routing</h2>
+<p>Once documents carry structured findings, routing becomes straightforward, and this is where most of the throughput gain arrives. Clean files with all fields located, all checks passing and high confidence go to a light confirmation step. Files with a few routine deviations go to the standard queue with the issues listed and the relevant text pinned. Files with unresolved fields, poor source quality, contradictions between documents, or findings above a materiality threshold go to a named specialist with a note on what the agent could not settle and why.</p>
+<p>Some escalations should be unconditional regardless of confidence: anything touching a regulated decision, anything above a value threshold, anything involving a party on a watch list, anything where the finding would change an outcome for a person. Write those down as rules, not confidence scores. Thresholds tune throughput. Hard rules protect you. And treat the queue itself as part of the product: reviewers should see the highest risk items first, with a one screen summary and the source text one click away.</p>
+<h2>The human sign off layer</h2>
+<p>No document review agent should be the final authority on a consequential decision. The question is not whether a human signs off, it is what they are signing off on and how long it takes. In practice you want three tiers. Confirmation, where the reviewer checks a summary and the flagged items and accepts or rejects in a minute or two. Full review, where the reviewer works the file properly but starts from extracted data and cited passages rather than a blank page. Specialist review, where the file was escalated and the agent's role was purely preparatory.</p>
+<p>Two details make this layer work. Sign off must be explicit and attributable to a named person, never implied by silence or a timeout. And rejection must be cheap and structured: capture what the agent got wrong in a field, not a comment box nobody reads. That override log is the raw material for every later improvement.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1600758083752-d1edc34dfbf3?w=1600&q=80&auto=format&fit=crop" alt="bound legal volume with a ribbon" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>The audit trail</h2>
+<p>If you cannot reconstruct how a conclusion was reached, you do not have a reviewable system, you have an opinion generator. For regulated, legal and diligence work the trail should be designed in at the start, not retrofitted.</p>
+<p>A sufficient trail records, for every document: the source file and its hash, when and how it arrived, what was extracted with page level citations, which standard version it was checked against, the findings and confidence, every routing decision and the rule that caused it, who reviewed it, what they changed, and when they signed off. Model and prompt versions belong there too, because "the system changed in March" needs to be answerable precisely.</p>
+<p>The practical test: someone should be able to pick any file from six months ago and, without asking the person who built the system, see what was concluded, on what evidence, under what rules, and by whom.</p>
+<h2>How you evaluate accuracy before you trust it</h2>
+<p>You do not get to assert that an agent is accurate. You measure it, on your documents, against answers you already believe.</p>
+<p>Start by building a gold set: a sample of real files, ideally a few hundred, spanning the messy cases as well as the clean ones, with experienced reviewers agreeing the correct answers. Where reviewers disagree with each other, record it, because human disagreement rates set the realistic ceiling for the agent and are usually higher than anyone expects.</p>
+<p>Then measure field by field, not in aggregate. A headline accuracy figure hides the fact that dates are easy and liability positions are not. For each field you want precision and recall separately. Missing a red flag is not the same failure as raising one that does not exist, and your thresholds should reflect which hurts more in your context.</p>
+<p>After that, run in shadow mode. The agent processes live volume, humans review as normal, and nobody sees the agent's output until after they have decided. Compare over several weeks. Set the acceptance bar before you look at the results, and keep measuring after go live. Drift is real: formats change, counterparties change templates, and a model update can shift behaviour unannounced.</p>
+<h2>Rollout sequencing</h2>
+<p>The pattern that works is boring. Pick one document type, high volume, with a written standard and a low cost of a caught error. Write that standard down first, including the parts your senior people carry in their heads, because an agent can only apply rules that exist. That exercise alone usually improves consistency.</p>
+<p>Then move through the stages in order. Intake and classification first, since it is verifiable and low risk. Extraction with citations next, verified by sampling. Then checking against the standard, in shadow mode. Then routing, once you trust the findings. Then, and only then, narrow the human step from full review to confirmation for clean cases, keeping every escalation path intact.</p>
+<p>Expand by document type rather than by relaxing supervision. A second type at full oversight is a better next move than the same type at half oversight.</p>
+<h2>Where AI fails here</h2>
+<p>Agents fail on poor source material. Bad scans, handwriting, photographs at an angle, dense tables and stamped or annotated pages are genuine failure modes, and text recognition errors propagate silently into extraction. Detecting low quality input and refusing it beats heroic guessing.</p>
+<p>Agents fail on cross document reasoning. Reading one document well is largely solved. Understanding that an amendment overrides a master, that a defined term shifted between versions, that two documents contradict each other, or that individually unremarkable facts add up to a problem, is much harder and needs explicit design plus human review.</p>
+<p>Agents fail at judgement under ambiguity. A model can tell you a file departs from your standard. It cannot tell you whether that departure matters given the relationship, the commercial context or your risk appetite. It has no stake in the outcome and should not imitate one.</p>
+<p>Agents can be confidently wrong. Fluent, plausible, wrong. This is why verbatim citation is the core control, and why any output a person cannot trace back to source text in seconds does not belong in a review workflow.</p>
+<p>Agents do not carry responsibility. Professional duties, privilege, confidentiality, data residency and retention obligations stay with your organisation. Solvable, but they must be solved before the first production file.</p>
+<p>The realistic outcome is not an unstaffed review function. It is one where the queue is sorted, the facts are on the page with citations, routine files clear in minutes, difficult ones reach the right person with the groundwork done, and every conclusion can be traced. Adopt AI Partners builds these systems inside the business and stays until the team owns them.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>

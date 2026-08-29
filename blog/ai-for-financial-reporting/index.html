@@ -1,0 +1,103 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Financial Reporting: Preparing the Close Without Posting a Single Entry | Adopt AI Partners</title>
+<meta name="description" content="How AI agents prepare reconciliations, draft flux commentary and assemble audit evidence across the month end close, while a qualified human approves every number.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-financial-reporting/">
+<meta property="og:title" content="AI for Financial Reporting: Preparing the Close Without Posting a Single Entry"><meta property="og:description" content="How AI agents prepare reconciliations, draft flux commentary and assemble audit evidence across the month end close, while a qualified human approves every number.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-financial-reporting/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Financial Reporting: Preparing the Close Without Posting a Single Entry","description":"How AI agents prepare reconciliations, draft flux commentary and assemble audit evidence across the month end close, while a qualified human approves every number.","datePublished":"2026-08-29","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-financial-reporting/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / finance</div>
+<article><h1>AI for Financial Reporting: Preparing the Close Without Posting a Single Entry</h1><div class="meta">29 August 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1600&q=80&auto=format&fit=crop" alt="discussion in a modern office" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>The month end close is not a thinking problem for most of its duration. It is a fetching, matching, chasing and formatting problem, with a thin layer of genuine accounting judgement on top. Someone opens twelve subledger reconciliations and works out why three have a difference. A controller writes the same variance sentence about freight costs for the fourth quarter running.</p>
+<p>That is where AI agents earn their place in finance. Not in deciding the number, which is your accountants' job, but in the preparation around it, so qualified people spend their days on decisions rather than assembly.</p>
+<p>One rule governs everything below. An agent built properly for financial reporting never posts a journal entry, never approves a reconciliation and never signs a number. It prepares, explains and evidences. A named human with the right authority approves. If a vendor tells you otherwise, they have not sat through a SOX walkthrough.</p>
+<h2>Reconciliation preparation and break investigation</h2>
+<p>The problem: reconciliations are prepared at the moment everyone is busiest. The clean ones still consume hours of pulling balances and formatting schedules. The unclean ones get a one line comment because there is no time to investigate, and the difference rolls forward for months.</p>
+<p>How it works: an agent pulls the general ledger balance and supporting detail from the subledger, bank feed, treasury system or fixed asset register, and builds the reconciliation in your standard template. It matches items, ages the open ones, and marks the reconciliation supported or not. For a break it traces the difference back through transaction history and tests the common explanations in order, timing differences, unposted items, foreign exchange revaluation, a payment applied to the wrong invoice, then writes what it found with the records it relied on.</p>
+<p>The trail: each reconciliation carries the source system, query, timestamp and record identifiers behind every matched and unmatched item. The handoff: the preparer reviews and the reviewer approves, exactly as now. What changes is that the preparer opens a schedule with the break already investigated.</p>
+<h2>Flux and variance analysis with a drafted explanation</h2>
+<p>The problem: flux analysis is where the close reveals whether anyone understands the business. In practice it is often written at eleven at night by whoever is left, and the explanation restates the number rather than giving a cause.</p>
+<p>How it works: an agent computes variances against prior period, budget and forecast at the level your policy requires, then looks for the cause before writing anything. It decomposes the movement into drivers, volume against rate, one off items, accrual releases, new contracts, a supplier price change, and identifies the transactions responsible. Then it drafts the explanation in your house style, with drivers quantified and underlying entries cited.</p>
+<p>What the controller receives is a draft to edit, not a blank box. The edit is usually tone, materiality framing, or business context the agent could not know, such as the marketing overspend being a deliberate decision taken in a meeting that produced no document. That is a better use of a controller's evening than reconstructing arithmetic.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=1600&q=80&auto=format&fit=crop" alt="group of people in a meeting" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Journal entry support and documentation</h2>
+<p>The problem: manual journals are the highest risk area of the close and often the worst documented. Support lives in someone's downloads folder, and the narrative says "accrual per schedule" when the schedule has moved.</p>
+<p>How it works: an agent assembles the support for recurring and standard journals. For an accrual it pulls the underlying activity, applies your stated methodology, shows its workings, and drafts the entry with account codes, cost centres and a narrative stating the basis and period. It flags where its calculation departs from last month's by more than a threshold, and says why.</p>
+<p>The line that does not move: the agent produces a proposed entry in the ledger's staging area or as a file. It does not post. A human with posting rights reviews the support, agrees the methodology holds, and posts under their own credentials. The agent's identity has read access and no posting permission, a configured fact your access reviews can test rather than a policy claim.</p>
+<h2>Consolidation checks</h2>
+<p>The problem: consolidation errors are found late and cost a full cycle to correct. Intercompany does not eliminate cleanly, an entity is missing from a hierarchy, translation runs at the wrong rate for one account, a local adjustment never reached group.</p>
+<p>How it works: an agent runs the checks a thorough group accountant would run if they had the hours. It reconciles intercompany balances by pair and reports which side is out and by how much, tests that entity mappings match the prior period plus approved changes, checks translation rates against the approved rate table account by account, and confirms local adjustments have flowed through. It runs these while the submission window is open, so exceptions reach the local team on day two rather than day six. Group still makes the call on treatment.</p>
+<h2>The management commentary and disclosure checklist</h2>
+<h3>The commentary draft</h3>
+<p>An agent drafts the narrative sections of the pack from the numbers actually reported, following the structure and tone of your prior packs. Revenue movements, margin, headcount, cash, segment performance. Every figure quoted is pulled from the ledger rather than retyped, which removes a common and embarrassing category of error. The finance director rewrites the judgement and the forward view, the part only they can do.</p>
+<h3>Disclosure checklist support</h3>
+<p>An agent works your disclosure checklist against the period's data and documents and answers each item as satisfied, not applicable, or requiring attention, with a pointer to the note or source behind the answer. It flags newly relevant items, a lease modification, a related party transaction, an impairment indicator that appeared in the numbers this period. The technical accounting call stays with your people. They simply arrive at it knowing which items need one.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1581279813180-4dddc1008167?w=1600&q=80&auto=format&fit=crop" alt="high rise office buildings" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Audit requests and the PBC list</h2>
+<p>The problem: the prepared by client list is a grind. Requests arrive in inconsistent formats, spread across mailboxes, and the same schedule gets produced three times in three shapes. Follow up questions get answered from memory.</p>
+<p>How it works: an agent parses the PBC list into discrete items, maps each to the system and report that satisfies it, and produces the schedules in the requested format with a cover note stating source, extraction date and population. It tracks status by item and owner, and when a follow up question arrives it locates the transactions and drafts a response with the supporting detail attached.</p>
+<p>The handoff: nothing goes to the auditor without review by your team, but review starts from a complete, sourced package, and the relationship improves when the population you gave in March is reproducible in June from the same query.</p>
+<h2>The controls story</h2>
+<p>This is what decides whether any of the above survives contact with your auditors, so build it first rather than last.</p>
+<p>Segregation of duties has to be real in configuration, not in a policy document. The agent's service identity holds read access to source systems and write access only to a staging area or document repository. It cannot post, approve, release a payment or change master data. Whoever approves the agent's output must not be whoever configured or changed it, and both actions need separate logs.</p>
+<p>Change management applies to the agent as to any financially relevant system. Prompt, rule, mapping and model version changes go through your normal process with a ticket, a tester and an approver. An undocumented change to how an accrual is calculated is a control failure whoever made it.</p>
+<p>Completeness and accuracy of the data the agent uses is the control your auditors press hardest on, particularly for anything feeding a management review control. Record what was extracted, when and with what query, reconcile the population back to the source system total, and retain the extract, not only the conclusion.</p>
+<p>Evidence of review is where most implementations get lazy. If the control is that a controller reviews the flux explanation, the evidence must show what they reviewed, what they changed and why, not simply that they clicked approve. Design the review so it produces that artefact naturally.</p>
+<h2>How you evaluate accuracy before trusting it</h2>
+<p>Do not go live on a demo. Demos use clean months.</p>
+<p>Run the agent in parallel against closed periods you have already signed. Six to twelve months, including a quarter end and one messy month with a restatement or system change. Compare its reconciliations, flux explanations and proposed entries with what your team concluded, and score three things separately: did it get the number right, did it get the explanation right, and did it refuse to conclude where a human escalated.</p>
+<p>That third measure matters more than it looks. An agent that produces a confident, well written and wrong explanation is worse than one that says it cannot determine the cause. Set thresholds so low confidence work is labelled as such and lands with a person by design.</p>
+<p>Then keep measuring. Have a reviewer independently rework a fixed sample of the output each month, blind, and track the difference over time. Rerun the parallel test whenever the chart of accounts changes, a source system is upgraded or the model version moves.</p>
+<h2>Where AI fails here</h2>
+<p>These systems fail when the underlying data is wrong. An agent will reconcile bad data neatly and explain a variance that exists only because someone coded an invoice to the wrong cost centre. It is no substitute for master data hygiene.</p>
+<p>They fail on genuine accounting judgement. Revenue recognition on a novel contract, whether an impairment indicator has been triggered, the treatment of a restructuring. Agents can retrieve the guidance and lay out the considerations, but should not be allowed to conclude, and a well built one refers rather than improvises.</p>
+<p>They fail on context that exists nowhere in your systems. The reason behind a commercial decision, the conversation with the auditor that settled a treatment last year, the customer disputing an invoice. If it was never written down, the explanation drafted will be plausible and incomplete.</p>
+<p>And they cannot carry accountability. The signature on the accounts belongs to named people, and no deployment worth building changes that. What changes is that those people reach the point of signing with the preparation done, the breaks investigated, the variances explained and the evidence assembled.</p>
+<p>Done properly this is not automation of the close. It is a shorter close with a better trail, produced at the moment of the work rather than reconstructed under audit pressure. If you want a plain view of which parts of your close would hold up, describe your current process to Adopt AI Partners and we will tell you honestly.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>
