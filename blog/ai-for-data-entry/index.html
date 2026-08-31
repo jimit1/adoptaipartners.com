@@ -1,0 +1,115 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Data Entry: The Hard Half Is Writing, Not Reading | Adopt AI Partners</title>
+<meta name="description" content="Getting a field out of a PDF is the easy half. Writing it correctly into an ERP or claims system, with validation rules, duplicates and an audit trail, is the hard half.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-data-entry/">
+<meta property="og:title" content="AI for Data Entry: The Hard Half Is Writing, Not Reading"><meta property="og:description" content="Getting a field out of a PDF is the easy half. Writing it correctly into an ERP or claims system, with validation rules, duplicates and an audit trail, is the hard half.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-data-entry/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Data Entry: The Hard Half Is Writing, Not Reading","description":"Getting a field out of a PDF is the easy half. Writing it correctly into an ERP or claims system, with validation rules, duplicates and an audit trail, is the hard half.","datePublished":"2026-08-31","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-data-entry/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / cross industry</div>
+<article><h1>AI for Data Entry: The Hard Half Is Writing, Not Reading</h1><div class="meta">31 August 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600&q=80&auto=format&fit=crop" alt="team meeting around a conference table" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>Somebody in your organisation has two windows open. On the left, a supplier PDF, a broker email, a scanned form or a portal that will not export. On the right, the ERP, the CRM, the claims system or the HR platform. They read a value on the left and type it on the right, several hundred times a week.</p>
+<p>Nobody puts this on a strategy slide. It still consumes more headcount than most of the things that do, and it is where the errors that surface three months later as a wrong invoice or a duplicate record are created.</p>
+<p>AI can take a large share of this work. But the part vendors demo is the easy part, and the part that decides whether a deployment survives your systems is almost never shown.</p>
+<h2>Extraction is the easy half</h2>
+<p>Pulling a field out of a document is close to solved for the common cases. A modern model reads an invoice, a bill of lading, a bank statement or a medical form and returns structured fields without a template, and it keeps working when the layout changes. That capability is real and available.</p>
+<p>Then you have to write it somewhere, and everything gets harder.</p>
+<p>Your ERP will not accept a vendor record without a tax classification and a payment term code from a controlled list. Your claims system requires a loss date that cannot precede policy inception. Half the fields on the screen are not on the document at all: they are derived from policy, from the requester, from what similar records looked like.</p>
+<p>So the real question is not "can it read the number". It is:</p>
+<ul>
+<li>Which of the twenty cost centres is right for this line, given who raised it</li>
+<li>Does this currency and payment term combination even exist in the master data</li>
+<li>What happens downstream if this posts wrong, and how long before anyone notices</li>
+<li>Is there a clean write path at all, or does this system only accept keystrokes</li>
+</ul>
+<p>An agent that stops at extraction has automated the enjoyable tenth and left the operator the rest. The value sits in the write, the validation and the exception handling.</p>
+<h2>Master data and the duplicate problem</h2>
+<p>The most damaging thing an entry agent can do is create records that should not exist.</p>
+<p>Customer, vendor, product and employee masters accumulate duplicates because the same entity arrives through different channels spelled differently. Acme Ltd, ACME Limited, Acme Ltd. at a slightly different address. A human creating the twentieth vendor this week does a half hearted search, finds nothing, and creates a new one. An agent does the same at machine speed, and duplicates are expensive to unwind once transactions hang off both.</p>
+<p>The design that works inverts the default. The agent's first job on any master data request is to prove the record does not already exist, using fuzzy matching across name, registration number, tax ID, bank details and address rather than exact comparison. Creation is the last resort. Anything with a near match goes to a human with both candidates side by side.</p>
+<p>Give an agent broad authority over transactional entry and narrow authority over master data creation. Transactions are correctable; a polluted vendor master is not, cheaply.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1631557777232-a2632ae3c67d?w=1600&q=80&auto=format&fit=crop" alt="laptop and papers on a wooden desk" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Cross system reconciliation and swivel chair work</h2>
+<p>A large share of rekeying exists only because two systems that should agree do not talk. The order lives in the CRM, the fulfilment record in the warehouse system, the invoice in the ERP. Someone reconciles by eye and retypes what is missing.</p>
+<p>Agents handle this well because the comparison is semantic rather than exact. Line descriptions differ, units of measure differ, one system splits a shipment the other treats as one. An agent can hold both records, explain what matches and what does not, correct the side that is demonstrably stale, and escalate genuine disagreements as a short exception list.</p>
+<p>Then there is the portal with no API: government filing systems, carrier portals, ageing applications behind a Citrix session. Here the agent operates the interface the way a person does, reading the screen and deciding what to do next rather than replaying recorded coordinates. This works, but it deserves plain language: it is the least reliable channel you have. Reserve it for systems with no alternative and expect to maintain it.</p>
+<h2>Confidence thresholds: post it or queue it</h2>
+<p>Every field carries a confidence, and every record needs a decision: post straight through, or hold for review.</p>
+<p>The mistake is one global threshold. Confidence should be weighted by consequence. A misread description on a low value stationery order is a nuisance. A wrong bank account, a wrong dosage or a wrong loss reserve is a different category of event.</p>
+<p>A workable policy has three tiers. High confidence on low consequence fields posts automatically. Anything touching money movement, identity, master data creation or a regulated field goes to a human regardless of confidence. Everything in between queues, with proposed values pre-filled so the reviewer confirms or corrects rather than keys from scratch.</p>
+<p>Start conservative. A deployment where humans review every record still removes most of the labour, because reviewing a filled form is far faster than filling one.</p>
+<h2>The audit trail nobody asks for until they do</h2>
+<p>For every field written, you want a record of where the value came from: which document, which page, which system lookup, which precedent, which rule. For every human correction, what changed and who changed it.</p>
+<p>This is not compliance theatre, it is operating instrumentation. When a controller asks in November why a batch of records was coded to the wrong entity in August, the trail is the difference between a ten minute answer and a week of reconstruction. It is also the raw material for improvement: the fields humans correct most often show you where the agent is weak.</p>
+<p>Build it before go live. The first time you need the trail is the worst time to find it absent.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1606327054536-e37e655d4f4a?w=1600&q=80&auto=format&fit=crop" alt="printed documents beside a keyboard" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>What RPA got wrong, and what it got right</h2>
+<p>Most large organisations already tried this with robotic process automation, and most have a graveyard of bots.</p>
+<p>RPA scripts are literal. They click fixed positions and match exact strings, so a redesigned page, a new mandatory field or a slower load breaks them. They also fail loudly, which is their best property: a broken bot stops and someone fixes it.</p>
+<p>Agents that read intent survive layout changes, handle documents that vary, and cope with cases nobody scripted. That is a real advance. But they fail differently. An agent that cannot find a field may infer a plausible one. It does not stop. It proceeds, confidently, and writes something wrong into a live system.</p>
+<p>So agents need guardrails RPA never needed: validation against the target system before writing, thresholds tied to consequence, human review on high impact fields, reversibility where the system allows it, and sampling of straight through records long after they look reliable. The flexibility that makes agents better is what makes ungoverned agents worse.</p>
+<h2>Measuring it honestly</h2>
+<p>"Time saved" is the metric of choice for people who do not want to be measured. It is modelled, not observed. Use numbers your finance team can verify.</p>
+<p><strong>Straight through rate.</strong> The share of records posted with no human touch. Report it per document type and per system, because a blended average hides the failing categories.</p>
+<p><strong>Correction rate.</strong> Of the records a human reviewed, how many needed a change, and to which fields. This is the honest accuracy measure.</p>
+<p><strong>Downstream defect rate.</strong> Records that posted cleanly and turned out to be wrong later. Harder to capture, and the most important number you have.</p>
+<p><strong>Cost per record, fully loaded.</strong> Inference, review labour, exception handling and maintenance, against your verified manual baseline. Capture the baseline first, because nobody can reconstruct it afterwards.</p>
+<p><strong>Cycle time from arrival to posted.</strong> Often the benefit the business feels first.</p>
+<h2>Where AI fails here</h2>
+<p>Poor source material still defeats it. A faxed form photocopied twice, a scan with the corner cut off, a table spanning a page break with no repeated header. Extraction degrades and the correct behaviour is to route to a person, not to guess.</p>
+<p>Handwriting is unreliable at the level of the individual character. Printed capitals in ruled boxes are workable. Cursive annotations in a margin, a European seven, an ambiguous one in a quantity field: these need human eyes, and a system that pretends otherwise posts wrong numbers confidently.</p>
+<p>Ambiguous source of truth is a business problem the technology cannot resolve. When the order says one address and the CRM says another and nobody has decided which wins, the agent cannot decide either. Automation exposes the ambiguity rather than fixing it.</p>
+<p>Silent errors are worse than obvious ones. A bot that crashes gets fixed on Monday. An agent quietly writing the wrong cost centre for five weeks produces a reconciliation problem, a restated report and a loss of trust that takes far longer to repair.</p>
+<p>Systems with no clean write path stay partly manual. Some applications have no API, no reliable interface layer and no supported bulk import. You can drive the screen, but you are accepting fragility, and you should say so when you scope the work rather than after it breaks.</p>
+<p>Undocumented policy stalls more deployments than model quality does. If your coding conventions, tolerance rules and mandatory field logic live only in the heads of two long serving people, they have to be written down first, and that is where the project time goes.</p>
+<p>And the asymmetry underneath all of it: a wrong record posted confidently costs more than a record left in a queue. Queues are visible and they get worked. Bad data that posted cleanly propagates into reports, payments and decisions, and you pay for it later with interest. Design for that and accept a lower straight through rate than the demo promised.</p>
+<h2>Where to start</h2>
+<p>Pick one document type flowing into one system. Measure the manual baseline honestly. Run the agent into a review queue where a human sees everything, so risk during the learning period is near zero while the labour saving is immediate. Then widen straight through processing where the evidence supports it.</p>
+<p>Describe your rekeying process to Adopt AI Partners and we will tell you plainly what is automatable now, what is not, and where we would start.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>

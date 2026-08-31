@@ -1,0 +1,94 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Use Cases in Government: The Agent Gathers, a Named Official Decides | Adopt AI Partners</title>
+<meta name="description" content="Practical AI use cases for departments, agencies and local authorities, from casework and enquiries to FOI triage, built so a named official still decides.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-use-cases-in-government/">
+<meta property="og:title" content="AI Use Cases in Government: The Agent Gathers, a Named Official Decides"><meta property="og:description" content="Practical AI use cases for departments, agencies and local authorities, from casework and enquiries to FOI triage, built so a named official still decides.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-use-cases-in-government/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI Use Cases in Government: The Agent Gathers, a Named Official Decides","description":"Practical AI use cases for departments, agencies and local authorities, from casework and enquiries to FOI triage, built so a named official still decides.","datePublished":"2026-08-31","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-use-cases-in-government/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / government</div>
+<article><h1>AI Use Cases in Government: The Agent Gathers, a Named Official Decides</h1><div class="meta">31 August 2026 &nbsp;&middot;&nbsp; 7 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1600&q=80&auto=format&fit=crop" alt="colleagues working with laptops at a table" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>Public sector work has a shape that private sector automation advice keeps missing. A council officer refusing a licence has to explain why in terms the applicant can challenge. A caseworker assessing entitlement is applying statute, not policy preference. A department answering a member's enquiry is answering on behalf of a minister who will be held to it in public.</p>
+<p>That does not make AI agents inappropriate here. It makes one design pattern appropriate and most of the others wrong. The agent gathers, checks, cross-references and drafts. A named official reads, judges and signs. Every step is logged in a form that survives an appeal, a tribunal, an ombudsman referral or a select committee.</p>
+<p>Below are the use cases we see working under those conditions, and the constraints that change how each one has to be built.</p>
+<h2>Casework and application processing</h2>
+<p>Licences, permits, grants, registrations, benefits evidence. The common pattern is an application arriving with attachments of variable quality, a checklist of statutory and policy conditions, and an officer who spends most of the assessment simply establishing what the file actually contains.</p>
+<p>An agent does the establishing. It reads the application form and every attachment, extracts the facts that each condition depends on, and produces a condition-by-condition assessment: what the requirement is, what evidence in the file speaks to it, whether that evidence is present, current and consistent, and where it sits. Missing or contradictory evidence becomes a specific line rather than a general flag, which also gives you a better applicant communication than a form rejection.</p>
+<p>The officer receives a prepared file and makes the determination. That split matters legally as well as practically. Where a decision affects a person's entitlement, their livelihood, their liberty or their immigration position, the decision must be a human one, and the reasoning recorded must be the human's reasoning, not a summary the human nodded at. The right test to apply during design is simple: if this decision were appealed, could the officer explain it from the record without relying on the phrase "the system indicated".</p>
+<p>There is a second pattern worth separating out. Straightforward grants of a routine permission, where conditions are objective and the outcome is favourable to the applicant, carry a different risk profile from refusals. Many organisations can defensibly move faster on approvals than on refusals, with refusals always routed to a person and always requiring written reasons drafted by that person.</p>
+<h2>Correspondence, enquiries and contact handling</h2>
+<p>Ministerial correspondence, member enquiries, councillor casework and complaints all run on the same mechanics: identify what is actually being asked, find the current position across scattered guidance, find whether the same correspondent has written before, draft in the right register, get it cleared.</p>
+<p>An agent handles the first three steps well. It classifies the enquiry, retrieves the current published position and the relevant internal guidance with citations to the source documents, pulls the correspondence history, and drafts a response in your house style with the source of every factual claim attached. The clearance officer's job becomes checking whether the position is right and the tone is right, rather than assembling the material from scratch.</p>
+<p>Two design points. First, the agent must be able to say that the position is unclear or that guidance conflicts, and route that upward, because a confident answer on an unsettled policy question is the failure mode that causes real damage. Second, nothing goes out under a minister's or member's name without a person clearing it. That is not a technical constraint, it is the whole accountability chain.</p>
+<p>In contact centres the same logic applies to deflection and summarisation. Answering a straightforward factual question about opening hours or document requirements is low risk. Telling someone what they are entitled to is not. Call summarisation, where the agent drafts the case note and the adviser corrects it, is often the higher-value and lower-risk half of the work.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1600758083752-d1edc34dfbf3?w=1600&q=80&auto=format&fit=crop" alt="bound legal volume with a ribbon" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Information rights, records and retention</h2>
+<p>FOI and subject access request handling is a strong fit for the gather-and-draft pattern because the hard part is search, not judgement. An agent can run the search across mail, document stores and case systems, assemble the candidate material, and produce a schedule listing each item with a proposed handling and a reason: potentially in scope, potentially exempt under a specific ground, contains third party personal data, duplicate.</p>
+<p>Redaction support works the same way. The agent proposes redactions with the ground for each, and an information rights officer confirms, amends or rejects them item by item. It must never be the last check before disclosure. The cost of a wrongly released name is measured in harm to a person, not in rework.</p>
+<p>Records management benefits quietly. Agents are good at reading unstructured material and proposing classification, retention category and disposal dates against your schedule, which is work that otherwise never gets done and which quietly undermines every information rights process downstream.</p>
+<h2>Procurement, inspection and planning</h2>
+<p>Tender evaluation support is legitimate as long as you are honest about where the line sits. An agent can check bids for completeness against the specification, extract the responses to each requirement into a comparable structure, identify where a bidder has not answered what was asked, and prepare the evaluators' pack. It must not score. Evaluation criteria and their weighting are published, evaluators are named, and a disappointed bidder can challenge the process. A score produced by a model that cannot be reconstructed is a procurement challenge waiting to be filed.</p>
+<p>Inspection and compliance reporting is a drafting problem. Inspectors gather findings in the field and lose hours converting notes, photographs and readings into a structured report against a published framework. An agent that turns the evidence into a draft report, mapped to the framework and citing the specific observation behind each finding, gives the inspector back their expertise time. The judgement, the rating and the enforcement recommendation stay with the inspector.</p>
+<p>Planning application review follows the casework pattern with more documents. The agent reads the submitted drawings, statements and consultee responses, checks the submission against validation requirements, summarises representations by theme with counts, and identifies which local plan policies each material consideration engages. The officer writes the recommendation. Material considerations are exactly the kind of weighted judgement that has to be visibly human.</p>
+<h2>Guidance, translation and internal policy research</h2>
+<p>Public guidance written for the public is frequently written by specialists for specialists. Agents are genuinely good at plain language rewriting and at translation into the languages your population actually uses, subject to one rule: a subject matter expert signs off every rewrite, because simplification can change meaning, and changed meaning in published guidance is a legal problem, not a style problem.</p>
+<p>Internally, policy research across scattered guidance is one of the highest-return uses available. Most organisations hold current policy across intranets, shared drives, email chains and the memories of long-serving staff. An agent that searches all of it and returns an answer with citations, plus an explicit statement where sources disagree or where the most recent version cannot be established, saves hours per query and exposes the guidance debt you have been carrying.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1600&q=80&auto=format&fit=crop" alt="discussion in a modern office" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Where AI fails here</h2>
+<p>Some honest limits.</p>
+<p>Automated decision making on entitlements is the sharpest one. Data protection law constrains decisions taken solely by automated means where they significantly affect a person, and administrative law requires reasons a person can actually challenge. An agent that produces an outcome no official can independently justify creates a decision that will not stand up. Do not build it, whatever the throughput case.</p>
+<p>Equality duties do not get satisfied by intention. Models trained on historical decisions can reproduce historical disparities, and a system applied at scale reproduces them faster. If an agent influences outcomes for people, you need monitoring of outcomes by protected characteristic, and you need to have thought about it before deployment rather than after a complaint.</p>
+<p>Public trust is asymmetric. One wrongly refused claim or one improper disclosure costs more than a year of efficiency gains returns. Deployment sequencing should reflect that, which usually means starting somewhere internal and unglamorous.</p>
+<p>Legacy data is the practical killer. Many public bodies run case systems designed decades ago, with records that are incomplete, inconsistently coded or held in scanned images. Agents surface that at scale before they save anything, which is useful information but not the outcome the business case promised.</p>
+<p>And procurement timescales are real. A twelve week pilot is not a twelve week procurement. Plan the commercial route and the data protection impact assessment alongside the technical work, not after it.</p>
+<h2>Where to start</h2>
+<p>Pick a process where the inputs are already digital, the rules are written down, a human review step already exists, and the failure mode is rework rather than harm to a person. Internal policy research, FOI search, records classification and case note drafting all qualify.</p>
+<p>Run it in shadow first. Have officers do the work as they do today and compare. Measure disagreement honestly and treat every disagreement as a design input. Bring information governance, legal and the unions in during week one, because a system introduced without them will be resisted for good reasons.</p>
+<p>Then keep the line where it belongs. The agent gathers and drafts. A named official decides. If you want to test a specific process against that line, describe it to Adopt AI Partners and we will tell you plainly whether an agent belongs in it.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>
