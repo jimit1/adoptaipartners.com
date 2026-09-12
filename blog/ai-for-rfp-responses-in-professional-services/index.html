@@ -1,0 +1,102 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for RFP Responses in Professional Services: Bid or No Bid, Call Offs and Named People | Adopt AI Partners</title>
+<meta name="description" content="How consultancies, engineering practices, advisory firms and agencies apply AI to bid qualification, framework call offs, method statements and a bid library that goes stale.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-rfp-responses-in-professional-services/">
+<meta property="og:title" content="AI for RFP Responses in Professional Services: Bid or No Bid, Call Offs and Named People"><meta property="og:description" content="How consultancies, engineering practices, advisory firms and agencies apply AI to bid qualification, framework call offs, method statements and a bid library that goes stale.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-rfp-responses-in-professional-services/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for RFP Responses in Professional Services: Bid or No Bid, Call Offs and Named People","description":"How consultancies, engineering practices, advisory firms and agencies apply AI to bid qualification, framework call offs, method statements and a bid library that goes stale.","datePublished":"2026-09-12","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-rfp-responses-in-professional-services/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / professional services</div>
+<article><h1>AI for RFP Responses in Professional Services: Bid or No Bid, Call Offs and Named People</h1><div class="meta">12 September 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=1600&q=80&auto=format&fit=crop" alt="group of people in a meeting" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>A professional services bid is not a product sheet with the price adjusted. It is a promise that named people, with real CVs and real diaries, will do specific work for a fee you have to stand behind for the length of the contract. That is why bidding in a consultancy, an engineering or architecture practice, an accountancy firm or an agency behaves differently from bidding anywhere else.</p>
+<p>The cost sits in two places. The first is the weekend work: the same credentials section rebuilt, the same methodology retold, the same certificate hunted down. The second is worse and almost never measured: the bids you should not have entered, and the bids you won on terms that made delivery a loss. An agent takes weight off the first. It can only inform the second.</p>
+<h2>Bid or no bid is the decision that pays for everything else</h2>
+<p>The highest value moment happens before a word is drafted. A firm that bids everything wins some of those bids badly, at a rate it cannot deliver, and then carries the engagement for two years.</p>
+<p>So qualification is where to put the machine first. An agent reads the whole tender pack, which under deadline nobody does end to end, and produces a qualification brief: scope against the disciplines you hold, mandatory requirements you cannot meet today, the delivery window against your live resourcing position, and the signals that the incumbent helped write the specification. Partners still decide, but from the document rather than from an enthusiastic account of it.</p>
+<h2>Frameworks, lots and call off competitions</h2>
+<p>Buying here rarely happens in one step. You qualify onto a framework, you are appointed to one or more lots, then you compete for call offs against the other appointed firms.</p>
+<p>These stages ask for different things, and treating them as one submission is an expensive error. The framework stage tests the firm: turnover, accreditations, policies, past performance. The call off tests the job: this site, this deadline, this named team, this fee. So hold the framework layer as a stable versioned firm record and treat call offs as short project level drafting. An agent should also keep the mechanics a bid team forgets between competitions: which lots you hold, the procedure each framework prescribes, and the response window, often days rather than weeks.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600&q=80&auto=format&fit=crop" alt="team meeting around a conference table" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>The portal, the clarification window and the question asked too late</h2>
+<p>Formal procurement runs through a portal with rules that do not bend. Messages are timestamped, clarification periods close before the submission deadline, and answers are published to every interested bidder.</p>
+<p>That last point is the one to plan around. A question you ask reveals what you noticed, and the answer arms your competitors. Ask it late and you may get no answer at all. So have an agent read the pack on day one and produce the ambiguity list immediately, while there is time to choose which to ask, which to resolve internally and which to leave alone. It should also watch the portal for clarifications and amendments, map each onto the answers already drafted, and say which sections now describe a superseded requirement.</p>
+<h2>Pass or fail selection questions</h2>
+<p>Most tenders open with selection questions that are not scored, only passed or failed. Professional indemnity cover at a stated level. Employer's liability. A quality management certification. A health and safety accreditation. Audited accounts for a stated period.</p>
+<p>A single missing or expired document voids a submission that would otherwise have scored well, and it happens to good firms because the certificate lived in one person's inbox. This is the least glamorous part of bidding and the best suited to an agent: hold the evidence in one indexed place with expiry dates and issuing body, check the tender's thresholds against what you hold, and refuse to mark a question answered when the document behind it has lapsed. Where you fall short, the output is the shortfall and the lead time to fix it.</p>
+<h2>The answer is a named person with a day rate</h2>
+<p>Here is the constraint that separates this sector from every other bidding context. Much of the score rests on people. The buyer asks who will lead, who will deliver, what their experience is, what grade they are, what they cost and how much of their time you are committing.</p>
+<p>No bid library can generate that. An agent can assemble the raw material: the right CVs, tailored to the discipline the criteria reward and cut to the buyer's template and length. What it cannot know is whether that person is free in the month the work starts, or is already promised to a client who has not signed yet. A resourcing conversation has to happen before a name goes in, because naming an unavailable person is how firms win work they then deliver with substitutes.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1600&q=80&auto=format&fit=crop" alt="colleagues working with laptops at a table" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>The proof you are not allowed to name</h2>
+<p>Firms here have a peculiar difficulty with references. The most persuasive evidence you hold is often the engagement you cannot describe, so the strongest proof point cannot be named and the ones you can name are weaker.</p>
+<p>An agent helps with the mechanics. It finds the closest matching prior engagements and retrieves the approved anonymised versions where they exist. It should hold the permission record: who has agreed to be named, for what, and for how long. What it must not do is decide how much detail makes an anonymised study safe. Size, sector, region and problem can identify a client precisely with no name attached. That is a judgement a partner signs for, in an explicit approval step rather than in the drafting.</p>
+<h2>Method statements are scored against the criteria, not the question</h2>
+<p>The scored heart of a bid here is the method statement: how you will approach the work, manage risk, mobilise the team, handle quality and report progress. Firms lose by answering the question as asked and ignoring the award criteria and weightings published alongside it.</p>
+<p>Those criteria are the marking scheme. They say what a high score looks like and how many marks each section carries, and therefore where the effort belongs. Hold them as structured data, draft against them section by section, then score its own draft as an evaluator would and name the weakest parts. A section that reads well and does not evidence the stated criterion scores the same as a poor one.</p>
+<h3>Writing to a word count</h3>
+<p>Answers come with hard word or character limits, and the limit is enforced. Compression is the real skill: everything the criteria reward, nothing else, inside the count. This is one of the few places a model helps a strong writer rather than replacing one, cutting a long answer to the limit while keeping the evidence. Check the stated unit, because words and characters including spaces are different constraints.</p>
+<h2>Pricing schedules, social value and evidence that expires</h2>
+<p>Commercial submissions arrive as fixed schedules: rate cards by grade, staff hours by task, expenses rules. The arithmetic has to tie to your commercial model and to the resourcing the method statement just described. An agent is useful for exactly that check: the grades priced are the grades named, hours match the programme, totals agree between summary and detail. The rates, the margin and any commitment on price stay with the people who carry the result.</p>
+<p>Social value and environmental sections behave the same way. They ask for commitments you will be measured against after award, so draft from what the firm can evidence and flag any commitment nobody has agreed to deliver.</p>
+<h2>The library that describes the firm you were three years ago</h2>
+<p>An answer library decays quietly, and the failure mode is specific. It produces a fluent, compliant submission describing a firm that no longer exists: the old headcount, an office you closed, a certification that lapsed, a partner who left.</p>
+<p>The maintenance is where an agent belongs permanently. After each submission it ingests the final version, compares it against what the library held, and proposes updates. It ages every answer and attachment, routes each to its owning partner for reapproval, and marks unreviewed content as unreviewed rather than serving it as approved. The point is not to remove review but to make it a small regular task rather than an annual project nobody starts.</p>
+<h2>Sign off, submission and the debrief</h2>
+<p>Only a person can commit the firm. A submission is an offer that can become a contract on award, so the final review is a partner review and the upload is done by a named human who has checked the pack against the compliance matrix one last time.</p>
+<p>Then the part firms skip. Post submission clarifications arrive with tight turnarounds and should be answered from the submission rather than from memory, which means keeping the submitted version and its sources retrievable. After award or rejection, ask for the debrief and record the evaluator's scores and comments against the specific answers they refer to. That is where win rate improves, because it tells you which method statements score and which merely read well.</p>
+<h2>Where AI fails here</h2>
+<p>Fluency is the trap. An answer that is well written and does not evidence the award criterion scores nothing, and it is harder to spot than a weak one because it reads finished.</p>
+<p>Availability is not in any document. No amount of retrieval tells you whether your best engineer is free in March.</p>
+<p>Price and contractual commitment stay human. Rates, margin, liability caps and indemnities are decisions with a name attached.</p>
+<p>Win themes do not come from an archive. The reason you and not the incumbent comes from what the pursuit team learned in the room.</p>
+<p>Thin history disappoints. If past bids live in individual mailboxes and the CVs were last updated for a different tender, retrieval has little to work with. That is the first project, not a side effect of another.</p>
+<h2>What to build first</h2>
+<p>Start with what is verifiable: the evidence register with expiry dates, and requirements and criteria extraction, because either the register matches the tender or it does not. Add qualification briefs next, since they change which bids you enter. Leave the executive summary, the win theme and the named team to people.</p>
+<p>If you want to talk through which parts of your bid process an agent should touch and which it should not, write to Adopt AI Partners at hello@adoptaipartners.com.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>
