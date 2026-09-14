@@ -1,0 +1,111 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Fraud Review in Retail: The False Positive Is the Expensive One | Adopt AI Partners</title>
+<meta name="description" content="How merchant fraud and payments teams use AI agents to assemble order dossiers, triage the review queue and build representment packs, with people keeping the judgement.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-fraud-review-in-retail/">
+<meta property="og:title" content="AI for Fraud Review in Retail: The False Positive Is the Expensive One"><meta property="og:description" content="How merchant fraud and payments teams use AI agents to assemble order dossiers, triage the review queue and build representment packs, with people keeping the judgement.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-fraud-review-in-retail/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Fraud Review in Retail: The False Positive Is the Expensive One","description":"How merchant fraud and payments teams use AI agents to assemble order dossiers, triage the review queue and build representment packs, with people keeping the judgement.","datePublished":"2026-09-14","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-fraud-review-in-retail/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / retail</div>
+<article><h1>AI for Fraud Review in Retail: The False Positive Is the Expensive One</h1><div class="meta">14 September 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1600&q=80&auto=format&fit=crop" alt="discussion in a modern office" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>A bank that blocks a good transaction hears about it: the customer rings and the block is lifted. A retailer that declines a good order hears nothing. The basket disappears, the customer assumes the site is broken, and they buy the same item elsewhere within the hour.</p>
+<p>That asymmetry defines merchant fraud review. Every control is also a conversion control. Tighten the rules and losses fall while revenue falls further. Loosen them and the chargeback ratio climbs until your payments team gets uncomfortable. The fraud lead is the only person measured on both sides of that trade.</p>
+<h2>Every fraud control is also a conversion control</h2>
+<p>Price both errors before you touch any technology. A missed fraudulent order costs the goods, the shipping, the dispute fee and the time to work it, a loss that lands as a line item with a number attached.</p>
+<p>An insult decline costs the margin on the basket, the customer's future orders, and whatever they tell people. It arrives as an absence and never reaches a fraud report. Most merchants manage the loss they can see and ignore the one they cannot. Start by making the second number estimable, through declined order follow up and controlled release of held orders.</p>
+<h2>The review queue and the seconds an analyst has</h2>
+<p>Behind every rules engine sits a manual review queue: orders neither clean enough to pass nor bad enough to kill. An analyst has seconds to a minute each.</p>
+<p>Most of that time goes on gathering rather than deciding: the order management system, device data from the fraud tool, other orders at the same address, the returns history. The judgement is quick once the picture exists. Assembling it is the opportunity.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1540340061722-9293d5163008?w=1600&q=80&auto=format&fit=crop" alt="person walking between store shelves" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>What the order dossier should contain</h2>
+<p>The first agent worth building assembles that picture before the analyst opens the order. It does not score and it does not decide. It fetches, links and lays out.</p>
+<p>A useful dossier covers basket composition, including whether the mix looks like consumption or resale; account age, order history and recent changes to the account; device and session signals; billing and shipping address mismatches; velocity across account, card, device and address; and past refunds, returns and contact history.</p>
+<h3>The linkage graph</h3>
+<p>What analysts most often lack is linkage. Which other orders share this device, card, address, email pattern or phone number, and what happened to them. One order in isolation looks fine. Six sharing a device across five accounts created in the same week do not. Building that graph by hand is slow enough that it usually happens only after a loss.</p>
+<h3>Sourcing, not summarising</h3>
+<p>Every line should cite where it came from and when it was read. Not "poor returns history" but the count, the period and the order references. A dossier that cannot be checked at a glance gets trusted blindly or ignored.</p>
+<h2>Account takeover looks like a good customer</h2>
+<p>The hardest cases are the ones where the account is genuinely good, because it is. Someone else is now using it.</p>
+<p>Static rules fail here by design, since everything on file is legitimate. What gives it away is the behavioural break: a login from an unfamiliar device, a change of address or contact details shortly before an order, a basket shifting towards easily resold goods, a switch to the fastest delivery. An agent can compare against that customer's own baseline rather than a population average. It hands over the comparison, not a verdict, because locking a real customer out of their own account is a customer-facing act.</p>
+<h2>Promotion, voucher and loyalty abuse</h2>
+<p>This is fraud with a different economic shape and needs a different threshold. Serial signups harvesting first order discounts, referral rings where both sides are the same person, codes shared far beyond their audience, points farmed through returns cycles.</p>
+<p>Detection is linkage again: accounts sharing devices, payment instruments, normalised addresses or delivery points, and the timing of scripted signups. The judgement is commercial. Someone gaming a discount is still a customer, sometimes a good one, and the answer is often to close the loophole rather than block the person. Agents map the ring and cost it. Marketing and fraud decide together.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1684695749267-233af13276d0?w=1600&q=80&auto=format&fit=crop" alt="a large warehouse filled with boxes" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Refund and returns abuse</h2>
+<p>Returns abuse covers wardrobing, empty box claims, item not received claims where tracking says delivered, serial partial refunders and organised return fraud against one product line. The signals are gatherable: claim frequency against order count, concentration on a single claim reason, delivery scan evidence, repeated delivery points across accounts.</p>
+<p>The hard part is that genuine misfortune produces the same pattern. Some customers really did receive an empty box, because the packing error was yours. A customer unlucky three times looks identical to one who has learned the claim works. That call has customer consequence and should never be automated.</p>
+<h2>Friendly fraud and first party misuse</h2>
+<p>In a large share of disputes the cardholder really did place the order. A family member used the card, a renewal was forgotten, the descriptor was unrecognisable, or a dispute is simply easier than your returns process.</p>
+<p>You cannot separate this from the transaction data, because nothing is wrong with the transaction. The signals sit outside payments: delivery accepted at the billing address, a login from a familiar device, a support contact about the item after delivery. Assembling that trail is the agent's job.</p>
+<h2>Chargeback representment</h2>
+<p>Representment is document assembly under a clock. A dispute arrives with a stated reason, and someone must gather evidence answering that reason and submit it before the deadline. Deadlines vary by scheme, acquirer and market, and missing one loses the case.</p>
+<p>An agent can track every open dispute against its deadline, pull the evidence matching the reason given, populate your template and flag what is missing. Whether to fight or write it off stays with a person: it turns on the value at stake, the odds of winning and whether you want the customer back.</p>
+<h2>Channel edges where the fraud is not yours</h2>
+<p>Click and collect moves the fraud away from the delivery address, which is the signal most models lean on. Buy online, return in store moves the refund decision to a colleague with a queue behind them and no view of the order history. Marketplace and third party seller models put part of the process inside a partner's controls.</p>
+<p>The answer has the same shape each time: get the missing context to the person at the edge, framed as a check rather than an accusation. Agents deliver context well, but they are no substitute for a partner whose controls are weak.</p>
+<h2>Peak trading and who owns the threshold</h2>
+<p>At peak, fraud volume rises, legitimate volume rises much further, and the review team stays the same size. Every unreviewed order is shipped unchecked or cancelled.</p>
+<p>Decide in advance which segments auto-approve at peak, which are held, where the queue cutoff sits and who may move it. An agent expands effective capacity, since a triaged, pre-assembled queue clears far faster than a raw one. What it must not do is move the threshold itself. Loosening controls for peak is a business decision about revenue and risk appetite, taken by named people who accept the consequence.</p>
+<h2>Explaining a decline without teaching the fraudster</h2>
+<p>When an order fails, customer service has to say something. What they can say is deliberately limited, because a detailed explanation is free feedback to whoever is probing your controls.</p>
+<p>The workable pattern is an internal note telling the colleague what happened and what remedies exist, paired with an external form of words that is honest, non-accusatory and offers a route forward. No automated message should tell a customer they are suspected of fraud. That is an accusation, and accusations need a person behind them.</p>
+<h2>Labels arrive late and incomplete</h2>
+<p>Merchant fraud has the worst feedback loop in the business. Chargebacks land weeks or months after the order, so recent months are always unlabelled. Orders you declined have no outcome at all, ever, which means your data quietly teaches you that your existing rules were right.</p>
+<p>Build for this. Keep a small holdout of orders that would have been declined but are let through under controlled exposure. Stamp labels by maturity so nobody evaluates on months that have not settled. Record the analyst's reason on every manual decision, because those are your only timely labels.</p>
+<h2>Evaluating this before you trust it</h2>
+<p>Test on your own history before you test on your customers. Take a stratified sample of past reviewed orders across normal and peak trading and run the agent blind. Check dossier completeness against the checklist your analysts use, verify every cited fact against the source system, and measure agreement with the human outcome. Keep the direction of disagreement separate: an agent that wanted to approve orders your analysts refused is the serious failure.</p>
+<p>Then run it in shadow, output recorded and hidden. Then put dossiers in front of analysts with no recommendation attached, and watch handling time, queue ageing and decision quality together. Add recommendations last. Keep the agent's output and the human decision in separate fields, with every override recorded.</p>
+<h2>Where AI fails here</h2>
+<p>Agents are weakest where retail fraud is newest. A scheme with no history in your data looks clean, and a well sourced dossier can make it look cleaner. Keep sampling the orders the agent found unremarkable.</p>
+<p>They inherit your past decisions, including the ones that would not survive scrutiny. If certain postcodes, payment methods or name patterns were refused more readily for reasons nobody wrote down, an agent built on that history reproduces it at volume. Test for it explicitly, and remember that data protection obligations apply to profiling customers whatever your intent.</p>
+<p>They cannot make the calls that make this job hard: whether an unlucky customer is an abuser, whether to fight a dispute, whether a discount ring is worth pursuing. And they do not remove the politics. The trade between losses and conversion still belongs to someone senior enough to defend it.</p>
+<h2>Where to start</h2>
+<p>Start with assembly, on one order segment where volume is high and the steps are written down. Add the linkage graph next, because it is the capability your team cannot replicate by hand. Add representment packs after that, since deadlines and evidence matching are mechanical while the decision stays human.</p>
+<p>Adopt AI Partners builds these agents inside the merchant's own systems and stays until the fraud team owns them. If you suspect your declines cost more than your losses, write to hello@adoptaipartners.com and describe the process.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>

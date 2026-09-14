@@ -1,0 +1,109 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Underwriting in Insurance: Triaging the Broker Submission Pile | Adopt AI Partners</title>
+<meta name="description" content="How carriers and MGAs use AI agents on the commercial lines submission desk, from broker intake and appetite triage to exposure schedules, loss runs and referral packs.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-underwriting-in-insurance/">
+<meta property="og:title" content="AI for Underwriting in Insurance: Triaging the Broker Submission Pile"><meta property="og:description" content="How carriers and MGAs use AI agents on the commercial lines submission desk, from broker intake and appetite triage to exposure schedules, loss runs and referral packs.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-underwriting-in-insurance/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1632152133952-98b268dc4b86?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Underwriting in Insurance: Triaging the Broker Submission Pile","description":"How carriers and MGAs use AI agents on the commercial lines submission desk, from broker intake and appetite triage to exposure schedules, loss runs and referral packs.","datePublished":"2026-09-14","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-underwriting-in-insurance/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / insurance</div>
+<article><h1>AI for Underwriting in Insurance: Triaging the Broker Submission Pile</h1><div class="meta">14 September 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1632152133952-98b268dc4b86?w=1600&q=80&auto=format&fit=crop" alt="papers and a pen on a desk" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>This article is about one desk: underwriting inside a carrier or a managing general agent, writing commercial and specialty lines, where risk arrives as a broker email with things attached. It is not the claims desk, and not personal lines motor pricing. Almost nothing here is structured, and the scarcest resource is underwriter attention.</p>
+<p>That tells you what the machine should do. Everything before the judgement is assembly: reading, extracting, matching, normalising and sorting. It is not underwriting. Underwriting authority stays with the underwriter. The agent's job is to make sure that when an underwriter opens a file, it is worth opening.</p>
+<h2>What actually lands on the desk</h2>
+<p>A submission is an email. Sometimes the risk is described in the body, sometimes only in the attachments, and sometimes both disagree. Attached you find a partially completed submission form on whatever standard template your market uses, a statement of values laid out however that broker's assistant lays out spreadsheets, and loss runs scanned from a previous carrier.</p>
+<p>Quality varies by broker, by branch, and by whoever prepared it, and a large share of submissions are missing something material on arrival. That is not fixable at source: the broker is not your employee and will not accept you dictating formats. It is a reading problem.</p>
+<h2>The same risk, three times, from three brokers</h2>
+<p>First, ask whether you have seen this risk already. The same account is routinely shopped to you by more than one broker, or resubmitted with a revised schedule and no note that it supersedes anything.</p>
+<p>An agent resolves identity across submissions on the signals that work: insured name variants, registration identifiers, addresses on the location schedule, requested inception date, and the shape of the exposure. Where it finds a probable match it raises a clash, showing both files side by side. Working an account twice wastes the scarce resource, and quoting it twice at different terms through different brokers damages you in the market.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1600&q=80&auto=format&fit=crop" alt="colleagues working with laptops at a table" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Appetite triage and the fast decline</h2>
+<p>This is the highest value thing an agent does here. Most submissions that arrive are outside appetite: wrong class, wrong size, wrong territory, a hazard you exited last year, a limit above your authority. Each one consumes underwriter time before it is recognised.</p>
+<p>An agent reads the submission against your written appetite and authority rules and sorts the queue into three piles: out of appetite with the specific rule cited, in appetite and complete enough to work, and everything in between, which is where your underwriters should spend the day. Declines come back drafted, for a human to release.</p>
+<h3>Why a fast decline is a service to the broker</h3>
+<p>Brokers do not resent a decline. They resent silence, then a decline weeks later, after they have told their client you were looking at it. A same day no, with a reason that tells the broker what you want, beats a slow maybe, and a broker who knows your appetite sends you better risks next time. The broker relationship is the real asset on this desk.</p>
+<h2>Extracting and normalising exposure data</h2>
+<p>Occupancy and construction descriptions are free text. Sums insured are split across buildings, contents, stock, machinery and business interruption in inconsistent columns, and valuation bases are often implied rather than stated.</p>
+<p>An agent extracts each location, maps the free text onto your own construction and occupancy codes, normalises the sums insured, and flags what it could not resolve rather than guessing. Every field points back to the source document and cell, because an underwriter who cannot check a number in one click will rekey the schedule anyway.</p>
+<h3>Aggregation and the peril zone question</h3>
+<p>The question is not what sits on the schedule. It is how much exposure is accumulating in one place. Geocoding the schedule and aggregating by postcode, by flood or windstorm zone, and against your existing book is work most desks do late, or at treaty level long after the decision. An agent can do it before anyone quotes.</p>
+<h2>Loss runs and a claims history that was never standardised</h2>
+<p>Loss runs are the most informative document in the submission and the worst formatted. They arrive as scans, from different carriers, with different conventions for what counts as a claim.</p>
+<p>An agent parses them into one normalised history: claim date, description, paid, outstanding reserve, status and policy period. It separates attritional frequency from large individual losses, because blending them hides both. It flags missing years and labels open claims as open, with the reserve marked as an estimate that will move, because an incurred figure carrying fresh open reserves is not a settled number.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600&q=80&auto=format&fit=crop" alt="team meeting around a conference table" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Sanctions and financial crime screening</h2>
+<p>Screening obligations apply before you can offer terms, and the specifics vary by market and line of business. The named insured is rarely the whole question: you may need the parent, the group structure and the beneficial owners behind it.</p>
+<p>An agent extracts the entity names, resolves the structure from the submission and available registries, runs the screening and assembles the evidence. It never clears a hit. Every potential match goes to a human with the data attached, and the clearing decision and its reasoning are recorded on the file.</p>
+<h2>Assembling the underwriting file and the referral pack</h2>
+<p>When a risk exceeds authority and goes to a senior underwriter, a reinsurer or a facility, the referral usually arrives half built, and the receiving underwriter rebuilds context that already existed.</p>
+<p>An agent assembles the pack: the exposure summary, the loss history with attritional and large separated, the aggregation position, screening status, prior submissions from the same insured, and the trigger for the referral. The recommendation is not the point. Completeness is. A referral that arrives complete gets a same day answer.</p>
+<h2>Wordings, endorsements and clause comparison</h2>
+<p>Brokers ask for their own wordings, manuscript endorsements and amendments to your standard form. Reading a marked up wording properly takes real time, so under pressure it gets skimmed, and a skimmed wording is how coverage arrives that nobody priced.</p>
+<p>An agent compares the requested wording against your house form clause by clause, lists every material difference, and classifies each against your known positions: acceptable, refer, never. It shows the actual language on both sides, and the underwriter decides what a difference is worth.</p>
+<h2>Renewals and mid-term adjustments</h2>
+<p>Renewal is a comparison problem, and exposure drift is the quiet leak. Locations get added mid-term, values get uplifted, an occupancy changes, and the policy runs on at last year's rate.</p>
+<p>An agent builds the change summary: what moved on the schedule, what the loss experience did, which mid-term adjustments were processed and whether each was repriced, and how open claims have developed. The underwriter opens the renewal knowing what is different, early enough for a conversation rather than a scramble.</p>
+<h2>The agent does not set the price</h2>
+<p>Say this plainly, including in the agent's operating instructions. The agent assembles the rating inputs, flags what is missing or contradictory across documents, and shows its working with sources. It does not produce a rate, a premium or a technical price.</p>
+<p>Rate is a rated and governed decision, owned by your pricing and actuarial functions and executed in the engine they control. Anything else creates a shadow pricing model with no governance and no owner. Clean, evidenced inputs improve pricing accuracy more than anything that shortcuts the rating engine.</p>
+<h2>Model governance, explainability and the audit trail</h2>
+<p>Anything that influences which risks get looked at, and which get declined, falls inside your regulator's expectations on model governance and fair outcomes. A system that declines without an explainable reason is a compliance problem as well as a commercial one.</p>
+<p>So build for explanation from the start. Every triage outcome should cite the rule or the extracted fact that drove it. If you learn from historical decisions, the agent will reproduce whatever pattern sits in that history, including the ones you would not defend out loud. Test for that before deployment and name an owner for the rulebook.</p>
+<h3>The file somebody reads years later</h3>
+<p>An underwriting file is read long after the underwriter has moved on, in a coverage dispute, an audit or a reinsurance query. What was known at the point of binding is the whole argument, so treat the record as an output rather than plumbing: every document received, every field extracted and from where, every rule evaluated and its outcome, and every human acceptance or override, named and timestamped.</p>
+<h2>How to evaluate and test this before you trust it</h2>
+<p>Do not buy a demonstration, because demonstrations run on clean submissions. Test on your own ugliest files.</p>
+<p>Pull real historical submissions from your messiest brokers, including the scans and the ones you declined. Run the agent in shadow and compare its output against what your underwriters actually did. Measure extraction accuracy field by field against a human keyed baseline, not overall. Measure appetite triage against your own decisions and look hardest at false declines, because a risk wrongly declined is the expensive error, and it is invisible unless you go looking. Then run live in draft mode, where a human releases everything, and track the override rate by category until it stops moving.</p>
+<h2>Where AI fails here</h2>
+<p>Extraction from poor scans and creatively formatted spreadsheets fails, and it fails confidently, which is worse than failing loudly. Without confidence thresholds and human review on low confidence fields, errors flow into the file looking like facts.</p>
+<p>Entity resolution is genuinely hard. Group structures, trading names and partial addresses produce missed duplicates and false clashes. Occupancy descriptions in a broker's private shorthand get mapped wrongly, and a loss run in an unfamiliar format will sometimes be parsed into a plausible and wrong history.</p>
+<p>The agent has no market judgement. It cannot read whether a deteriorating account is a turnaround, or weigh what a broker relationship is worth across a portfolio. It enforces last year's appetite with perfect consistency until somebody updates the rules, so appetite changes need an owner and a release process.</p>
+<p>None of that argues against deploying. It argues for narrow scopes, cited reasoning, confidence thresholds, review gates, and a human owning every decision with legal, financial or customer consequence.</p>
+<p>The prize here is not a machine that underwrites. It is a desk where nothing is worked twice, where out of appetite business is declined the same day with a reason the broker can use, and where the files that deserve an underwriter arrive complete. If you want a grounded view of where this would help first on your book, describe your submission flow to Adopt AI Partners at hello@adoptaipartners.com.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>
