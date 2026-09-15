@@ -1,0 +1,101 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Claims Handling in Logistics: Cargo Loss and Damage Files | Adopt AI Partners</title>
+<meta name="description" content="How AI agents work a cargo loss or damage claim on the operator side, from the first angry email through file assembly and notification clocks to recovery.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-claims-handling-in-logistics/">
+<meta property="og:title" content="AI for Claims Handling in Logistics: Cargo Loss and Damage Files"><meta property="og:description" content="How AI agents work a cargo loss or damage claim on the operator side, from the first angry email through file assembly and notification clocks to recovery.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-claims-handling-in-logistics/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Claims Handling in Logistics: Cargo Loss and Damage Files","description":"How AI agents work a cargo loss or damage claim on the operator side, from the first angry email through file assembly and notification clocks to recovery.","datePublished":"2026-09-15","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-claims-handling-in-logistics/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / logistics</div>
+<article><h1>AI for Claims Handling in Logistics: Cargo Loss and Damage Files</h1><div class="meta">15 September 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1600&q=80&auto=format&fit=crop" alt="discussion in a modern office" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>A cargo claim almost never arrives as a claim. It arrives as an email from an annoyed customer, photographs attached, a subject line quoting a reference that may not be yours, and a sentence saying the pallets were a mess on arrival and what are you going to do about it. Nobody attaches the delivery receipt.</p>
+<p>From that email your team builds a file, works out what happened in a chain you subcontracted, decides what you owe and what you can recover, and does it before two clocks run out. It is the most evidence heavy work in the business and the least loved. Files sit, files age, and ageing files become write offs without anyone deciding to write them off.</p>
+<p>This is the operator desk, not the insurance desk. You receive the claim, investigate it, pay or decline it, then chase whoever had the consignment when it went wrong. Most of that work is reading, assembling and diarising. Only a small part is judgement, which is why agents earn a place here.</p>
+<h2>The claim arrives as prose, not as a form</h2>
+<p>The first job is recognising that an email is a claim at all. Plenty do not say so. They say the consignee refused part of the delivery, or the temperature looked wrong, or they forward a photograph with no text.</p>
+<p>An intake agent reads the mailbox, classifies the message, and where it looks like a loss or damage notification opens a claim record in your system of record rather than leaving the thread as correspondence. It extracts the customer, the reference quoted, the consignment it maps to, the delivery date, the nature of the complaint, and whether the sender used words that look like a formal notification. The delivery date matters most, because every deadline is calculated from it.</p>
+<h2>Assembling the file before anyone argues about it</h2>
+<p>Once the claim exists, building the file is pure retrieval across systems that do not talk to each other.</p>
+<p>An agent pulls the transport document, the booking instructions, the delivery receipt and any exception noted on it, the packing list, the commercial invoice used to substantiate value, weight records, temperature or data logger output where the traffic warrants it, the subcontractor confirmations, and handover photographs. It reads the customer thread and the subcontractor thread, which usually sit in different inboxes. It writes the bundle back to the claim file indexed by document type, and lists what is missing rather than quietly proceeding without it. Missing documents are the normal state, so the useful output is a bundle plus an honest list of what to ask for today.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1590496793907-4d66e2994b4d?w=1600&q=80&auto=format&fit=crop" alt="container ship loaded by cranes at dusk" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>What the delivery receipt actually says</h2>
+<p>The most consequential fact in a cargo claim is whether the receiver noted anything at delivery. A clean signature narrows your position. A scrawled, half legible exception changes everything.</p>
+<p>An agent reads the delivery receipt image, transcribes any handwritten annotation, and records the transcription and its confidence next to the original image. It flags whether the exception is specific, meaning it names cartons, damage type or count, or generic, meaning someone wrote something unreadable next to the signature. It does not decide what the note means. It puts the note in front of a person who will, image alongside transcription, because a confident misreading here is expensive. Where there is no exception at all, it records that too, along with whether the customer notified you within the window your trading conditions give them.</p>
+<h2>Establishing where in the chain it happened</h2>
+<p>When several subcontractors touched the consignment, the fight is about which leg the loss occurred on, and that evidence is scattered across handover points.</p>
+<p>An agent builds a timeline from the documents it has: collection, each transfer, each interchange receipt, each status event, each set of photographs, weight recorded at different stages, and any temperature excursion. It places the first recorded evidence of damage or shortage on that timeline, identifies which party had custody at that moment, and writes the sequence back to the file with the source document cited against each entry.</p>
+<p>That is an evidential position, not a liability conclusion. Where it finds a gap, meaning nobody recorded condition at a handover, it says so plainly. Gaps are the most common finding and the most useful, because they tell you which subcontractor relationship needs a process change rather than a letter.</p>
+<h2>The two clocks, and the one that destroys recovery</h2>
+<p>Every cargo claim runs on two deadlines. Your customer has a window to notify you, set by your trading conditions. You have a window to put the underlying carrier or subcontractor on notice, set by the liability regime that applies to the mode and the route, alongside the limitation period that applies to any eventual proceedings.</p>
+<p>Missing the second destroys recovery even when liability is obvious. It is the largest avoidable loss on a claims desk, and it happens because the file was being investigated rather than diarised.</p>
+<p>An agent calculates both clocks from the delivery date the moment the record opens, writes them as dated tasks, and escalates as they approach. More usefully, it drafts the holding notice to the subcontractor immediately, before anyone has investigated anything, because a protective notice costs nothing and preserves everything. A person releases it. The agent makes sure it exists at the start.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1664382953403-fc1ac77073a0?w=1600&q=80&auto=format&fit=crop" alt="workers walking a warehouse aisle" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Quantum, meaning what the claim is actually worth</h2>
+<p>Customers claim the number on their sales invoice. That number usually includes mark up you never insured, freight you already charged, and sometimes consequential loss sitting outside all of it.</p>
+<p>An agent reads the commercial invoice, the packing list and the correspondence, and builds a quantum working: units affected against units shipped, value substantiated per unit, freight and duty treated separately, salvage where the goods are repairable, and a separate line for anything claimed that looks like downstream loss rather than the goods themselves. It then applies the cap the relevant regime places on the claim given the mode, the route and the recorded weight, and shows whether the claimed amount sits above or below it. That is arithmetic nobody has time for, so today it happens only on the large files.</p>
+<h2>Deciding to pay commercially, and saying so</h2>
+<p>Sometimes you pay a claim you are not liable for. The account is worth more than the file, the customer is right in spirit, or the argument would cost more than the settlement. That is a legitimate commercial decision and it should be recorded as one.</p>
+<p>What goes wrong is that it gets recorded as a liability admission, becomes a precedent, and the same customer claims the same way next quarter. An agent cannot make this decision. It can present the file to whoever does: the evidential position, the quantum working, the account's claims history and the recovery prospects. Then it records the outcome in the field that distinguishes a commercial settlement from an admitted claim, so your reporting stays honest.</p>
+<h2>Recovery and the handoff that follows it</h2>
+<p>Once you have paid, the file changes direction. You are the claimant now, and your recovery is only as good as the notice you gave and the evidence you kept.</p>
+<p>An agent prepares the recovery pack: the timeline, the custody position, the documents, proof of payment to your customer, and the notice you served. It diaries responses, drafts chasers when the other side goes quiet, and flags the approaching limitation period so the decision to pursue or drop is made deliberately. Where the file goes to your insurer or a recovery agent, it assembles the same pack in the form that party expects.</p>
+<h2>Demurrage, detention and storage are not claims</h2>
+<p>Much of what lands in the claims inbox is not a cargo claim at all. It is a dispute about container detention, quay rent, storage after free time, or a waiting charge, arriving in the same annoyed tone. An agent should separate these at intake and route them to charge dispute handling, not to the claims register. Different evidence, different owner, different clock. Mixing them is why real claims sit behind invoice arguments.</p>
+<h2>The ageing file</h2>
+<p>Claims files rot in a specific way. A document is requested and never chased. A subcontractor does not reply and nobody notices. The file is neither settled nor declined, it just stops moving, and eventually it is written off or deducted from your next invoice.</p>
+<p>An agent watching the register for inactivity is unglamorous and probably the highest value item here. It reads every open file, identifies what each is waiting on and from whom, and produces a daily working list ordered by which deadline falls first rather than which email shouted loudest.</p>
+<h2>Where AI fails here</h2>
+<p>Contested liability between subcontractors is not a reading problem. When two parties each hold plausible custody evidence and both deny it, resolving that takes commercial leverage, relationship history and sometimes a willingness to lose the argument. No agent has any of that.</p>
+<p>Photographs are worse than they look. A picture of a crushed carton does not show when it was crushed, who was holding it, or whether the goods inside are affected. An agent will describe that image confidently and may imply causation it does not support. Treat image descriptions as an index, not as evidence.</p>
+<p>The judgement of paying to keep an account cannot be delegated, and neither can the judgement of when to fight a good customer. Nor may an agent send a liability position outward. Declining a claim, admitting one, or putting a number in writing all bind you. The agent drafts, a named person releases, and the system should enforce that, not policy.</p>
+<p>Then the quiet failure: a well written claim summary that misreads a delivery exception note. It will look excellent, it will be internally consistent, and it will be wrong, and because it reads well nobody will go back to the original image. Keep the source document next to every extraction and make checking it the cheaper option.</p>
+<h2>Where to start</h2>
+<p>Start with intake and the deadline diary. Both are high volume and easy to verify, and both fail safely: a wrongly opened claim record costs a minute, a missed notification costs the whole recovery. Run the agent alongside your existing process and compare its output against what your team did, on real files, long enough to see the awkward ones. File assembly comes next, because it is the largest time cost. Leave quantum, liability positions and anything customer facing until the first two have earned trust.</p>
+<p>If you want a grounded view of which parts of your claims desk an agent should own and which it never should, describe the process to Adopt AI Partners at hello@adoptaipartners.com.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>

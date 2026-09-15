@@ -1,0 +1,102 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Quality Control Documentation in Semiconductors | Adopt AI Partners</title>
+<meta name="description" content="How AI agents draft the quality evidence a fab runs on: excursion write ups, hold and disposition records, material review packets and failure analysis reports.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-quality-control-documentation-in-semiconductors/">
+<meta property="og:title" content="AI for Quality Control Documentation in Semiconductors"><meta property="og:description" content="How AI agents draft the quality evidence a fab runs on: excursion write ups, hold and disposition records, material review packets and failure analysis reports.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-quality-control-documentation-in-semiconductors/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1647427060118-4911c9821b82?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Quality Control Documentation in Semiconductors","description":"How AI agents draft the quality evidence a fab runs on: excursion write ups, hold and disposition records, material review packets and failure analysis reports.","datePublished":"2026-09-15","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-quality-control-documentation-in-semiconductors/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / semiconductors</div>
+<article><h1>AI for Quality Control Documentation in Semiconductors</h1><div class="meta">15 September 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1647427060118-4911c9821b82?w=1600&q=80&auto=format&fit=crop" alt="a factory floor filled with orange machines" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>A fab produces more evidence than any human being will ever read. Every lot carries hundreds of process steps, each with recipe parameters, tool identity, chamber, timestamps, inline metrology, defect scans and the control charts those measurements feed. Almost all of it is stored and never looked at again, until something moves and the same data becomes the only thing standing between you and a customer asking what happened to parts already in their product.</p>
+<p>That is the economics of semiconductor quality documentation. The raw material is abundant and machine readable. The finished record a person will read and sign is scarce, late, and written by an engineer at the end of a long shift who would rather be fixing the tool.</p>
+<h2>Why a fab is not a batch plant</h2>
+<p>Quality documentation advice written for general manufacturing assumes a batch that starts, runs and closes in a recognisable window, with one record to complete. A fab breaks that. Cycle time runs for weeks, so the excursion you are investigating today touched material now spread across a dozen operations. Lots split, merge and get partially scrapped. Wafer level data rolls up to die level data rolls up to a packaged part with a different identifier entirely.</p>
+<p>So the hard part of a fab quality record is not filling in the form. It is bounding the problem: which lots, which wafers, which chambers, which window, and what else passed through the same path while the condition existed. That is answerable from data you already hold, and it is what humans answer slowly under pressure.</p>
+<h2>Excursion write ups that start themselves</h2>
+<p>When a control limit is breached or an inspection flags a defect signature, the write up begins hours later, once the firefight is over. By then the engineer is reconstructing events from memory and screenshots.</p>
+<p>An agent can assemble the record while the event is live. It reads the chart violation, resolves the tool, chamber and recipe, pulls the parameter traces for the window, lists every lot processed on that path since the last known good point, and checks whether the signature has appeared before. It writes back a draft excursion record in your quality system with the affected population bounded, the evidence attached and the timeline in order. The engineer judges what it means, starting from a complete picture rather than an empty text field and five system logins.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1716191299980-a6e8827ba10b?w=1600&q=80&auto=format&fit=crop" alt="industrial robot arm on a factory line" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Hold and disposition records</h2>
+<p>Holds are where quality documentation and cycle time collide. Someone has to write down why a lot is held, what the containment boundary is, and what evidence would release it. Too often the hold reason is a two line note whose author has gone home, and the next shift cannot act on it.</p>
+<p>An agent writes the record properly at the moment the hold is placed: the trigger, the rule or spec involved, the wafers and quantities affected, the sibling lots sharing the suspect condition, and the data still outstanding. As evidence arrives, retest results, cross sectional analysis, tool requalification, it appends to the same record and flags when the release criteria have been met.</p>
+<p>It does not release the lot. Disposition carries liability and belongs to a named person. The agent makes sure that person is never waiting on paperwork to make the call.</p>
+<h2>Material review board packets</h2>
+<p>An MRB meeting is only as good as the packet in front of it, and the packet is usually assembled by whoever drew the short straw. The content is predictable: lot genealogy, the deviation from spec with its magnitude, inline and end of line data, any failure analysis completed, prior similar dispositions, customer exposure, quantities and options.</p>
+<p>That is assembly work. An agent builds the packet from the systems of record in the time it takes to schedule the meeting, including the section teams usually skip: what was decided when something similar came up before, and what happened to that material afterwards. Decisions get more consistent when precedent is in the room.</p>
+<h2>Failure analysis reports and the customer round trip</h2>
+<p>Failure analysis carries a documentation burden at both ends. On the way in, the request needs the part traced back through assembly, test and wafer origin, with the datalog, the reported symptom and the shipping history attached. On the way out, the bench produces images, measurements and a conclusion someone must turn into a report the customer will accept, in the customer's format, usually more than once as questions come back.</p>
+<p>An agent handles both ends. It opens the request with traceability and test history already resolved, then drafts the report against the analyst's findings and images, writes the plain language summary the customer's quality engineer will actually read, and keeps internal and external versions consistent through revisions. The conclusion stays with the analyst. The round trip does not need to.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?w=1600&q=80&auto=format&fit=crop" alt="interior of a large industrial factory" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Corrective action reports in the eight step format</h2>
+<p>Most semiconductor teams run corrective actions in some variant of the eight step structure, and the pain sits in the same places: assembling evidence for containment, keeping the escape point analysis honest, and demonstrating effectiveness months later when everyone has moved on.</p>
+<p>An agent drafts containment from lot and shipment data, populates the problem description from the original complaint or excursion record, and pulls prior corrective actions with matching signatures so the team can see whether this is genuinely new. Later it does the unglamorous part: it watches the effectiveness criteria the team committed to, checks them against live data at the agreed intervals, and drafts the verification section. Root cause stays a human conclusion. Follow through does not.</p>
+<h2>Control chart annotation and out of control action records</h2>
+<p>Every out of control point is supposed to carry a written explanation. In practice many get annotated with something like "tool recovered" because the engineer had other charts to clear.</p>
+<p>An agent can propose the annotation with real content behind it: what maintenance happened on that tool in the preceding window, whether a recipe or consumable changed, whether adjacent parameters moved together. The engineer accepts, edits or rejects. Over time this turns placeholder text into a searchable history, which is what the annotation was always for.</p>
+<h2>Tool maintenance and recipe change records</h2>
+<p>Preventive maintenance records, qualification runs after maintenance, and recipe change logs are usually complete in isolation and disconnected from each other. When an excursion is traced to a tool, someone reconstructs the sequence by hand.</p>
+<p>An agent maintains that link continuously. It reads maintenance closures and recipe change approvals, writes the record with affected process steps and products named, and stitches the sequence so any later question about a tool returns one ordered narrative rather than three exports. It also flags the mismatch that causes real trouble: a recipe change executed without the corresponding document revision, or a qualification run recorded as passed on data that does not support it.</p>
+<h2>Cleanroom and environmental monitoring evidence</h2>
+<p>Particle counts, humidity, differential pressure, deionised water and chemical monitoring produce a continuous stream of evidence that is reviewed periodically and then wanted urgently at the worst moment, during a customer audit or an excursion that might be environmental.</p>
+<p>An agent keeps that evidence ready: continuous review against your limits, exception records written when a limit is exceeded with affected areas and time windows named, and a standing summary that exists rather than being compiled the night before.</p>
+<h2>Traceability answers on demand</h2>
+<p>The question a customer asks is simple to state and expensive to answer. Here is a part marking, tell us everything. Behind it sits a chain from package to assembly lot to wafer to fab lot to tool history, crossing systems never designed to be read together.</p>
+<p>An agent given read access to that chain resolves the genealogy and returns the history with gaps explicitly marked as gaps. Marking them matters more than filling them. An answer that quietly interpolates is worse than one saying the link between assembly and test is missing for this date range, because the second can be fixed.</p>
+<h2>Where to start</h2>
+<p>Start where the ground truth is unambiguous and the output is a draft, not a decision. Traceability assembly and failure analysis request preparation are good first choices, because both are verifiable against data you trust and neither touches disposition.</p>
+<p>Scope it to one product family, one fab or one customer. Write down before anything is built what the agent may read, what it may write back into your quality system, and what always routes to a named person. Run it alongside your existing process and compare drafts against what humans produced, in both directions. Measure something your operations review already tracks, such as days a lot spends on hold waiting for paperwork rather than data.</p>
+<h2>Where AI fails here</h2>
+<p>Root cause attribution is where fluent writing is most dangerous. An agent can produce a well organised narrative that reads as though the cause is established when the data supports three possibilities equally. Treat every drafted cause as a hypothesis with its evidence attached.</p>
+<p>An agent cannot decide a disposition. Scrap, downgrade, use as is, ship with a concession, all carry liability, and the record needs a qualified person's name against the decision. Same for whether a change is significant enough to notify a customer under your quality agreement.</p>
+<p>Genuinely novel excursions are the hardest case and the ones that matter most. Pattern matching helps when history contains something similar, and a first occurrence by definition does not. Expect the agent to be strongest on recurring conditions and weakest where you would most want help, so build the workflow to escalate novelty loudly rather than force it into the nearest existing category.</p>
+<p>Data quality sets the ceiling. Broken lot genealogy, tool identifiers that changed during a system migration, and equipment logs with clock drift will produce confident and wrong bounding of affected material, which is the most expensive error mode here.</p>
+<p>Confidentiality is not an afterthought either. Process detail, yield data and customer programme information sit under some of the tightest controls in industry, and a deployment that cannot satisfy your customers' security requirements should not proceed.</p>
+<p>Quality documentation in a fab exists so that someone, later, can reconstruct what happened and trust the reconstruction. Done carefully, agents strengthen that, because every record gets the full evidence pull rather than the amount the author had time for. If your engineers spend their evenings writing prose instead of solving the problem in front of them, describe your documentation flow to Adopt AI Partners at hello@adoptaipartners.com for an honest read on which parts an agent could carry.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>
