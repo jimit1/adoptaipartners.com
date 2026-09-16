@@ -1,0 +1,109 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Fraud Review in Insurance: The Special Investigations Desk | Adopt AI Partners</title>
+<meta name="description" content="How insurers use AI agents on the special investigations desk, covering referral triage, investigation file building, link analysis, interview briefs and case summaries.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-fraud-review-in-insurance/">
+<meta property="og:title" content="AI for Fraud Review in Insurance: The Special Investigations Desk"><meta property="og:description" content="How insurers use AI agents on the special investigations desk, covering referral triage, investigation file building, link analysis, interview briefs and case summaries.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-fraud-review-in-insurance/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Fraud Review in Insurance: The Special Investigations Desk","description":"How insurers use AI agents on the special investigations desk, covering referral triage, investigation file building, link analysis, interview briefs and case summaries.","datePublished":"2026-09-16","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-fraud-review-in-insurance/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / insurance</div>
+<article><h1>AI for Fraud Review in Insurance: The Special Investigations Desk</h1><div class="meta">16 September 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1600&q=80&auto=format&fit=crop" alt="colleagues working with laptops at a table" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>This article is about one desk inside an insurer, and it is not the claims desk. Claims decides whether a loss is covered and what it is worth. The special investigations desk gets the claims where somebody thinks something is wrong, and works out which suspicions deserve an investigator.</p>
+<p>Claims handling is forward motion: gather, verify, value, pay. Investigation is backward motion. You reconstruct what happened, test the claimant's account against the documents and against what they said last time, and produce a record that survives a hostile reader years later.</p>
+<h2>How a referral actually reaches the unit</h2>
+<p>Referrals do not come from one place, and that is the first thing anyone designing for this desk gets wrong. Some come from a handler who cannot say what bothered them, only that the claimant changed the story about where the vehicle was parked. Some come from a scoring model, arriving as a number with contributing features that may or may not mean anything. Some come from a match in whatever shared industry data your market provides. Some are structural: a bank account already paid on an unrelated claim, an address that keeps appearing, a repairer seen in cases you have declined.</p>
+<p>They land in one queue with wildly different reasoning attached, and most will close without a fraud finding. Investigator time is the scarce resource, and the queue does not say where to spend it.</p>
+<h2>What an agent can actually do here</h2>
+<p>The honest framing is narrow. An agent will not detect fraud your models missed and it will not decide anything. It removes the reconstruction work sitting between a referral arriving and an investigator having an opinion.</p>
+<p>That work is most of the day: pulling claim history, reading the notification statements, reconciling three accounts of one accident. None of it requires judgement, and all of it comes first.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1606327054536-e37e655d4f4a?w=1600&q=80&auto=format&fit=crop" alt="printed documents beside a keyboard" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Triage: does this referral deserve an investigator</h2>
+<p>Triage is the highest value point on the desk, because it allocates the scarce resource, usually fast and on thin information.</p>
+<p>An agent can prepare it properly, assembling what a triage lead wants: what is actually alleged, translated out of the referrer's shorthand, when cover incepted relative to the loss, claim value and reserve, prior claims by the policyholder and anyone else named, and whether any party, vehicle, address or bank account appears on another case.</p>
+<p>It then proposes a route with its reasoning visible: worth an investigator, worth a desk based validation, or nothing here. The closure route must not be executable by the agent, because an agent that can quietly close referrals will eventually close the one that mattered.</p>
+<h2>Building the investigation file</h2>
+<p>Once a referral is accepted, someone spends a long stretch assembling the file before any investigating happens. This is the best first build, because it carries almost no decision risk.</p>
+<p>The agent works a defined evidence checklist for the claim type. For motor that means the first notification of loss recording and every later statement, policy history including mid term changes and previous named drivers, prior claims and their outcomes, the engineer assessment, repair invoice, and the third party's account. For household or small commercial property it means the notification, the schedule and sums insured, proof of ownership, the loss adjuster's report and prior claims at the same address.</p>
+<h3>What the file has to show</h3>
+<p>Every item dated, sourced and linked back to the original document. Where something is missing, the file says so, because a missing document is itself a finding here.</p>
+<h2>Hunting inconsistency in the claimant's own account</h2>
+<p>This work most rewards a machine that never gets bored. A claimant tells the story at notification, again to the handler, again to the adjuster, again in a written statement. Innocent people vary their accounts. But the specific things that move matter: time of day, who was driving, where the vehicle was kept, whether the door was locked.</p>
+<p>An agent can hold every version side by side and list each point where they differ, with the exact words quoted and dated. It can also test the account against the documents: whether a receipt date fits the story, whether an invoice describes work consistent with the engineer's photographs.</p>
+<p>What it produces is a list of discrepancies for an investigator to weigh, not a credibility assessment. Credibility is a judgement about a person, and not something an agent writes down.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1600&q=80&auto=format&fit=crop" alt="discussion in a modern office" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Linking claims to each other</h2>
+<p>Link analysis is where organised activity becomes visible, and no investigator can do it at scale by reading files.</p>
+<p>An agent resolves and connects entities across your book: named parties and their variants, vehicles by registration, addresses, telephone numbers, bank accounts, repairers, hire companies and medical providers. The output is a map of which claims touch which, and on what, with every link evidenced rather than asserted.</p>
+<p>Two disciplines make it usable. Show the strength and nature of each link, because a shared bank account is not a shared postcode. And keep linked claims openable, so an investigator reads the connected file.</p>
+<h2>Organised and opportunistic fraud are different problems</h2>
+<p>An exaggerated contents list after a real burglary and a staged collision run by people who do this for a living are both fraud, and treating them alike wastes effort on one and loses the other.</p>
+<p>Opportunistic cases are single claim problems. The evidence sits inside the file and the outcome is often a policy level decision handled quickly. Agents help by making the file complete and the inconsistencies obvious.</p>
+<p>Organised cases are network problems. The individual claim looks unremarkable, which is the point, and the value sits in the pattern across claims. Link analysis matters far more here than anything the agent says about the single file, and the tempo differs: these cases run long, with a real possibility of litigation. Build for both, and let triage route between them.</p>
+<h2>Preparing the interview brief</h2>
+<p>When an investigator interviews a claimant, preparation is most of the outcome. The brief is a real artefact: the timeline as understood, the points on which the account has varied, the documents to put to the claimant, and the questions whose answers are already evidenced, so that a false answer is informative.</p>
+<p>An agent drafts that brief from the assembled file in your unit's format, and the investigator rewrites it. It does not script the interview, and it has no business suggesting how to handle a person in a room.</p>
+<h2>Drafting the case summary that carries the decision</h2>
+<p>Investigations end in a document. It goes to someone who will validate the claim, negotiate it, repudiate it or pass it to lawyers, and it may be read in court.</p>
+<p>An agent can draft it: what was alleged and by whom, what was examined, what was established, what was not, the evidence for each proposition with its source, and the points a competent opponent would attack. It keeps findings separate from inference, a distinction that blurs at the end of a long week. It does not recommend repudiation. That belongs to a named investigator, and the decision to whoever holds the authority.</p>
+<h3>The record behind a declined claim</h3>
+<p>A declined claim is a decision about a customer that must stay defensible for years, through a complaint, litigation, or your regulator's reporting expectations. Build the record as an output, not as plumbing.</p>
+<p>Every case should carry what the agent queried, what each source returned, what it drafted, who reviewed it and what they changed. Keep the drafts a human overrode, because override history is the strongest evidence that human control was real.</p>
+<h2>Evaluating it against referrals you have already dispositioned</h2>
+<p>Do not evaluate this on a demonstration. Evaluate it on your own closed referrals, several hundred at least, stratified across referral sources and claim types, and run blind.</p>
+<p>Measure evidence completeness against your checklist, factual accuracy of every cited claim, and agreement with what your investigators did. Then look hard at the direction of disagreement. An agent that wants to escalate cases you closed costs investigator hours. An agent that wants to close cases you escalated and proved is the failure that matters, and it stays invisible unless you look for it.</p>
+<h2>Where AI fails here</h2>
+<p>Agents are weakest exactly where this desk earns its keep. A ring the model has never seen looks like ordinary claims, because it was built to. The case where every document is clean and something about the story is still wrong is the one an agent will confidently recommend closing, while an experienced investigator smells it without being able to say why. Sample the cases the agent wanted to close, permanently.</p>
+<p>Agents inherit your history. If certain customer segments, postcodes, occupations or names were investigated more readily in the past for reasons you would not defend out loud, an agent built on that history reproduces the pattern faithfully and at higher volume, with consistency making it look principled. Test for disparate treatment explicitly, before deployment and continuously after.</p>
+<p>Link analysis produces coincidence as readily as conspiracy. In dense housing, shared addresses mean flats. A repairer appearing across many claims may be the busiest bodyshop in the area. Drawn as a network, coincidence looks like evidence, which is serious when the output feeds a decision to decline.</p>
+<p>A wrong repudiation is not symmetrical with paying a doubtful claim. It is a complaint, a reversal, redress, press interest and regulatory attention on your whole fraud process.</p>
+<p>And an agent cannot fix an inconsistent referral taxonomy. If two units use one outcome code to mean different things, or nobody can say what separates a validated claim from an unproven suspicion, you get the same confusion faster and better formatted. That cleanup comes first.</p>
+<h2>Where to start</h2>
+<p>Start with file assembly on one claim type where the evidence checklist is already written down and referral volume is real. Motor is usually the right first ground, because the documents are structured and repetitive. Build the assembly agent only, and live with it. Add the inconsistency list next, then link analysis once entity resolution has been tested against cases you already understand. Case summary drafting comes last.</p>
+<p>Adopt AI Partners builds these agents inside the client's own claims, policy and case systems, and stays until the investigations team owns them. Success is not that the agent works in a demonstration. It is that your investigators reach for it, your decisions are better evidenced than before, and nobody has to take the machine's word for anything. If you want a grounded view of where this would help first, describe your referral flow to Adopt AI Partners at hello@adoptaipartners.com.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>
