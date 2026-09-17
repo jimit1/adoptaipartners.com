@@ -1,0 +1,95 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Quality Control Documentation in Pharma | Adopt AI Partners</title>
+<meta name="description" content="How AI agents shorten the gap between batch completion and release: review queries, deviation write ups, out of specification investigations and CAPA records.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-quality-control-documentation-in-pharma/">
+<meta property="og:title" content="AI for Quality Control Documentation in Pharma"><meta property="og:description" content="How AI agents shorten the gap between batch completion and release: review queries, deviation write ups, out of specification investigations and CAPA records.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-quality-control-documentation-in-pharma/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1610891015188-5369212db097?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Quality Control Documentation in Pharma","description":"How AI agents shorten the gap between batch completion and release: review queries, deviation write ups, out of specification investigations and CAPA records.","datePublished":"2026-09-17","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-quality-control-documentation-in-pharma/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / pharma</div>
+<article><h1>AI for Quality Control Documentation in Pharma</h1><div class="meta">17 September 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1610891015188-5369212db097?w=1600&q=80&auto=format&fit=crop" alt="industrial textile factory with machinery and pipes" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>A batch is finished long before it is released. The last operation ends, the record closes, and then the lot sits. Not because anyone doubts the product, and usually not because anything went wrong. It sits because several hundred pages have to be read, queried, answered, read again, and finally signed by a person whose name carries the release.</p>
+<p>That gap is the most expensive documentation problem on a pharmaceutical site. It is counted in days per lot, it repeats across every product, and almost all of it is reading and writing rather than deciding. Agents are useful here for an unglamorous reason: they can start the reading the moment the record closes, and they can draft the documents that keep the lot in the queue.</p>
+<h2>What is actually sitting in the release queue</h2>
+<p>Ask how long release takes and you get a number. Ask what the number is made of and the answer is less comfortable. The queue holds records waiting for a first review because the reviewer has three ahead of them, records returned to production carrying comments, records held against an open deviation nobody has written up properly, records held against a pending out of specification result, and records complete but for one certificate or one signature from a supervisor on nights.</p>
+<p>None of those is a quality judgement. Every one is a documentation state, a state that exists because a document has not been produced, read or answered yet.</p>
+<h2>Batch record review and the query round trip</h2>
+<p>The review itself gets the attention, but the round trip costs more. A reviewer works through an executed record and raises a set of comments. The record goes back to production. A supervisor answers over the following days, often by asking operators what they meant by an entry made a fortnight ago. It returns, and the reviewer reads it again, because an answer in one place can invalidate a check somewhere else.</p>
+<p>An agent working the record as it closes changes the timing of that loop rather than removing it. The comment set exists within minutes of the last entry, so production answers while the people who executed the steps are still on shift and still remember the run. Memory is a real input to record quality and it decays fast.</p>
+<p>It also shrinks the list. A large share of review comments are not questions, they are discrepancies resolvable from data the site already holds: a recorded value that disagrees with the equipment log, a calculation that does not reproduce, a time stamp out of sequence, a referenced deviation with no matching event in the quality system, a material lot that does not match what was dispensed. An agent presents both sides of each discrepancy with its source, so the reviewer is deciding rather than investigating. What remains for production are the human gaps: a missing initial, an unclear annotation, a correction with no reason recorded.</p>
+<p>There is a quieter benefit in consistency. Two reviewers reading the same record raise different comments, and experienced operators know which reviewer is coming. An agent applies the same check set every time.</p>
+<h3>Evidencing the review itself</h3>
+<p>The output is not only the exceptions. It is also the record of which checks ran, against which document versions, and with which result. A reviewer signing off work they did not personally perform line by line needs that record to exist, so build it as a primary output, not as logging.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600&q=80&auto=format&fit=crop" alt="team meeting around a conference table" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Deviation write ups and the cost of bad prose</h2>
+<p>A deviation record is technical writing with rules. It has to describe what happened without asserting why, state the affected scope without pre-empting the impact assessment, and remain intelligible in three years to someone who was not in the room. Most are written days later by a supervisor between other duties, which is why so many share the same faults: a cause smuggled into the description, a no impact statement with nothing behind it, a scope written from memory, and a first paragraph QA has to rewrite before the record can proceed.</p>
+<p>An agent can take the operator's plain account at the point of occurrence, ask the clarifying questions the procedure requires, and draft the record in the site's structure with batch, equipment, material and process context filled from the systems that hold it. The useful discipline is structural: the description field takes observations only, inferences go to the assessment section, and the agent declines to move one into the other. It proposes a classification and shows the prior events classified the same way, because classification drift is what turns a minor into a major two years later when a pattern is finally noticed. Scope gets the same treatment: which other batches or campaigns were exposed to the condition is a query, not a recollection, and it belongs in the record as a query result with its criteria visible.</p>
+<p>One more thing is worth automating. Open deviations block releases, and the ageing report says a record is thirty four days old without saying what it is waiting for. An agent that reads the record can name the blocker: an outstanding laboratory result, an impact assessment sitting with a named person, a CAPA not yet drafted.</p>
+<h2>Out of specification investigations</h2>
+<p>This is where documentation quality decides whether an investigation holds up. A result outside specification starts a clock and a sequence, and the sequence has to be visible in the record: the laboratory phase documented before any retest, the retest plan authorised in writing before it is executed, any laboratory cause demonstrated rather than asserted. An investigation closed as analyst error with no evidence of that error is a familiar finding, and it is a documentation failure more often than a science failure.</p>
+<p>Most of the laboratory phase is objective and already recorded somewhere. When a result outside limits is entered, an agent can open the investigation and populate the checklist from the systems of record: sample preparation entries, standards and their expiry, system suitability for that sequence, the column and instrument, the raw data with the calculation independently reproduced, other results from the same analyst, instrument and session, and the method's history of similar events. The analyst and supervisor get a record where the answerable questions are answered with sources and the rest are marked as requiring a person.</p>
+<p>Two design choices matter more than extraction accuracy. The agent must write the hypothesis and the retest justification before the retest happens, so the record reflects the real order of events. And when no assignable cause is demonstrated it must say exactly that, then route the investigation into manufacturing rather than reaching for the most common historical outcome.</p>
+<h2>CAPA records that survive their own effectiveness check</h2>
+<p>The weakest sentence in most CAPA records is the action. Retraining is the default because it is always available and always defensible, and it rarely addresses a cause described as procedural or design related three paragraphs earlier. The second weakest is the effectiveness criterion, written loosely enough that it cannot fail.</p>
+<p>An agent drafting the record can hold both to account. It flags where the proposed action would not have prevented the event as described, and surfaces how many prior actions on the same procedure or line were retraining and whether recurrence followed. It asks for the criterion in measurable terms, then holds that definition and drafts the verification from recurrence data when it falls due, long after attention has moved elsewhere.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1652211955967-99c892925469?w=1600&q=80&auto=format&fit=crop" alt="workers on a factory floor" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Change control and the version the batch actually ran under</h2>
+<p>Changes block releases in a specific and avoidable way. A master batch record is revised, the change is approved, and a batch runs somewhere in the overlap on a version superseded two days earlier. Nobody notices until review, and then a completed lot needs an assessment nobody planned for. An agent reconciling each executed record against the master version effective on the manufacturing date catches that at closure instead, and ahead of implementation it can hold the packet open until the artefacts exist: the revised record at its effective version, the completed training, the executed requalification with attachments.</p>
+<h2>Where AI fails here</h2>
+<p>Start with what does not move. Reviewers do not read faster, the qualified person's judgement takes the time it takes, analytical testing has a lead time no agent shortens, and a real investigation should not be compressed at all. The queue drains because work starts earlier and arrives complete, not because anyone is hurried.</p>
+<p>An agent must never determine disposition and must never invalidate a result. Invalidation is the highest stakes act in this article, and a fluent, well organised narrative is precisely what makes a weak invalidation look strong. Treat every proposed cause as a hypothesis with its evidence attached.</p>
+<p>The pattern matching that makes agents useful on out of specification work also biases them towards the common historical outcome. If most of your closed investigations name laboratory error, an agent working from that history will lean the same way, which is the exact bias an inspector goes looking for. Impact statements carry the same warning. An agent can list every batch exposed to a condition, but the sentence saying product quality was unaffected belongs to a person who can defend it.</p>
+<p>Extraction from handwritten and scanned entries carries a real error rate, and the dangerous failure is not the unreadable value, it is the misread one that falls inside limits and therefore never gets flagged. Configure for escalation over guessing.</p>
+<p>A subtler risk is master data. If the limits and check definitions the agent applies are typed into a configuration rather than read from the approved master record, you have created a second source of truth that will drift from the first.</p>
+<p>The validation burden is ongoing rather than a project, and the agent's prompts, retrieval configuration and model versions become controlled items with change control of their own. On a low volume product that cost will exceed the benefit. And once an agent's comment set is usually right, it stops being a prompt for review and quietly becomes the review, which is worth watching from the first week.</p>
+<h2>Where to start</h2>
+<p>Start in shadow on batches already released. Ground truth exists, nothing is at risk, and the comparison gives you two numbers that matter: what the agent found that the reviewer did not, and what the reviewer found that the agent did not.</p>
+<p>From there the two contained deployments are laboratory phase assembly on out of specification results, where most inputs are structured and machine readable, and the discrepancy layer of batch record review, where the agent proposes comments and a reviewer disposes of them. Neither touches a release decision. Measure what your operations review already tracks, days from batch closure to release, and separate the days spent working from the days spent waiting.</p>
+<p>If your release cycle is gated on paperwork rather than product, describe your review and investigation flow to Adopt AI Partners at hello@adoptaipartners.com and we will give you an honest read on which parts an agent could carry inside your quality system.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>
