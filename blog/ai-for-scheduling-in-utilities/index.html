@@ -1,0 +1,98 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for scheduling in utilities: Work Orders, Crew Authorisations and the Day the Plan Breaks | Adopt AI Partners</title>
+<meta name="description" content="How electricity, gas and water utilities apply AI to field scheduling: work order intake, crew authorisations, outage and access constraints, storm mode and day-of exceptions.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-scheduling-in-utilities/">
+<meta property="og:title" content="AI for scheduling in utilities: Work Orders, Crew Authorisations and the Day the Plan Breaks"><meta property="og:description" content="How electricity, gas and water utilities apply AI to field scheduling: work order intake, crew authorisations, outage and access constraints, storm mode and day-of exceptions.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-scheduling-in-utilities/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for scheduling in utilities: Work Orders, Crew Authorisations and the Day the Plan Breaks","description":"How electricity, gas and water utilities apply AI to field scheduling: work order intake, crew authorisations, outage and access constraints, storm mode and day-of exceptions.","datePublished":"2026-09-19","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-scheduling-in-utilities/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / utilities</div>
+<article><h1>AI for scheduling in utilities: Work Orders, Crew Authorisations and the Day the Plan Breaks</h1><div class="meta">19 September 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=1600&q=80&auto=format&fit=crop" alt="group of people in a meeting" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>At ten past seven the day plan is already wrong. A two person team sits outside a substation waiting on a switching programme the control room cannot run until a generation constraint clears. A jointer has driven forty minutes to a service alteration and found nobody home and the meter box locked. A fault has come in, and the nearest crew holding the right authorisation is halfway through a pole change that will now not finish today.</p>
+<p>None of that is a failure of scheduling software. The schedule published last night was a set of reasonable promises made against a network, a workforce and a set of third parties, all of which moved overnight.</p>
+<h2>The work does not arrive as work orders</h2>
+<p>Four streams feed the same finite pool of qualified people, each with its own cadence and its own idea of urgency. Outage management produces fault work, raised by customer calls, protection operations and last gasp messages from metering, prioritised by customers off supply and by a restoration clock. Asset inspection programmes produce cyclical volume, overhead line inspections, pressure regulator checks, hydrant surveys, plus the defects they raise, each with a remedial window set by severity. Planned maintenance comes out of asset policy and condition data, and most of it needs a network outage to execute. Customer requested work covers new connections, service alterations, meter exchanges and third party damage.</p>
+<p>It arrives as incidents in the outage system, work orders in the asset system, an email from a local authority, a spreadsheet, a call from a site manager. Before any of it can be scheduled it has to become the same comparable object: what work, on which asset, needing which authorisations and crew composition, for how long, in what network state, with what access, inside which date window, against which clock. That normalisation is the first honest job for an agent.</p>
+<h2>A crew is not a resource unit</h2>
+<p>Competency is a hard constraint and finer grained than most scheduling data models admit. A person authorised to operate at one voltage is not automatically authorised at the next one up. Gas operative competence is held by category and pressure tier, by mains or services. Add confined space entry, water hygiene certification for potable work, street works accreditation for whoever supervises the excavation, and first aid cover.</p>
+<p>Certificates expire, medicals expire, and agency labour arrives with paperwork that has to be verified rather than assumed. Some tasks need a crew composition held at the same moment, one person to work and another competent to rescue, so a single absence does not slow the job, it cancels it. Treat any of that as a preference and the plan looks better and cannot be executed.</p>
+<p>Keeping that picture true is real agent work: reconciling training records, authorisation registers, medical review dates and subcontractor documentation, then flagging every expiry landing inside the planning horizon while there is time to book the reassessment.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1506194799431-53903d9d77d0?w=1600&q=80&auto=format&fit=crop" alt="transmission towers at golden hour" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>The network has to be in the right state first</h2>
+<p>A job on a circuit usually needs an outage. The outage needs a switching and isolation programme, and that programme needs approval and a sanctioned window agreed with control that depends on demand, generation, weather and whatever else is booked against that circuit. So jobs get bundled into one outage, which makes every job in the bundle dependent on every other. One slip and the outage is wasted and requeues weeks out.</p>
+<p>Then there is access, a set of calendars owned by other people. Wayleave notice periods. A farmer who will not have vehicles on that field during lambing or harvest. A street works permit with fixed dates and a charge for overrunning them. An agent is well suited to chasing these and raising the alarm when a permit date and a crew date have drifted apart, which nobody notices until the morning of.</p>
+<p>Plant belongs in the same picture and rarely is. An excavator, a jointing van or an elevated work platform with a current inspection certificate and a licensed driver is booked in a different system from labour at most utilities, which is why crews arrive at digs with no machine.</p>
+<h2>The customer end of the appointment</h2>
+<p>Some jobs are a network task and some are an appointment with a household, and the second kind carries obligations the first does not. A window has been promised, and in many markets a missed one carries a guaranteed standard and a compensation payment. Customers on a priority services register may have a medical dependency on supply, need longer notice, an interpreter, or contact through a relative.</p>
+<p>Those commitments have to survive rescheduling, and that is where they fail. The original appointment respects the flag because the booking process checked it. The replacement, made by a dispatcher at four in the afternoon, does not. Any agent touching rebooking must carry the customer's constraints into the new slot as a gate, not a note.</p>
+<p>Regulatory response clocks sit above all of it: gas escape attendance targets, supply interruption limits, restoration obligations. A scheduler who cannot see which jobs run against a clock will trade one away to save three.</p>
+<h2>Weather, storm mode and the way back</h2>
+<p>Weather does two things at once. It changes what work is permitted, since wind above a threshold stops work at height and ground conditions rule out certain jointing and pressure activity. And it changes how much work exists. When a storm lands the plan inverts: planned work is stood down, crews are reassigned to restoration, and mutual aid arrives from another region needing briefing, mapping and an authorisation check.</p>
+<p>The underrated part is the way back. Hundreds of stood down jobs, each with its own permit, outage dependency and appointment, all needing rebooking in order against constraints that shifted while nobody was watching. Reconstructing what was cancelled, what each customer was told, which permits lapsed and which outages must be re-requested, then proposing a re-entry sequence, is slow clerical work and entirely tractable.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1728808668151-1ff0b42866a3?w=1600&q=80&auto=format&fit=crop" alt="a row of power lines" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Where the optimiser ends and the agent begins</h2>
+<p>An optimiser answers a well posed question: given jobs with durations, locations, time windows and skill requirements, and crews with shifts and start points, produce an assignment that respects the constraints and minimises travel. Good solvers exist. Keep yours.</p>
+<p>The trouble is that the question is almost never well posed. Durations come from a task library that knows nothing about this site. An access restriction sits in an email. A permit status was never updated. A competency lapsed last week. Plant is booked out in a system the scheduler cannot see.</p>
+<p>So an agent belongs upstream and downstream of the optimiser rather than in place of it. Upstream it assembles a schedulable job: reading the incident, the defect, the survey notes and the correspondence, resolving the asset reference, deriving the authorisation and crew composition required, finding the access clause in the wayleave, checking permit and outage status, and estimating duration from your own completion history rather than the book figure.</p>
+<p>Downstream it handles the exceptions: deciding what moves, telling affected customers, renegotiating access, rebooking inside the customer's recorded needs, and writing all of it back into the work management system and the mobile workforce app. That last step is underestimated. A rescheduling decision that never reaches the crew's device is not a decision, it is a rumour.</p>
+<p>Write the commit boundary down before go live. An agent may propose assignments, book inside published windows where every constraint is satisfied, send confirmations from approved templates and write status back. Without a named person it may not alter network state, vary a switching decision, relax an authorisation requirement, dispatch to a job whose safety documentation is incomplete, or move a job on a regulatory clock.</p>
+<h2>The day-of reality</h2>
+<p>Jobs run over. The excavation hits an unrecorded service, the joint fails a pressure test, the fault is not where the indication said. Watching live status against planned duration lets the knock-on be modelled at eleven in the morning rather than discovered when the crew rings in at four.</p>
+<p>There is no access at site. Nobody home, gate locked, a vehicle over the chamber, a landowner who has changed his mind. The travel is already spent, so the value sits in the next hour: reach the customer while the crew is still there, offer a slot that honours their original constraints, and find nearby work to fill the gap.</p>
+<p>An emergency callout lands. A reported gas escape pulls the nearest qualified crew off whatever they were doing. That reassignment is correct and it wrecks the rest of their day. The useful work is what a dispatcher has no time for: identifying every displaced job, telling every affected customer before they ring in, and rechecking standby cover.</p>
+<h2>Where AI fails here</h2>
+<p>It cannot create capacity. If you are short of authorised jointers, better scheduling shows that shortage in sharper detail and does not fix it. Nor can it negotiate with a landowner who has decided today is not the day, or make a permit authority answer the phone.</p>
+<p>Asset and network model quality is the ceiling on everything. Wrong locations, wrong connectivity, unrecorded services and duplicate asset records produce plans that are fluent, specific and wrong.</p>
+<p>Duration prediction is genuinely hard and heavy tailed, fault work most of all, where diagnosis dominates and is not predictable from the incident record. An estimate good on average is badly wrong on the job that ruins the day.</p>
+<p>Safety judgement is not a scheduling input. Whether conditions at a site allow work belongs to the competent person standing there, and a tight plan quietly argues for pressing on.</p>
+<p>Then the failure that reads like success: a message citing a slot already promised elsewhere, written confidently because the booking moved after the draft was composed. Bind every time in a customer message to a value read at the moment of sending.</p>
+<h2>Where to start</h2>
+<p>Begin with intake enrichment. It is high volume, checkable against what a planner would have done, and it reaches no customer. Follow with no access recovery and appointment rebooking, both pure exception handling with a verifiable right answer. Leave outage bundling, storm re-entry planning and any form of dispatch authority until the first two have been trusted through a bad week. Measure jobs completed on first visit, appointments kept and clocks met, not jobs scheduled.</p>
+<p>If your plan is assembled from an asset system, an outage system, a permit inbox and a spreadsheet everyone quietly trusts more than the software, describe it to Adopt AI Partners and we will say plainly which parts an agent should carry and which it should not.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>
