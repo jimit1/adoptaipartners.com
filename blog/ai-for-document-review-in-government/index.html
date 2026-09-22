@@ -1,0 +1,108 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Document Review in Government: Disclosure Decisions That Survive Review | Adopt AI Partners</title>
+<meta name="description" content="How AI agents support an information rights desk, from request triage and search across scattered systems to exemptions, redaction, mosaic risk and reasoned decisions.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-document-review-in-government/">
+<meta property="og:title" content="AI for Document Review in Government: Disclosure Decisions That Survive Review"><meta property="og:description" content="How AI agents support an information rights desk, from request triage and search across scattered systems to exemptions, redaction, mosaic risk and reasoned decisions.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-document-review-in-government/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Document Review in Government: Disclosure Decisions That Survive Review","description":"How AI agents support an information rights desk, from request triage and search across scattered systems to exemptions, redaction, mosaic risk and reasoned decisions.","datePublished":"2026-09-22","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-document-review-in-government/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / government</div>
+<article><h1>AI for Document Review in Government: Disclosure Decisions That Survive Review</h1><div class="meta">22 September 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1600&q=80&auto=format&fit=crop" alt="discussion in a modern office" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>This is about the information rights and disclosure desk inside a public body: the team that takes freedom of information requests, subject access requests, and the disclosure obligations attached to inquiries and litigation, and decides what is released. It is not about the casework systems that produced the documents, and it is not general records management.</p>
+<p>The distinguishing feature of the work is that every withholding decision is a legally reasoned one. It has to survive an internal review, a regulator, and sometimes a tribunal. What defends it is the reasoning written at the time, not the better argument someone assembles two years later under pressure. Meanwhile the statutory deadline runs whether or not anyone has yet found the material. Exemptions, time limits and appeal routes differ by jurisdiction; what follows is the shape of the work, not the law.</p>
+<h2>Triage, clarification and the clock</h2>
+<p>Many requests arrive underspecified. Others are precise but are really twelve requests wearing one envelope, each landing on a different business area with a different exemption profile.</p>
+<p>An agent is good at the decomposition. It splits the request into discrete asks, maps each to the teams likely to hold the material, flags what is already published, produces the first scope estimate that a cost limit decision rests on, and drafts the clarification letter for the officer to send.</p>
+<p>One caution. Clarification stops the clock in many regimes, which makes it tempting as a delay tactic, and an agent that quietly narrows a request into something convenient has changed the question. The split must be visible to the requester in the words of the letter.</p>
+<h2>Locating the material across systems nobody migrated</h2>
+<p>The hard part is rarely the decision, it is establishing that you have found everything. Material sits in shared drives structured for a reorganisation three ago, in mailboxes, in case systems, in a records management system half the organisation never adopted, and in chat histories nobody has scoped.</p>
+<p>An agent can propose the custodian list and search terms, run those searches across the repositories it is connected to, and report what it could not reach. The record of where you searched, with what terms, and what you knowingly excluded is the first thing a regulator asks for when a requester says you must hold more. Most desks reconstruct that from memory; an agent produces it as a by-product.</p>
+<h3>Duplicates, versions and the near identical draft</h3>
+<p>A search across four repositories returns the same document many times over, plus a run of near identical drafts. Exact duplicates collapse by hash. Versions cannot, because the paragraph carrying the sensitivity may exist in one draft and not the next, and each version in scope needs its own decision. Group the version family, show what differs between members, and carry a decision across only where the text is identical.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1769092992534-f2d0210162b9?w=1600&q=80&auto=format&fit=crop" alt="bookshelves in a law library" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Exemptions are a reasoned test, not a keyword match</h2>
+<p>Applying an exemption means asking a structured question about specific words on a page: what harm would follow, to whom, how likely, and whether the information falls within the class described.</p>
+<p>An agent can do that preparation honestly. For each candidate passage it proposes an exemption, quotes the text it relied on, and sets out the elements of the test with what it found for each, which gives the reviewer something to correct rather than something to compose. It also surfaces what nobody flagged: the commercial figure in an annex.</p>
+<p>What it cannot do is the public interest balance. That turns on circumstances the documents do not contain: what is already public, what the organisation is currently being accused of, how much this disclosure adds to an argument already underway. The most an agent should do is assemble the arguments both ways and leave the weighing to the officer who will defend it.</p>
+<h2>Personal data, and the difference between a name and an identity</h2>
+<p>Third party personal data is the most common reason to withhold. Detecting names, addresses and identifiers is a solved problem, and an agent finds more of them than a tired human reading at speed.</p>
+<p>Identity is different. A document stripped of every name can still identify someone completely: the only person who made that complaint, the officer described by their role in a team of two, the member of staff whose absence dates are legible from a meeting record. That reassembly happens from context, where the machine has to be ambitious rather than literal. A useful agent does not only tag entities, it tells the reviewer who a passage points at.</p>
+<h2>Subject access on overlapping material</h2>
+<p>Subject access requests run over much the same material with an entirely different test, and one property changes the job: the requester is in the documents, appearing in correspondence they never saw, described by colleagues, assessed, complained about.</p>
+<p>An agent helps by separating the requester's personal data from documents that merely mention them, by finding every place they appear under variant spellings, former names, staff numbers and pronouns, and by flagging where releasing their data exposes a third party. What it should not do is decide which route a request travels under, which turns on the requester's intent.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=1600&q=80&auto=format&fit=crop" alt="group of people in a meeting" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Mosaic effects, the disclosure log and what you published last year</h2>
+<p>A disclosure is never assessed alone. A requester holds what you released last year, what a neighbouring body released, and what is on your publication scheme. Information harmless in isolation becomes identifying once joined to that.</p>
+<p>An agent is well placed here: this is retrieval at a scale no person holds in their head. Before release it checks the proposed set against your disclosure log, your proactive publications and prior sets on the same subject matter, and reports what, joined together, identifies someone or reconstructs a withheld figure. It can also maintain the log and draft the publication entry.</p>
+<h2>Consistency with your own previous decisions</h2>
+<p>Public bodies are most often caught out not by a wrong decision but by two different decisions on the same subject matter, made by different officers who never spoke.</p>
+<p>Retrieval across your own decision history fixes that. When a reviewer opens a passage, the agent shows the closest previous calls, what was released and withheld on what ground, and whether any went to appeal and how it ended. Departing from a previous decision is legitimate; doing it without noticing is not. The agent's contribution is that the officer knows they are departing and says why.</p>
+<h2>Redaction that removes the text rather than covering it</h2>
+<p>Redaction has to destroy the underlying content, not conceal it visually. Black rectangles over live text, hidden layers, tracked changes, comment threads, document properties, image metadata and cropped images that retain the crop have all produced incidents in organisations that believed they had redacted properly.</p>
+<p>Treat this as an engineering control, not a review step. Flatten and rebuild the released file, run an independent extraction pass over the output to confirm no redacted string is recoverable, and refuse anything that fails. An agent can also check each redaction carries the exemption it was applied under.</p>
+<h2>Inquiry and litigation disclosure at a scale no team is staffed for</h2>
+<p>Statutory inquiries and major litigation impose volumes an information rights desk was never sized for, alongside an ordinary caseload that does not pause. Relevance is set by someone else's rubric, and the timetable is not yours.</p>
+<p>The agent does the first pass at volume: relevance against the stated criteria, a confidence score, the passage it relied on, and routing of anything sensitive or ambiguous to a human queue. The value is concentrating senior attention on the documents where judgement changes the outcome rather than spreading it evenly.</p>
+<h2>Internal review, the regulator and the appeal</h2>
+<p>At internal review the whole case is the contemporaneous record. If the reason was never written down there is nothing to defend, and the officer reconstructing it is guessing.</p>
+<p>So the reasoning captured at decision time is not documentation overhead. An agent can assemble the review bundle in full: the request, the search record, every decision with its ground and the officer who made it, the comparable cases. It should never invent a justification after the fact where the original reasoning is missing. That gap is a finding and should be reported as one.</p>
+<h2>Retention and sensitivity review at transfer</h2>
+<p>The same capability serves records approaching transfer to an archive or scheduled destruction. Sensitivity review at transfer is disclosure review with a longer horizon and a far larger corpus.</p>
+<p>An agent can work a transfer batch, proposing which files are clear, which need a reviewer and which are candidates for closure. It also flags the awkward finding: material destroyed that should have been kept, or kept long past its schedule while requests for it arrived.</p>
+<h2>Where AI fails here</h2>
+<p>Public interest balancing is the clearest limit. It depends on current context the documents do not contain, and a model asked to weigh it produces fluent reasoning that reads defensibly and reflects nothing.</p>
+<p>Second, these systems are inconsistent at the margin in ways that are hard to detect. The same borderline passage can attract different exemptions in two runs. On a desk whose worst failure mode is inconsistency, that has to be controlled by fixing decisions once and carrying them forward explicitly.</p>
+<p>Third, they miss sensitivity obvious to anyone who knows the organisation: the project not yet announced, the individual whose situation is known internally, the phrasing that reads as an admission. A model has no institutional memory unless you give it one.</p>
+<p>Fourth, redaction failure is silent: the model believes it removed something, and only an independent extraction check over the output proves otherwise.</p>
+<p>Finally, overconfidence in the search is what produces regulator findings. An agent reporting a clean result across systems it never reached is worse than no agent, because it feels thorough.</p>
+<h2>What to put in front of a reviewer first</h2>
+<p>Start where the work is mechanical and the decision stays human. Search record and scope decomposition, then deduplication and version grouping, then candidate exemption flagging, a reviewer accepting or rejecting every call. The reviewer's judgement is the product. The machine's job is to have it ready to make.</p>
+<p>Measure it against decisions your team already made: take a closed quarter, run the agent over the same material, compare. You are looking for what it missed entirely, the only error class a reviewer cannot catch. Then for how often it flagged material a person passed over, which is often the finding that settles the argument internally.</p>
+<p>Adopt AI Partners builds these systems inside the organisation and stays until your team runs them without us. To walk through how this sits against your own backlog, write to hello@adoptaipartners.com.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>
