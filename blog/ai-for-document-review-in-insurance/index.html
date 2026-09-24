@@ -1,0 +1,95 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for document review in insurance: wordings, submissions and claims files | Adopt AI Partners</title>
+<meta name="description" content="How insurers use AI agents on policy wordings, broker submissions, certificates, loss runs and claims files, and where the review has to stay with a qualified human.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-document-review-in-insurance/">
+<meta property="og:title" content="AI for document review in insurance: wordings, submissions and claims files"><meta property="og:description" content="How insurers use AI agents on policy wordings, broker submissions, certificates, loss runs and claims files, and where the review has to stay with a qualified human.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-document-review-in-insurance/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1606327054536-e37e655d4f4a?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for document review in insurance: wordings, submissions and claims files","description":"How insurers use AI agents on policy wordings, broker submissions, certificates, loss runs and claims files, and where the review has to stay with a qualified human.","datePublished":"2026-09-24","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-document-review-in-insurance/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / insurance</div>
+<article><h1>AI for document review in insurance: wordings, submissions and claims files</h1><div class="meta">24 September 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1606327054536-e37e655d4f4a?w=1600&q=80&auto=format&fit=crop" alt="printed documents beside a keyboard" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>Insurance is a documents business that happens to move money. The policy is a document. The submission is a stack of documents. The claim is a file. When something goes wrong, the answer is almost never in a system of record. It is in a wording, an endorsement, a survey report or an email chain, and somebody has to read it.</p>
+<p>That reading is the work. It is also the part of the operation that scales worst, because the people qualified to do it are the same people you need for the judgement calls. The question worth asking is not whether a model can read a policy. It is which specific reading tasks can be handed over safely, and what the output has to look like for an underwriter, a claims examiner or coverage counsel to trust it without redoing the work.</p>
+<h2>What insurance document review actually involves</h2>
+<p>Outside the industry, "document review" sounds like one activity. Inside it, it is several different jobs with different failure modes.</p>
+<p>Comparing a renewal wording against the expiring one, clause by clause, and flagging every material change including the ones the broker did not mention. Reading a submission pack, an ACORD application, a schedule of values, five years of loss runs and a broker narrative, and pulling out what the underwriter needs to price. Checking a certificate of insurance against what a contract actually required, which means reading both. Reading a bordereau against the binder it sits under. Finding the one clause in a 90 page wording that governs a live coverage dispute, then finding the endorsement that modified it. Assembling a claim file that will survive a regulator, an arbitrator or a court.</p>
+<p>Each is a comparison between one document and another document or a standard, done at volume, under time pressure, where the cost of missing something is asymmetric. That shape is what AI agents are genuinely good at, provided the output is structured evidence rather than a summary.</p>
+<h2>Wording and endorsement comparison at renewal</h2>
+<p>Renewal wording comparison is the clearest case. The expiring wording exists, the proposed wording exists, and somebody has to tell you what changed.</p>
+<p>A redline tool gives you every textual difference, including reformatting, renumbering and the insurer changing its own address, which buries the two changes that matter. Done well by a senior person, it takes hours per programme, and at renewal season there are not enough hours.</p>
+<p>An agent doing this properly aligns the two documents clause by clause rather than line by line, so a definition that moved from section 3 to section 7 is recognised as the same definition rather than a deletion and an addition. It then classifies each difference: no substantive change, narrower cover, broader cover, changed condition precedent, changed notification requirement, new exclusion, changed sub-limit or deductible, changed jurisdiction or governing law. For each one it quotes both versions verbatim, names the clause on both sides, and states in a sentence what the change does to the insured's position.</p>
+<p>It does the same across the endorsement stack, which is where the real drift happens. A wording plus fourteen endorsements is not something anyone reads end to end. The agent reconstructs the operative position: what the policy says today, after every endorsement has been applied in sequence, with each modification traced back to the endorsement that made it. That reconstructed operative wording is useful well beyond renewal, because it is what the claims examiner needs eighteen months later.</p>
+<h3>Against your own house position</h3>
+<p>The same mechanism works against a standard rather than a prior year. If you have house wordings, market standard forms you accept, or a list of clauses you will not write, the agent compares an incoming wording against that position and reports deviations by severity. Anything it cannot map cleanly comes back quoted and unresolved, not guessed at.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1631557777232-a2632ae3c67d?w=1600&q=80&auto=format&fit=crop" alt="laptop and papers on a wooden desk" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Submissions, ACORD forms and schedules of values</h2>
+<p>A submission arrives as a folder. The broker narrative, an ACORD application, a schedule of values in a spreadsheet nobody has standardised, loss runs from two prior carriers in two different formats, a survey report, sometimes a prior year's wording.</p>
+<p>The agent's job here is triage and extraction, not selection. It reads the pack and produces a structured submission record: named insured and legal entities, operations and classifications, locations with construction, occupancy, protection and exposure detail from the schedule of values, requested limits and attachment points, and a loss history normalised across carriers into a single table with claim counts, paid, outstanding, incurred and dates, with large losses separated out.</p>
+<p>Two outputs matter more than the extraction. The first is a completeness check: what an underwriter needs for this class that is not in the pack, stated as specific missing items so the broker gets one clear request instead of three rounds. The second is a contradiction list: the schedule of values says one thing about a location that the survey report describes differently, the application answers a question in a way the loss runs do not support, the narrative describes operations the classification does not cover. Those contradictions are the underwriting signal, and they are what gets missed when a submission is read quickly at the end of a long day.</p>
+<h2>Certificates, loss runs and bordereaux</h2>
+<p>Certificate checking is pure comparison and it is done badly almost everywhere, because it is tedious and it sits with whoever has capacity. The contract requires certain limits, additional insured status, waiver of subrogation, primary and non-contributory wording, notice provisions. The certificate says what it says. An agent reads the contractual insurance requirements out of the underlying contract, reads the certificate and any attached endorsements, and reports compliant, non-compliant with the specific shortfall quoted, or unverifiable from the certificate alone. That last category is honest: a certificate is evidence of insurance, not the policy, and no amount of AI makes it more than that.</p>
+<p>Bordereaux review under delegated authority follows the same logic at higher volume. Risks written outside the binder's classes, limits, territories or attachment terms, premium calculations that do not follow the agreed basis, claims coded in ways that will not aggregate correctly, and gaps between the risk bordereau and the claims bordereau. The agent runs the binder terms against every line, every month, which is the part sampling never achieves.</p>
+<p>Reinsurance treaty and facultative slips get the same treatment: comparing the slip against the underlying policy for back-to-back cover, checking that exclusions align, and confirming that notification triggers in the reinsurance are not tighter than what the inward policy will let you meet.</p>
+<h2>Claims files, medical records and coverage questions</h2>
+<p>On a claim, the reading task is different again. The examiner has a file: first notice, adjuster and surveyor reports, photographs, invoices and estimates, correspondence, sometimes medical records running to hundreds of pages, sometimes prior claims on the same insured.</p>
+<p>An agent builds the chronology. Every dated event from every document in the file, in order, with the source named and the page cited. For bodily injury and medical records that chronology includes treatment dates, providers, diagnoses, gaps in treatment and prior conditions, which is a genuinely miserable manual job done under deadline. It flags internal inconsistencies: dates that do not line up, an adjuster report describing damage that the invoices do not match, a reported mechanism of loss the surveyor's findings do not support.</p>
+<p>Then it maps the facts against the operative wording. Which insuring clause is engaged, which conditions precedent apply and whether the file shows they were met, which exclusions are potentially in play and what facts would decide each one, and what is still unknown. This is where the discipline has to be strict. The agent presents the coverage question with the evidence on both sides. It does not answer it. Coverage decisions belong to the examiner and to coverage counsel, and the value of the agent is that they reach the decision with the file already read rather than spending their scarce hours reading it.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=1600&q=80&auto=format&fit=crop" alt="group of people in a meeting" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Where AI fails here</h2>
+<p>These failures are real and they are not fixed by a better model or a longer prompt.</p>
+<p><strong>It reads what is there, not what the market means.</strong> Insurance language carries settled meaning built from case law, market practice and how a particular Lloyd's clause has been applied in the past. A model reading a clause literally can produce an interpretation that is defensible in plain English and wrong in the market. Anything touching interpretation for a decision needs a human who knows the law and the market.</p>
+<p><strong>Scanned and handwritten material degrades quietly.</strong> Surveyor reports with handwritten annotations, faxed certificates, medical records scanned at low quality, older policies as image PDFs. Extraction errors here do not announce themselves. A figure read wrong looks like a figure read right. Every extracted number that drives money needs a page citation a human can check in one click.</p>
+<p><strong>Ambiguity gets resolved instead of surfaced.</strong> The most dangerous behaviour is a confident answer where the document genuinely does not say. A well built agent returns "the wording does not address this" as a first class output. That behaviour takes deliberate design and testing, and it is the thing most implementations get wrong.</p>
+<p><strong>Complex structures defeat naive comparison.</strong> Layered programmes, quota share participations, differences in conditions and differences in limits cover, follow-form excess that follows a primary which was itself endorsed. Comparison across these needs the structure modelled explicitly, not inferred from the documents.</p>
+<p><strong>Volume creates false confidence.</strong> When a system reviews every certificate instead of a sample, people stop checking. That is the intended efficiency, and it is also how a systematic extraction error runs undetected for months. Sampling of the machine's output has to continue permanently.</p>
+<h2>Making the output defensible</h2>
+<p>The reason to structure all of this as evidence rather than summary is that insurance decisions get tested later, sometimes years later. A regulator asks why a claim was declined. An arbitrator asks what the file showed at the time.</p>
+<p>Build so that every assertion carries its source: the document, the page, the quoted text, and the date it entered the file. Keep the wording that was operative at the date of loss, not the current one. Log what the agent produced, what the human changed, and why. That record is worth as much as the time saved, because it turns a file that somebody remembers handling into a file that demonstrates what was considered.</p>
+<p>Start with one document type and one comparison. Renewal wording comparison and certificate checking are the usual first choices, because the correct answer is knowable and you can measure the agent against reviews your own people already did. Adopt AI Partners can be reached at hello@adoptaipartners.com.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>

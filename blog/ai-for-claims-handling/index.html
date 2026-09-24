@@ -1,0 +1,103 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for claims handling: intake to settlement, with the adjuster in charge | Adopt AI Partners</title>
+<meta name="description" content="How AI agents take the assembly work out of claims: intake, evidence, coverage checks, triage, reserves and settlement prep, with the adjuster deciding.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-claims-handling/">
+<meta property="og:title" content="AI for claims handling: intake to settlement, with the adjuster in charge"><meta property="og:description" content="How AI agents take the assembly work out of claims: intake, evidence, coverage checks, triage, reserves and settlement prep, with the adjuster deciding.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-claims-handling/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for claims handling: intake to settlement, with the adjuster in charge","description":"How AI agents take the assembly work out of claims: intake, evidence, coverage checks, triage, reserves and settlement prep, with the adjuster deciding.","datePublished":"2026-09-24","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-claims-handling/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / cross industry</div>
+<article><h1>AI for claims handling: intake to settlement, with the adjuster in charge</h1><div class="meta">24 September 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1600&q=80&auto=format&fit=crop" alt="colleagues working with laptops at a table" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>A claim is a promise being tested. Someone has suffered a loss, and an organisation that agreed in advance to carry part of that loss now has to decide how much, how quickly, and on what evidence.</p>
+<p>The teams who do this work rarely compare notes across industries, yet their files are close to identical in structure. A triggering event, reported by someone who is annoyed or distressed. Documents that arrive in no fixed order and in no fixed format. A contract that says what is and is not covered. A judgement about complexity. A number. A payment. And a record of the whole thing that has to survive scrutiny by an auditor, a regulator or a court years later.</p>
+<p>That common shape is why claims handling is one of the better places to put AI agents, and one of the easier places to overreach. The useful work is the assembly: finding, reading, checking, chasing and writing up. The decision stays with the adjuster, the examiner or the claims handler.</p>
+<h2>The shape a claim takes, whatever industry you are in</h2>
+<p>In property and casualty insurance the claim tests a policy wording against a loss event. In health claims and medical billing it tests clinical documentation and coding against plan benefits and payer policy. In warranty it tests a failure against the warranty terms, the purchase date and whether the product was used as intended. In freight and cargo it tests loss or damage against carrier liability conventions, the delivery receipt and the contract of carriage. In utilities it tests third party damage to buried or overhead plant against tariff terms and the record of who was on site.</p>
+<p>Different law, different vocabulary, same operating problem: the file is never complete when it arrives, and most of the elapsed time goes on making it complete.</p>
+<h2>First notice of loss, in whatever format it arrives</h2>
+<p>Notification is the least controlled moment in the process. It arrives as a phone call, an email written in prose, a half-completed portal form, a broker submission, an EDI message, a scanned dealer job card, a photograph taken in a car park, or a note in a driver's app.</p>
+<p>An agent's first job is to turn all of that into one structured record: what happened, when, where, who was involved, which policy, plan, contract or warranty it sits under, the estimated value, and the parties who need to be told, reading the attachments as it goes rather than leaving them for a person to open later.</p>
+<h3>The questions nobody asked at the first contact</h3>
+<p>Every claim type has a handful of facts that are cheap to capture on day one and expensive on day thirty. The serial number and proof of purchase for a warranty claim. Whether the delivery receipt was claused, and what the note said, for cargo. The date of onset and the referring clinician for a health claim. Whether a dig notification was raised before the excavator arrived, for utility damage.</p>
+<p>An agent working from a per-type checklist can spot what is missing while the claimant is still engaged, and draft one clarifying request rather than the three sequential ones that add a fortnight. First contact completeness is the cheapest improvement available to most claims operations.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1606327054536-e37e655d4f4a?w=1600&q=80&auto=format&fit=crop" alt="printed documents beside a keyboard" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Gathering the evidence without waiting to be asked</h2>
+<p>Much of what a file needs already exists inside the organisation: policy and endorsement history, order and delivery records, product registration and service history, telemetry, meter reads, dispatch records, prior claims by the same party. An agent can pull all of it the moment a claim is registered, rather than when a handler opens the file four days later.</p>
+<p>For evidence that must come from outside, it can list what is needed, draft the request, track what returns and chase what does not. When documents arrive it extracts the fields and, more usefully, checks them against each other. A repair estimate quoting a different model number from the registration, an invoice dated after the reported loss, a photograph whose metadata places it in another month: these are obvious to anyone comparing documents side by side, and nobody has time to do that on every file.</p>
+<h2>Coverage and eligibility</h2>
+<p>This is the paper question, and it is genuinely readable work. An agent can retrieve the wording, plan rules, warranty terms or liability limits in force at the date of loss, and produce a coverage position that quotes the operative clause, states the facts relied on, names the exclusions it considered and says how confident it is.</p>
+<p>Two constraints matter. The agent must quote rather than paraphrase, because a paraphrased exclusion is an invented exclusion. And it must use the version in force at the date of loss, not the current one on the intranet. Version control is a common source of confident wrong answers.</p>
+<p>The output is a draft position for a human to confirm or overturn. The handler reviews a paragraph with the clause attached instead of spending an hour finding it.</p>
+<h2>Triage and routing by complexity</h2>
+<p>Most claims are small, clean and unremarkable. A minority carry most of the cost, most of the risk and nearly all of the regulatory attention. Sorting by value alone gets this wrong: a modest claim with contested causation and an injured person is harder than a large one that is fully documented.</p>
+<p>An agent can score complexity on the signals that predict effort: injury or harm, ambiguity in the coverage position, multiple parties or potential recovery, prior claims history, catastrophe or event coding, claimant vulnerability, and how much of the file is still missing. That routes the claim to the right skill level first time, which quietly removes a lot of reassignment and rework.</p>
+<p>It also identifies straight-through candidates: low value, unambiguous, fully documented, no fraud indicator, inside authority limits. Those should move fast, audited on a sample rather than reviewed in full.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=1600&q=80&auto=format&fit=crop" alt="group of people in a meeting" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Reserves and the first number</h2>
+<p>The initial reserve is set with the least information anyone will ever have about the claim, then not revisited until something forces the issue. Late strengthening is an accounting problem as much as a claims one.</p>
+<p>An agent can propose an opening reserve from comparable closed files, showing which ones it used so the handler can disagree with the reasoning rather than the number. It is more valuable afterwards, watching for facts that have moved: a specialist instructed, a repair scope that has doubled, a warranty failure that is starting to look like a fleet-wide defect. The agent proposes and reminds; the reserve stays a human decision.</p>
+<h2>Fraud and leakage are two different problems</h2>
+<p>Fraud is deliberate. Leakage is paying more than you owed through ordinary process failure, and in most operations it is the larger number because nobody owns it. An excess or deductible not applied. A recovery against a third party never pursued. A part replaced at your cost that a supplier warranty covered. Salvage abandoned. A duplicate paid.</p>
+<p>Both belong as routine checks on every file rather than a special exercise on a few. Leakage checks can be largely automatic, because they are rule shaped and unambiguous. Fraud is not. An agent should surface indicators with the reasons attached and route them to a trained investigator. It should never decline a claim, and a model score must never be the stated reason for a decision. If you cannot express the reason in a sentence a claimant and a regulator can both read, you do not have a reason.</p>
+<h2>Settlement, payment and saying no properly</h2>
+<p>For settlement the agent assembles the calculation sheet with every component traced to a source: the limit and sub-limit, the deductible, the depreciation or betterment policy, the agreed schedule or contracted rate, any recovery already secured. It drafts the explanation in language the claimant will understand, and where the answer is no, it drafts the decline with the clause and the facts set out plainly.</p>
+<p>A decline letter is the most scrutinised thing a claims operation writes, and a person signs it every time. One more hard line: an agent must never change payee bank details. That is the most attacked step in the payment chain and it needs out of band verification by a human.</p>
+<h2>The audit trail is the product</h2>
+<p>Whatever gets automated, the file has to show who decided what, when, on which evidence, under which version of the wording, and why. Agents help, because they are naturally verbose and consistent. Every extracted field should link to its source document and page, every coverage position should quote its clause, and every draft should record the model version, the person who approved it and the reason for any override. Done properly, a file review becomes reading a chronology rather than reconstructing one.</p>
+<h2>Where AI fails here</h2>
+<p>Rare and severe claims have no useful comparables, and these are exactly the claims where being wrong is expensive.</p>
+<p>Ambiguous wording is the job, not an obstacle to it. Where two experienced people would read a clause differently, a fluent single answer hides the disagreement.</p>
+<p>Photographs do not establish cause. Image based damage estimation is improving, but it cannot reliably separate pre-existing wear from event damage, or a manufacturing defect from misuse.</p>
+<p>Plausible and wrong is the standard failure. A quoted clause that is not in the policy, a limit lifted from a different product, a fee schedule from last year. Every fact in a draft should be bound to a value read from a system at draft time and validated before a human sees it. Poor master data makes this worse: duplicate claim records, policies that do not match the risk, warranty registrations never completed, cargo references that differ between systems.</p>
+<p>Fraud scoring carries discrimination risk through proxy variables, and it needs the same governance, testing and explainability you would apply to an underwriting or credit model.</p>
+<p>Catastrophe surge breaks assumptions built on normal volumes. A queue that fails quietly is far worse than a queue that is visibly behind.</p>
+<h2>Where to start</h2>
+<p>Take one claim type and one hand-off. Intake normalisation and evidence assembly into a review queue is the usual first move, because every decision stays human, so risk is near zero while the time saving lands immediately. Measure the baseline first: cycle time from notification to decision, touches per claim, reopen rate, and leakage found in audit sampling. Widen the agent's authority only where the evidence supports it.</p>
+<p>If you want a grounded view of which parts of your claims process an agent could take on, describe it to Adopt AI Partners and we will tell you where we would begin.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>

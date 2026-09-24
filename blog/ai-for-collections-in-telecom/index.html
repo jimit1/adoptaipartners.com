@@ -1,0 +1,105 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for collections in telecom: disputes, dunning and the accounts worth saving | Adopt AI Partners</title>
+<meta name="description" content="How operators separate genuine billing disputes from genuine non payers: roaming and out of bundle queries, device instalment debt, gated dunning and agency handover.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-collections-in-telecom/">
+<meta property="og:title" content="AI for collections in telecom: disputes, dunning and the accounts worth saving"><meta property="og:description" content="How operators separate genuine billing disputes from genuine non payers: roaming and out of bundle queries, device instalment debt, gated dunning and agency handover.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-collections-in-telecom/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for collections in telecom: disputes, dunning and the accounts worth saving","description":"How operators separate genuine billing disputes from genuine non payers: roaming and out of bundle queries, device instalment debt, gated dunning and agency handover.","datePublished":"2026-09-24","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-collections-in-telecom/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / telecom</div>
+<article><h1>AI for collections in telecom: disputes, dunning and the accounts worth saving</h1><div class="meta">24 September 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1600&q=80&auto=format&fit=crop" alt="network cabling in a data centre" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>A telecom ledger holds two populations that look identical on an aged debt report. One is a customer who will not or cannot pay. The other is withholding a specific amount because they believe the bill is wrong, and is often paying the rest of it on time every month. That second group is not in arrears. They sit in an unresolved billing query your systems relabelled as debt.</p>
+<p>Treating them the same loses money in both directions. Dunning a disputing customer turns a billing question into a complaint and a churn event on a profitable account, while the genuine non payer gets a reminder that changes nothing and affordable repayment starts thirty days late.</p>
+<h2>Separating disputes from non payment before anything is sent</h2>
+<p>The evidence that separates the two usually exists already, spread across systems. A partial payment matching last month's bill minus one line item is a dispute. So is an inbound call before the due date, an open care ticket for the same amount, or a balance concentrated in one usage category when the rest of the bill was paid. A silent account with a declined payment method and a balance spread across every charge type is something else.</p>
+<p>An agent can read across billing, rated usage, CRM, care notes and payments, then label each account with the evidence attached. The value is not the judgement itself, but that it happens on every account before contact.</p>
+<h2>The four disputes that dominate a telecom book</h2>
+<h3>Roaming and international</h3>
+<p>Roaming charges arrive after the fact, often after the customer got home, which is why they produce bill shock rather than a query at the point of use. The causes vary: zone misclassification, an inclusive allowance that excluded the country actually visited, data used on a border cell by someone who never travelled, or a travel bundle applied after the usage it covered.</p>
+<p>Verification means building a usage timeline from rated records, comparing it against the tariff and every bolt on with its activation timestamp, and stating which rule applied. That is hours per case and exactly the work machines do well.</p>
+<h3>Premium rate and third party charges</h3>
+<p>Short codes, subscription content, directory services and anything billed on behalf of an aggregator. These carry the highest proportion of legitimate complaint, because the customer sees your brand and not the merchant's, and there is a real fraud population inside them. The work is identifying the merchant, evidencing an opt in event, and checking what your aggregator terms allow.</p>
+<h3>Out of bundle usage</h3>
+<p>Data over allowance, calls outside inclusive minutes, a shared plan where one line drained the pool. These charges are usually correct and disputed anyway. The question is not whether the charge is valid but whether notification worked: was the alert delivered, did the customer have a chance to act. Where alerting failed, the charge is arguably yours. Where it worked, the answer is a tariff review, because a credit alone books the same dispute next month.</p>
+<h3>Mid contract price rises</h3>
+<p>An uplift handled badly produces a synchronised wave of short payment, thousands of customers each deliberately paying the old amount. That is not arrears, and running the standard ladder over it is a self inflicted complaint spike. The signature is easy to find: a bill to bill delta equal to the uplift across a cohort, with payment otherwise on time. Detect that cohort in the first billing run and route it to communications.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=1600&q=80&auto=format&fit=crop" alt="group of people in a meeting" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Handset debt and airtime debt do not behave the same way</h2>
+<p>Where a device instalment agreement runs alongside an airtime plan, one relationship carries two debts with different legal characters, different default consequences and usually different systems of record.</p>
+<p>Partial payments have to be allocated correctly, and customers often have a preference: keep the handset, drop the service. Arrears and default notices on a regulated credit agreement have prescribed content and timing, so getting them wrong is a compliance breach rather than a service failure. Suspending airtime does not extinguish instalment liability, and the customer experiences that as paying for nothing. Writing off one while pursuing the other should be deliberate, not an artefact of which system ran first.</p>
+<p>An agent can reconcile the split per account: how much is device, how much is airtime, how payments were allocated, whether the notice sequence is on schedule. The notices themselves come from a rule engine, not a model.</p>
+<h2>Early termination charges</h2>
+<p>Early termination is the most disputed single line item in most books, because it lands on a customer who has already left, believes they left correctly, and now has a large bill for a service they no longer hold. The recurring shapes are familiar: a port out the customer assumed cancelled billing, a notice period that ran alongside the request rather than after it, or a charge calculated on list price rather than the discounted price actually paid.</p>
+<p>Verification here is documentary: contract start date, term, the cancellation request with channel and timestamp, the port date, the actual cease date and the calculation basis. Most operators hold all of it across four systems, so nobody assembles it before the letter goes out. Do that before first contact and the ledger will shrink, which is the correct result rather than a problem with the approach.</p>
+<h2>The dunning ladder and the real cost of suspension</h2>
+<p>Reminder, restriction, suspension, disconnection, then write off or agency placement. Two things go wrong. The ladder runs on a timer, and a timer cannot tell a dispute from a default. And its middle stages are more destructive than their position suggests.</p>
+<p>Suspension is usually where the relationship ends. It removes the number the customer uses for two factor authentication, for work, for their children's school, and converts a payment problem into a grievance. Recovery after it is rarely better than before, because the customer who could not pay still cannot, and the one disputing now has a reason not to engage.</p>
+<p>Gate each stage rather than time it. Reasonable preconditions before restriction: balance verified against rated usage, no open dispute touching the amount, contact attempted on a channel the customer uses, an arrangement genuinely offered, the vulnerability gate clear, device and airtime separated. An agent can evidence all of those, but should not perform the advance itself, which stays a rule your compliance team can read.</p>
+<p>Some lines stay up regardless of balance: vulnerable customers, lines supporting care alarms or medical equipment, and wherever your market imposes an emergency access obligation. Those are stops, not weightings.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1581279813180-4dddc1008167?w=1600&q=80&auto=format&fit=crop" alt="high rise office buildings" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Business accounts fail for different reasons</h2>
+<p>A business account with four hundred lines rarely goes unpaid because the business is insolvent. It goes unpaid because the invoice arrived without a purchase order reference and accounts payable rejected it, because it went to a named person who left, or because one cost centre is querying three lines and their process holds the whole invoice until that closes.</p>
+<p>That makes business collections a reconciliation and routing problem rather than a persuasion problem: match the invoice to the purchase order, split disputed lines from undisputed ones so the remainder can be released, identify the current accounts payable contact, and work to their payment run calendar rather than your dunning calendar. Genuine distress looks different, and payment runs slipping, consistent part payment and sites being ceased should reach the account team first.</p>
+<h2>Arrangements, affordability and vulnerability</h2>
+<p>An arrangement that repays arrears while ignoring the ongoing monthly bill fails by month two, so both have to be affordable together. The instalment element is usually less flexible than the airtime element, so the right answer for a consumer in difficulty is often a tariff downgrade rather than a payment plan.</p>
+<p>Vulnerability belongs before the scoring, as a gate, not inside it as a feature. A feature is a weight, and a large enough balance eventually outweighs it. The valuable use of AI runs the other way: finding vulnerability nobody recorded, in call notes, correspondence and letters from advice agencies. The agent proposes the flag and the evidence; a trained human chooses the treatment. Wherever regulated collections conduct applies, covering forbearance, contact frequency and the form and timing of notices, the model informs and never decides.</p>
+<h2>The handover pack to a debt collection agency</h2>
+<p>Placement fails on data quality more often than on anything else. A pack that works carries the verified balance split into airtime and device with the calculation shown, the contract terms, the notice history with delivery evidence, every contact attempt and outcome, the dispute and arrangement history, the verified current address, the vulnerability position, and for a business the correct legal entity.</p>
+<p>Assembling that pack suits an agent, as does the work nobody does after placement: recall monitoring. A customer contacting you directly, a new vulnerability flag, a billing correction or a port record showing the service ceased earlier than billed should each pull the account back. You stay accountable for the agency's conduct throughout.</p>
+<h2>Where AI fails here</h2>
+<p>Usage reconstruction is only as good as the underlying data. Late mediated roaming records, missing bolt on timestamps and partial access to rated events produce a confident and wrong verdict. The agent must be able to say it cannot verify a charge, and that answer has to route to a human rather than default to the charge standing.</p>
+<p>Dispute detection produces false negatives: a customer quietly short paying without ever contacting you looks like a partial payer, and silence is not agreement.</p>
+<p>Language models are unreliable at money arithmetic. Every balance, allocation, proration and termination calculation belongs in ordinary code.</p>
+<p>Affordability cannot be inferred. A model that estimates income from spending behaviour and calls that an affordability assessment produces something you cannot defend to a regulator.</p>
+<p>Tone in a collections message is a regulatory surface. Generated text that drifts into pressure, or implies a consequence you are not entitled to apply, is a conduct breach regardless of intent.</p>
+<p>An agent optimised on cash collected learns that threatening suspension works in the short term, and never sees the churn cost landing two quarters later.</p>
+<p>Vulnerability detection is not accurate enough to be a filter. It should only add flags, never clear them, and never remove an account from human review. Business hierarchy data is similarly unreliable, and chasing the wrong legal entity is a data protection problem as well as a commercial one.</p>
+<h2>Where to start</h2>
+<p>Start with verification rather than contact. Run the dispute split and the balance check across the book before changing a letter or a ladder timing, and expect the book to shrink. Everything else is easier once you know which balances are real, and hello@adoptaipartners.com reaches us.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>
