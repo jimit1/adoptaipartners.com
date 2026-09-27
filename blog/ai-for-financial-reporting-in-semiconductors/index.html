@@ -1,0 +1,104 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Financial Reporting in Semiconductors: Inventory, Sell Through and the Reserves | Adopt AI Partners</title>
+<meta name="description" content="How an agent can genuinely help a semiconductor controller with inventory valuation, absorption variance, distributor sell through and reserve evidence at close.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-financial-reporting-in-semiconductors/">
+<meta property="og:title" content="AI for Financial Reporting in Semiconductors: Inventory, Sell Through and the Reserves"><meta property="og:description" content="How an agent can genuinely help a semiconductor controller with inventory valuation, absorption variance, distributor sell through and reserve evidence at close.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-financial-reporting-in-semiconductors/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1610891015188-5369212db097?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Financial Reporting in Semiconductors: Inventory, Sell Through and the Reserves","description":"How an agent can genuinely help a semiconductor controller with inventory valuation, absorption variance, distributor sell through and reserve evidence at close.","datePublished":"2026-09-27","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-financial-reporting-in-semiconductors/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / semiconductors</div>
+<article><h1>AI for Financial Reporting in Semiconductors: Inventory, Sell Through and the Reserves</h1><div class="meta">27 September 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1610891015188-5369212db097?w=1600&q=80&auto=format&fit=crop" alt="industrial textile factory with machinery and pipes" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>It is the fourth working day of the close and the financial reporting manager has three windows open. A wafer bank listing showing lots that started at a foundry two quarters ago and are still in die bank. A folder of point of sale files from distributors, several in layouts nobody recognises and one a scanned attachment. Last quarter's excess and obsolete reserve model, needing a refresh against a demand picture that has changed twice since it was last touched.</p>
+<p>None of this is unusual. It is a semiconductor close. The question is not whether software can do the work, but which parts an agent can carry honestly and which stay with a person who puts their name against the judgement.</p>
+<h2>Why a semiconductor close behaves differently</h2>
+<p>Most closes assume the thing being valued is somewhere you can look at it. Here it usually is not. Product in progress may be a wafer at a foundry, a tested die at an assembly and test subcontractor, a finished unit in a hub, or a unit shipped into distribution but not yet sold to an end customer. Cost accumulates across parties the finance team does not employ, on a cycle measured in months. By the time the ledger shows a cost, the decision behind it happened somewhere else and long before.</p>
+<h2>Inventory valuation across the stages</h2>
+<p>Wafer inventory carries foundry cost and whatever yield assumption is applied. Die bank carries wafer cost plus probe and test, and is where the oldest material accumulates. Finished goods carries assembly, test, packaging and freight. Each stage has its own standard, set at a point in time against an assumed volume.</p>
+<h3>Standard to actual reconciliation</h3>
+<p>Standards rest on assumed yields, wafer prices and test times. Actuals arrive from foundry and subcontractor invoices, test floor data and scrap records. The gap has to be explained, allocated between inventory and cost of sales, and described in words a reviewer accepts.</p>
+<p>An agent helps in a narrow way: it can compute the difference by product family and stage, identify which lots and cost elements drove the movement, and flag a standard not revisited in several quarters while the wafer price moved. It cannot decide whether a variance is a real cost change belonging in a revised standard or a one off event belonging in the period.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1716191299980-a6e8827ba10b?w=1600&q=80&auto=format&fit=crop" alt="industrial robot arm on a factory line" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Unabsorbed capacity and the paragraph that has to explain it</h2>
+<p>Anyone running their own fab, or carrying fixed test and assembly capacity, faces absorption every period. Volumes below plan leave fixed cost unabsorbed. Volumes above plan over absorb. Either way someone writes the paragraph explaining why, and it is read closely.</p>
+<p>The mechanical part is tractable. An agent can assemble loading against capacity, compute the absorption position by cost centre, tie it to the rate set at the start of the year, and check that absorption charged to inventory and to cost of sales adds back to the pool.</p>
+<p>The narrative is different. Whether low loading is seasonality, a demand problem or a deliberate inventory reduction depends on what operations was doing. An agent can draft from the ledger. A person decides whether it is true.</p>
+<h2>Excess and obsolete reserve judgement</h2>
+<p>A device may sell in modest volumes for years after its design wins are done, which makes a mechanical ageing rule a poor guide to whether material is really excess. Material that looks stale may have a customer who orders twice a year.</p>
+<h3>The demand evidence behind the number</h3>
+<p>The judgement rests on evidence: shipment history by part, the current demand picture, whether a replacement part exists, whether the customer base has narrowed to one, and how much material sits at each stage. Forward demand indications are one input among several, worth as much as their reliability.</p>
+<p>An agent can assemble that evidence per part number, compute coverage on a consistent basis, and show what the reserve would be under each of several policies, surfacing the parts where the answer moves most. It can carry forward last period's judgements with the facts that changed. It cannot set the policy, and it should not be the thing that concludes a part is dead.</p>
+<h2>Distributor sell through and channel inventory</h2>
+<p>Where revenue is recognised on sell through, reporting depends on files arriving weekly or monthly in formats that differ by partner and change without notice. Part numbers may be the distributor's own, units may be reported in cases, credits and returns may be separate lines or netted.</p>
+<p>The reconciliation is the same every period. Opening channel inventory, plus what was shipped in, less what was reported sold, should equal closing channel inventory as the distributor reports it. It rarely does, and the differences have to be run down: mismatched part mapping, a file covering a different cut off, a resale reported twice, stock rotation returns not yet processed.</p>
+<p>This is the best fit for an agent in the close. Normalising inconsistent files, mapping part numbers, computing the roll forward and isolating the lines that do not tie is rule bound work that improves when done the same way every time, and deferred margin follows from a clean roll forward. A claim of a missing shipment still needs a person.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1600&q=80&auto=format&fit=crop" alt="discussion in a modern office" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Ship and debit, price protection and rebates</h2>
+<p>Distributors claim the difference between the price they paid and the price they were authorised to sell at. Those claims land after the sale, often after the period, so the reserve has to be estimated before they arrive. The same holds for price protection when list prices fall and for volume rebates that depend on a result not yet known.</p>
+<p>Claim history is the basis. An agent can build the claim lag profile by distributor and product line, apply it to what sits in the channel, and show how the estimate shifts under different claim rate assumptions. It can also find claims accrued and never received, which is where old balances hide. The rate booked stays a management estimate.</p>
+<h2>Warranty and returns</h2>
+<p>Warranty accrual depends on quality data: field return rates by product, the cost of a return, and whether a known issue is confined to specific lots. An agent can pull return history, compute rates by product family and vintage, and tie the accrual to units shipped and still under warranty. A live quality event, with uncertain scope, is for the controller and the quality organisation.</p>
+<h2>Mask sets, engineering cost and tool capitalisation</h2>
+<h3>Mask sets and engineering spend</h3>
+<p>Every new product raises the same questions. Is a mask set an asset or a cost. Over what period does it amortise. Where does non recurring engineering paid to a foundry sit, and when does development cost meet the threshold for capitalisation. A reviewer asks for the same evidence: what was spent, against which product, when, and what supports a future benefit. An agent can keep that file current, track amortisation of each mask set against actual volumes, and flag assets attached to products whose volumes have collapsed. The capitalisation conclusion is an accounting judgement.</p>
+<h3>Capital equipment and depreciation</h3>
+<p>Tool cost is rarely a single invoice: the tool, the install, the qualification effort, spares and sometimes facility work, with the boundary of the capitalised cost a recurring question. Useful life matters more here than elsewhere, because a tool may stay capable long after the process node it was bought for stops being used. An agent can reconcile the fixed asset register to the ledger, recompute depreciation on the stated lives, and trace how much reached cost of sales through the absorption rate. Whether a life should be shortened is for finance leadership.</p>
+<h2>Purchase commitments to foundries and subcontractors</h2>
+<p>Capacity is secured in advance, so commitments sit as obligations to buy wafers, substrates and test time. They need disclosing, and assessing for whether any has become onerous: a commitment to buy material for a product whose demand has fallen away is a loss waiting to be recognised. An agent can assemble the commitment schedule, age it by period, and compare committed volumes against the current demand picture per part. The onerous conclusion and the disclosure language stay with the controller.</p>
+<h2>Segment, product line and geographic reporting</h2>
+<p>Product line reporting is assembled from systems that disagree. Manufacturing groups by process and package. The commercial system groups by the customer's naming. The ledger groups by whatever the chart of accounts allowed. Geography can mean ship to location, distributor location or end customer location, and the three give three answers. An agent can hold the mapping, apply it the same way every period, and report what failed to map rather than quietly dropping it. Most product line reporting errors are not wrong numbers but silently excluded ones.</p>
+<h2>Where AI fails here</h2>
+<p>An agent cannot conclude that a part is obsolete. It can show that shipments stopped, a replacement exists and coverage runs to many years. Concluding no future demand exists needs things held in no system, including a conversation with a customer that has not happened yet.</p>
+<p>It cannot write honest absorption commentary, because the cause of a loading shortfall lives in operations rather than the ledger. Left to itself it blames whatever moved most, and fluent plausible commentary is the worst output available at this point in the close.</p>
+<p>It handles inconsistent distributor files well until one is genuinely ambiguous, where the right behaviour is to stop and ask rather than infer. A system that infers produces reconciliations that tie and are wrong.</p>
+<p>It cannot own a capitalisation decision, a useful life change, an onerous commitment conclusion or a warranty position on an emerging quality issue. Each is a judgement a person signs, and the agent's job is the complete evidence file behind it. Nor can it be trusted on the strength of a demonstration.</p>
+<h2>Where the first reserve is worth rebuilding</h2>
+<p>The only evaluation that means anything to a finance team is back testing on periods already closed and signed off. Have the agent rebuild the excess and obsolete reserve, the channel inventory roll forward and the ship and debit accrual from the data as it stood at several such dates, with no access to what was eventually booked. Then compare.</p>
+<p>You are not looking for an exact match. You are looking for whether the differences are explainable, whether the evidence file would have supported the number a reviewer approved, and whether it flagged the same parts the team argued about at the time.</p>
+<p>Start with one reserve, on closed periods, with the answer already known. If the back test holds, you have something worth running in parallel next close. If it does not, you have learned that cheaply, before anything reached a signed set of accounts.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>

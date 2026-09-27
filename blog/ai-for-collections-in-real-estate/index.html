@@ -1,0 +1,106 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Collections in Real Estate: Rent Arrears, Disputed Sums and the Route to Recovery | Adopt AI Partners</title>
+<meta name="description" content="How an AI agent reconstructs what a tenant actually owes across rent, service charge and interest, drafts the chase and prepares the evidence pack before any escalation.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-collections-in-real-estate/">
+<meta property="og:title" content="AI for Collections in Real Estate: Rent Arrears, Disputed Sums and the Route to Recovery"><meta property="og:description" content="How an AI agent reconstructs what a tenant actually owes across rent, service charge and interest, drafts the chase and prepares the evidence pack before any escalation.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-collections-in-real-estate/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1746364742672-c6383331b032?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Collections in Real Estate: Rent Arrears, Disputed Sums and the Route to Recovery","description":"How an AI agent reconstructs what a tenant actually owes across rent, service charge and interest, drafts the chase and prepares the evidence pack before any escalation.","datePublished":"2026-09-27","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-collections-in-real-estate/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / real estate</div>
+<article><h1>AI for Collections in Real Estate: Rent Arrears, Disputed Sums and the Route to Recovery</h1><div class="meta">27 September 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1746364742672-c6383331b032?w=1600&q=80&auto=format&fit=crop" alt="construction cranes across a city skyline" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>A credit controller opens a case on a mid terrace retail unit. The ledger says the tenant is two quarters behind. The tenant's finance manager says they paid, and has the remittance to prove it. Both are right. The payment landed with no reference, sat on suspense for three weeks, then went against an insurance demand nobody had chased. The current quarter's rent is genuinely unpaid, the service charge is partly withheld because the lift has been out since spring, and the property manager has a repair thread running that credit control has never seen.</p>
+<p>Working that out took an hour across the property system, the banking file, a shared mailbox and a spreadsheet. The chase letter took ten minutes. That ratio is where an agent earns its place.</p>
+<h2>Why property arrears behave nothing like trade debt</h2>
+<p>An ordinary receivable comes from an invoice, and if it goes bad you stop supplying and sue. Property arrears break both halves of that.</p>
+<p>The sum due comes from a lease, not an invoice. The demand is evidence that you asked, but the obligation exists whether or not it was correctly raised, and a badly raised demand can undermine a remedy you later rely on. The debtor is a sitting occupier, so you are not deciding whether to keep supplying, you are deciding whether you want them out, and usually you do not.</p>
+<p>The remedies are legal instruments with preconditions. Trade collections escalates by tone. Property collections escalates through steps taken in order, with notice periods, the right party served and the right documents in hand. Miss a precondition and you do not get a weaker outcome, you get none.</p>
+<h2>Reconstructing what one tenancy actually owes</h2>
+<p>One occupier's balance can carry principal rent, service charge on account, a balancing amount from a prior period, insurance rent, interest at the rate the lease specifies, and recoverable costs from an earlier chase, each demanded on a different date.</p>
+<p>The agent's first job is arithmetic, not persuasion. It reads every demand, receipt, credit note and write off against the tenancy and produces one statement a human can defend line by line: what was demanded, when, under which head, what was paid, what remains. Where interest is claimable it shows the calculation and the clause behind it rather than a lump figure. The point is not speed, it is that the number stops being contestable.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1600&q=80&auto=format&fit=crop" alt="colleagues working with laptops at a table" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>When not paying is the only lever the tenant holds</h2>
+<p>These look identical in a ledger and need opposite handling. A slow payer needs pressure; a disputed sum needs the property manager, because the money is not the subject. Withheld payments here are often a complaint about the building, expressed by not paying because that is the only lever the tenant holds.</p>
+<p>An agent can spot the pattern before a human reads the case. It looks for payment that stopped abruptly rather than degrading, a part payment matching one head of charge and excluding another exactly, and correspondence about defects in the same window. It then labels the case as probably disputed, attaches the evidence and routes it to the manager instead of issuing a chase that lands badly.</p>
+<p>A tenant who pays rent in full and withholds service charge is making an argument. One paying a consistent fraction of everything is short of cash. The shape of the shortfall matters more than its size.</p>
+<h2>Unreferenced receipts and the order of allocation</h2>
+<p>Money arrives from a trading name that does not match the lease, standing orders keep running at the old rent after a review, and round sums cover several units. Allocation matters more here than in ordinary cash application, because where you put a receipt can change what remedy is available. Oldest debt first, interest first, or against the head of charge the tenant has disputed are three different positions. Leases sometimes dictate the order, and some remedies depend on a specific period remaining unpaid. An agent proposes the match, shows what it inferred and why, and flags where the choice has consequences beyond bookkeeping.</p>
+<h2>Payment plans and the commercial view</h2>
+<p>Forbearance in real estate is an asset decision, not a credit decision. Whether to accept a plan depends on what the unit would re let for and how long the void would run.</p>
+<p>An agent can assemble that case: arrears history and whether previous plans were kept, comparable rents on the estate, remaining term, what security exists, what the shortfall costs against a void. It cannot make the call, but it can stop the asset team deciding from a one line email. Once a plan is agreed it tracks the instalment dates and notices the first miss the day it happens.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1655975719898-8f3432eed322?w=1600&q=80&auto=format&fit=crop" alt="a crane lifting materials on a building site" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Writing the chase for the occupier in front of you</h2>
+<p>A national covenant, a single site independent and a residential tenant need different letters, and a template with the name swapped produces the wrong one.</p>
+<p>The national covenant usually is not refusing to pay, it has a process, so the message goes to the right shared mailbox, quotes the reference their payables system needs, and asks what is blocking approval. The independent may be in difficulty and may also be the tenant you most want to keep, so be plain about the consequence while opening a conversation. The residential tenant sits inside a conduct regime constraining tone, frequency and channel. An agent drafts to the occupier type, pulls the correct figures and demand references, and hands a human something to approve.</p>
+<h2>The evidence pack before anything is handed over</h2>
+<p>Handover to solicitors or a recovery agent takes weeks because the pack is scattered, not because it is hard. It usually needs the lease and any licence, variation or assignment, proof each demand was raised and served at the right address, the statement of account with the interest calculation, correspondence in order, any guarantee or deposit documentation, and confirmation of the pre action steps your solicitors require. It is retrieval and ordering work, and doing it well shortens recovery more than better chasing does.</p>
+<h2>Remedies as a checklist the agent prepares, never takes</h2>
+<p>Each route out of persistent arrears has preconditions. A statutory notice route requires the correct notice, period and recipient. Some recovery options exist only while particular sums remain outstanding, and are lost if a receipt is allocated against them. Calling a deposit or a guarantee depends on the wording and on prior steps. Some actions are points of no return.</p>
+<p>The agent prepares rather than decides. It confirms which preconditions are satisfied, which documents are missing, which deadlines are live and which options a pending allocation would close off, and presents that as a checklist with evidence attached.</p>
+<p>No notice is served, no proceeding started, no guarantee called and no escalation against an occupier triggered by software. Those are human decisions taken with legal advice, and a system that blurs the line should be rejected.</p>
+<h2>Who is actually liable for that period</h2>
+<p>Liability in a leasehold chain is rarely only the current occupier. There may be a guarantor, a former tenant still liable under a guarantee given on assignment, a subtenant paying rent to somebody who is not paying you, or an assignee who took over mid quarter. Serving the wrong party can invalidate a step and waste months.</p>
+<p>An agent reads the assignment and guarantee documents, builds a timeline of who held the interest across each demand period, and maps each outstanding sum to the parties liable for it. Where the documents do not support a conclusion it says so.</p>
+<h2>Balances you inherit</h2>
+<h3>The final account when a tenancy ends still owing</h3>
+<p>The account carries arrears, dilapidations or deposit deductions, charges apportioned to the departure date, and a balancing amount nobody will know for months. An agent can draft the account, separate certain sums from provisional ones, check that the deposit terms permit the deductions, and keep the residual claim alive against the right party.</p>
+<h3>Somebody else's spreadsheet</h3>
+<p>A portfolio taken on from another managing agent arrives with balances that do not reconcile to demands, no record of what was chased, plans agreed verbally and allocations nobody documented. Rebuilding case by case from the demands and bank records is where real value sits, because inherited arrears is money the client already believes it is owed. The agent marks which balances are supportable and which should go back.</p>
+<h2>Residential arrears, vulnerability and the hard stops</h2>
+<p>Chasing residential occupiers is regulated in ways commercial chasing is not, and vulnerability changes what is permitted regardless of the sum. An agent working residential arrears needs hard stops rather than guidance: no automated contact once vulnerability is flagged, human review before escalation, and an audit trail of every contact. Build the constraint into the workflow, not the prompt.</p>
+<h2>Where AI fails here</h2>
+<p>It cannot read a lease with legal certainty. It summarises obligations well and will occasionally misread unusual drafting, a poorly scanned deed or a variation contradicting the original. On anything supporting a remedy, a human checks the clause.</p>
+<p>It cannot judge the commercial call: whether to accept a plan, take a unit back or write off turns on a market view the agent does not hold.</p>
+<p>It cannot resolve a service charge dispute. It can identify one and set out both positions, but whether a charge was properly incurred is a question for the surveyor.</p>
+<p>If demands were never properly raised, or correspondence lives in a former colleague's inbox, the agent reports a gap, which is correct and often unwelcome.</p>
+<p>It should never take a legal step, and it will not fix a bad rent collection process. If demands go out late to the wrong address, the arrears are manufactured upstream.</p>
+<h2>Piloting on a single managed portfolio</h2>
+<p>The only evaluation worth doing is a replay. Take arrears cases your team has already closed, perhaps forty across the occupier types you manage, including the messy ones: the disputed service charge, the assignment mid quarter.</p>
+<p>Run the agent on them with the records as they stood at the time. Did it reach the same outstanding figure? Did it identify the dispute before your controller did? Did it name the right liable party? Did its checklist flag the precondition your solicitors later raised? Would its draft chase have been sendable? Read every disagreement rather than counting them, because one wrong liability call matters more than ten rounding differences.</p>
+<p>Then run live on one portfolio, with a controller reviewing every output, across a full quarter cycle so you see a quarter day and a service charge demand. To talk through that on your own arrears, write to hello@adoptaipartners.com.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>
