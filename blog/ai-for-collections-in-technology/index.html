@@ -1,0 +1,103 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Collections in Technology: Failed Payments, Invoices and the Suspension Decision | Adopt AI Partners</title>
+<meta name="description" content="How subscription and usage based software companies apply AI to two receivables books: card failures nobody sees, and enterprise invoices waiting on a purchase order.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-collections-in-technology/">
+<meta property="og:title" content="AI for Collections in Technology: Failed Payments, Invoices and the Suspension Decision"><meta property="og:description" content="How subscription and usage based software companies apply AI to two receivables books: card failures nobody sees, and enterprise invoices waiting on a purchase order.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-collections-in-technology/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Collections in Technology: Failed Payments, Invoices and the Suspension Decision","description":"How subscription and usage based software companies apply AI to two receivables books: card failures nobody sees, and enterprise invoices waiting on a purchase order.","datePublished":"2026-10-02","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-collections-in-technology/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / technology</div>
+<article><h1>AI for Collections in Technology: Failed Payments, Invoices and the Suspension Decision</h1><div class="meta">2 October 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1600&q=80&auto=format&fit=crop" alt="colleagues working with laptops at a table" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>A technology company that bills by subscription keeps delivering while the money is late. The product runs, support answers, and every day of delay adds cost rather than deferring cash. That is what separates this ledger from a trade debt book, where the goods have gone and payment is the only open question. The strongest lever you hold, switching the service off, is also the most destructive, and its existence warps every conversation held in front of it.</p>
+<h2>One ledger, two failure modes</h2>
+<p>Card paying customers fail mechanically and silently. A charge was attempted, something at the issuer said no, and the only trace is a line in a payments log that nobody reads.</p>
+<p>Invoiced enterprise customers fail procedurally and humanly. A payment run falls on a fixed day, an approver is on leave, a purchase order has exhausted its value, a query was raised internally and never relayed to you. Someone always knows why, and will explain if you reach them.</p>
+<p>Those two populations need different detection, different actions and different owners, which is why one list sorted by days overdue is useless. It puts last night's soft decline beside a disputed implementation invoice from the spring.</p>
+<h2>When a card fails and nobody is told</h2>
+<p>In most subscription businesses the largest single leak of recurring revenue is not bad debt. It is payments that were going to succeed and did not: a card that expired, an issuer declining for insufficient funds that would authorise days later, a fraud control reacting to a recurring charge, a card closed when the billing contact left.</p>
+<p>None of that is a credit judgement, and a model has the signal to tell the cases apart: the decline reason, the payment history, the point in the month, how near expiry sits. The output is not a score but a decision: retry this one, ask that one for a new card, treat the third as a question about ability to pay.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1600&q=80&auto=format&fit=crop" alt="discussion in a modern office" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>The retry pattern is a design decision</h2>
+<p>Most retry schedules were inherited: whatever the billing system shipped with, plus an adjustment somebody made in a bad quarter. The questions worth deciding are how many attempts, how far apart, whether to align with pay dates, and what each message says.</p>
+<p>The right answer differs by cause. Insufficient funds argues for waiting and retrying near month end, an expired card for asking immediately for new details instead, a suspected fraud block for a message that explains the charge rather than asking for money. There is also a ceiling, because every extra attempt costs goodwill and a customer who was always going to pay eventually reads the sequence as harassment.</p>
+<h3>Churn you did not choose</h3>
+<p>A customer who wanted to stay and left because a payment failed is a different event from one who decided to go, and reported together the first disappears. Measure it on its own and attribute it: expired card, hard decline, no response to the update request. That tells you whether to fix the retry logic, the email, or the card update flow in the product.</p>
+<h2>What has to be true before an invoice can be paid at all</h2>
+<p>An enterprise invoice can be perfectly correct and structurally unpayable. The purchase order reference is missing, it went to whoever signed the contract rather than to payables, it needs submitting into a procurement portal somebody was given credentials for once, or your company is not set up as a supplier. Chasing that as a collections matter wastes months, when it can be caught before issue by comparing what the customer's paperwork requires against what you are about to send.</p>
+<p>For balances already outstanding, the work is reading the replies. Portals and shared payables inboxes produce text containing the answer: a submission reference, a rejection reason, the approver it sits with.</p>
+<h2>The usage invoice that is correct and still disputed</h2>
+<p>Consumption billing produces something trade debt does not have: an invoice that is arithmetically right, contractually right, and far larger than the customer planned for, because a team ran a backfill or left a test environment running.</p>
+<p>The first message back is rarely a refusal, and treating it as one manufactures the dispute you feared. Separate the customer asking what happened from the one asking for a credit and the one declining to pay, because only the last is collections work. For the first, the answer is an explanation: which account, which period, what changed since the last invoice, which contract term applies. Better still, catch the spike as it happens, so the contact is a warning and not a bill.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=1600&q=80&auto=format&fit=crop" alt="group of people in a meeting" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Seats, amendments and the credit a salesperson promised</h2>
+<p>Behind a surprising share of overdue balances sits an entitlement question nobody settled. The customer counts fewer seats than you invoiced, a mid term amendment changed the price and billing kept the old one, or a credit promised verbally was never raised. The customer pays what was agreed while you chase what you think is owed.</p>
+<p>Those documents exist, spread across a contract repository, a sales tool and somebody's mailbox. An agent that reconciles them before a chase goes out prevents the worst outcome here, a dunning email sent to a customer who is right.</p>
+<h2>Turning the service down before switching it off</h2>
+<p>The option to restrict access is why this book behaves unlike any other, and the fastest route from late payer to former customer with a grievance. AI should prepare that decision and never take it: the notice the contract requires, who uses the service and how heavily, whether the amount is disputed, whether anyone has yet spoken to a human. Then a named person decides, and the record shows that they did.</p>
+<p>Build the middle ground first: a read only mode, a downgrade, or new users blocked while existing ones keep working, each applying pressure without removing what the customer's operations depend on. The notice has to say what stops, when, and what reverses it, because a warning the customer cannot act on is only a threat.</p>
+<h2>When an open balance meets a renewal date</h2>
+<p>Eventually an unpaid invoice and a renewal land in the same week, the point of most leverage and most risk, because what is at stake is not one invoice but the next term of revenue.</p>
+<p>The account owner and the finance owner need one picture before either speaks: the balance, its age, the queries behind it, and whether this is cash timing or dissatisfaction showing up as slow payment. An agent produces that brief reliably. It should not draft the ultimatum, because tying a renewal to a balance is a commercial decision with a signature on it.</p>
+<h2>Matching the money when the payment tells you nothing</h2>
+<p>Cash arrives by every route: card settlements batched with fees netted out, a treasury transfer carrying no reference, a portal payment covering several invoices, a payment net of withholding that will never equal the invoice. Matching is pattern work, and the signals are amounts, dates, payer names, partial references like "INV 4471 PART", and how this customer has paid before. Duplicate records such as "Northwind Ltd 2" are usually why a receipt looks unmatchable.</p>
+<p>Allocate automatically only where confidence is high and the amount reconciles exactly, and propose the rest to a person with the reasoning visible. Set allocation order by policy, not by the model, because which invoice a part payment clears changes ageing, disputes and what you chase next.</p>
+<h2>Terms decided before the deal closes</h2>
+<p>Some balances were always going to be late, and the decision happened at signature: annual terms for a company that pays quarterly, extended terms conceded to win a deal, no deposit on a large first commitment. At quote stage, flag the terms being offered against how comparable customers have actually paid, as a prompt to a deal desk rather than a veto.</p>
+<p>Resellers are a third pattern worth separating, because the partner rarely pays before the end customer has paid them. Your overdue balance is a report on someone else's collections process, and the lever is the partner agreement rather than the reminder.</p>
+<h2>Who contacts the customer, and which balances to let go</h2>
+<p>In most technology companies three parties chase a late payer independently: the account manager who wants the renewal, the finance team working the ageing report, and an automated sequence nobody has read recently. Decide who owns the chase for each segment before automating anything, and let every system see what the others have sent.</p>
+<p>Self serve balances can run almost entirely automatically. Named accounts should never receive an automated message the account owner has not seen, so let AI draft and schedule while the relationship owner holds a short veto window. Some balances also cost more to pursue than to forgive, and a model can surface those against a policy and clear them in a batch with a reason recorded.</p>
+<h2>Where AI fails here</h2>
+<p>It cannot tell you why a customer is not paying when the reason was never written down. If the cause is a champion who left, a budget cut, or a quiet decision to move at renewal, no document reading finds it and a phone call does.</p>
+<p>It is confidently wrong about entitlement when your own records disagree. Where the billing system, the contract and the order form tell three stories, a model picks one and argues it well, which is worse than no answer. These disputes need a human conclusion.</p>
+<p>None of it survives a billing system that is wrong. If invoices leave with the incorrect price, the wrong contact and no purchase order, AI applied to collections is a faster way of chasing your own mistakes.</p>
+<h2>Start with the money that leaves by accident</h2>
+<p>Start with failed card payments. The segment is self contained, the volume is high, and the result shows up in retained revenue within a billing cycle or two. Instrument it before you change it, then alter one thing at a time: routing by decline reason, then timing, then the messages.</p>
+<p>Then take the invoices that cannot be paid because something administrative is missing, and measure how many overdue balances are explained that way before building anything. Leave suspension, renewal leverage and anything that speaks to a named account until the first two work and your people trust the output. If a view of how that sequencing applies to your book would help, Adopt AI Partners is at hello@adoptaipartners.com.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>

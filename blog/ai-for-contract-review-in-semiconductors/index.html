@@ -1,0 +1,99 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Contract Review in Semiconductors: Capacity, Licences and the Promises Inside the Part | Adopt AI Partners</title>
+<meta name="description" content="How in house legal and commercial teams at chip companies review capacity, supply, licensing and quality paper, and keep track of what each agreement obliges them to do.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-contract-review-in-semiconductors/">
+<meta property="og:title" content="AI for Contract Review in Semiconductors: Capacity, Licences and the Promises Inside the Part"><meta property="og:description" content="How in house legal and commercial teams at chip companies review capacity, supply, licensing and quality paper, and keep track of what each agreement obliges them to do.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-contract-review-in-semiconductors/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Contract Review in Semiconductors: Capacity, Licences and the Promises Inside the Part","description":"How in house legal and commercial teams at chip companies review capacity, supply, licensing and quality paper, and keep track of what each agreement obliges them to do.","datePublished":"2026-10-02","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-contract-review-in-semiconductors/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / semiconductors</div>
+<article><h1>AI for Contract Review in Semiconductors: Capacity, Licences and the Promises Inside the Part</h1><div class="meta">2 October 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1600&q=80&auto=format&fit=crop" alt="colleagues working with laptops at a table" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>A contracts manager has a capacity agreement open in one window and a customer framework agreement in another. The foundry wants a firmer take obligation across more quarters. The customer, for unrelated reasons, wants longer discontinuation notice and a wider right to approve process changes. Each request is reasonable on its own page. Together they describe a company promising to keep making something it may not be able to keep buying.</p>
+<p>Nobody has read them together, because that means reading everything and the review is due tomorrow. The difficulty is rarely one hard clause. It is many ordinary ones whose combined effect nobody has the hours to establish.</p>
+<h2>A supply promise that outlives the part</h2>
+<p>The obligations here run longer than the products do. An agreement signed for a long term may cover a device superseded within a third of it. Capacity is reserved, and often paid for, before anyone knows the demand exists. And the licensed intellectual property does not stay on the page: it ends up inside something physical that is packaged, boxed and sold on.</p>
+<p>So the risk is not concentrated in the liability clause. It sits in definitions and schedules that decide what a unit is, when a forecast becomes a commitment, and whose problem a moved line is. Those are the parts a reviewer skims under deadline, and the parts an agent can read in full, flagging where the paper contradicts itself.</p>
+<h2>Capacity bought before the demand exists</h2>
+<h3>Reservation, prepayment and the duty to take what you booked</h3>
+<p>Three moving parts: what is reserved, what you pay to reserve it, and what happens if you do not use it. The question is rarely whether a take obligation exists but how the shortfall is measured and whether it can be recovered. Is it assessed per quarter, per year or across the whole term, and can an underlift be carried forward at the original price. Does a prepayment credit against later purchases, decay on a schedule, or convert into a fee. Can the reservation move between product families or between your own entities. Setting those answers side by side for every capacity agreement, side letters included, is the comparison promised in meetings and never produced.</p>
+<h3>Pricing mechanics and the unit the commitment counts in</h3>
+<p>Pricing here is a mechanism rather than a number: a base price with steps tied to volume, a pass through for a material, a yield assumption that shifts cost when actual yield differs. Underneath sits a definition, since the commitment may be denominated in wafer starts, in good die, in packaged units or in test hours. Two agreements using one word for different things is normal, and a model compares definitions rather than recalling them.</p>
+<h3>What happens when the node or the line moves</h3>
+<p>The clause worth finding covers change on the supplier's side. If a node is retired, a line requalified or production moved, does your reserved volume follow, lapse or reprice. Does the supplier owe you notice, a requalification allowance, a right to walk away without penalty, or nothing. Many agreements are silent, and the silence is the finding.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1716191299980-a6e8827ba10b?w=1600&q=80&auto=format&fit=crop" alt="industrial robot arm on a factory line" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>The same commitment from the other side of the table</h2>
+<p>Turn the paper around. Framework and long term supply agreements with a large customer impose supply assurance on you. Ask of each whether what you promised downstream is covered by what you secured upstream, and for the same duration.</p>
+<p>Forecast language is where this comes apart. An agreement will say forecasts are for planning and not binding, then, pages later, make the nearest part of the horizon firm, fix a flexibility window around the next part, and attach liability for material and work in progress committed against the rest. Both clauses are real, and which governs depends on precedence wording nobody read. Pulling the firm window, the flexibility band and the cancellation liability out of every agreement into one view is tedious in just the way machines suit.</p>
+<h2>Licence scope, and the reports meant to prove it</h2>
+<p>Licensing runs both ways here, and scope is drawn along several axes at once: field of use, a named family such as "device family A2", a specific die, a count per unit shipped. Reading one axis and assuming the rest gives a wrong answer. What matters is what counts as a licensed product, whether a derivative or a shrink of the same design sits inside the grant, whether the right reaches your subcontractors and your customers' customers, and what survives termination for parts already in the channel.</p>
+<p>Where a licence is paid per unit you have also accepted a reporting obligation, with a deadline, a required level of detail and an audit right behind it. An agent can list, across every inbound licence, what must be reported, in what period, and what the licensor may inspect if the numbers look wrong.</p>
+<h3>Tool and core licences, counted by seat, site and design</h3>
+<p>Design tool agreements and third party core licences restrict differently: named seats, licensed sites, limits per design, bars on contractor access, conditions on moving a licence, duties to track where a core such as "core IP 7" is instantiated. These rarely reach legal after signature, which is why the breach tends to be found by the vendor rather than by you.</p>
+<h2>Infringement indemnity, its carve outs and where the cap sits</h2>
+<p>An indemnity is only as strong as its carve outs allow. The usual exclusions remove combinations with third party products, modifications, compliance with a customer specified design, and shipment continued after a replacement was offered. For a designer building to a customer's specification, that third exclusion decides who carries the claim. Then the structural question: does the indemnity sit inside the liability cap, outside it, or under a separate higher one. The answer differs between your inbound and outbound paper more often than anyone expects.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1647427060118-4911c9821b82?w=1600&q=80&auto=format&fit=crop" alt="a factory floor filled with orange machines" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Failures measured as a rate rather than one unit</h2>
+<p>Warranty here is partly ordinary and partly not. Alongside the unit remedy sits an epidemic or systemic failure clause, triggered when a failure rate crosses a threshold within a defined population and window. That trigger brings obligations of another order: containment, recall support, replacement of unaffected stock. Worth extracting across every customer agreement is how the rate is calculated, against what population, over how long, and whether the resulting liability is capped at all.</p>
+<h2>The duty to tell a customer before something changes</h2>
+<p>Most customer agreements oblige you to give notice before a process, material, design or manufacturing site changes, and many give the customer an approval right over it. The terms differ in ways that matter: what counts as notifiable, how much notice is required, whether approval is deemed given by silence, whether the customer may demand continued supply of the old version while it evaluates, and who pays for requalification. A quality or manufacturing agreement signed separately will cover the same ground in different words, and the precedence clause may not resolve the difference. Read as a set, these clauses define how much freedom you actually have to change anything, which is a commercial fact that usually lives nowhere.</p>
+<h2>Discontinuation written as an obligation you owe</h2>
+<p>End of life appears in customer paper as promises rather than a plan: notice before announcement, a window in which final orders must be accepted, supply for a period after that, sometimes a duty to offer the design or the mask set, or to support in the field after shipment stops. The gap to look for is between the longest obligation you have granted a customer and the shortest notice your own supplier owes you. If the supplier can leave with less warning than you promised, only reading both sides at once reveals it.</p>
+<h2>Terms a large customer pushes across the table</h2>
+<p>A big account will ask for things your standard form does not contemplate: consignment stock with title passing on use, extended payment terms, a most favoured pricing undertaking, buffer stock held at your cost, broad rights of audit and physical access. What helps is a register of which customers hold which, because a most favoured pricing promise made to one account quietly constrains every negotiation after it. Distributor and representative agreements form a further layer with the same problem, their exclusivity, territory and post termination provisions negotiated once and then left alone for years.</p>
+<h2>Who owes which notice to whom</h2>
+<p>After signature an agreement becomes a list of duties with dates attached: change notices, forecast submissions, royalty reports, audit cooperation windows, discontinuation announcements. They are scattered across documents and owned by people who have never read them. A model can build that register from the executed set and keep it current as amendments arrive, so when a supplier proposes one change you can ask what it touches across everything you have signed.</p>
+<h2>Where AI fails here</h2>
+<p>It will not tell you what to accept. It proposes, a lawyer decides, and on anything load bearing the lawyer reads the clause itself.</p>
+<p>It is weak where your records are weak. If the executed set is incomplete, if side letters live in inboxes, or if the filed version is not the signed one, the output will be confidently wrong. Scanned paper and pricing annexes drawn as tables also degrade extraction, so anything taken from a schedule needs checking against the source before it is relied on.</p>
+<p>It has no view on leverage. Whether to concede a wider take obligation to a supplier you cannot replace is a judgement about the relationship, the roadmap and the alternatives, none of which is in the document. Nor will it predict how a clause plays out in a dispute: it can say what the words do and where they conflict, but not what a tribunal would make of that.</p>
+<h2>Starting where the paper repeats itself</h2>
+<p>Hand over the task you already do the same way every time. For most teams here that is either the inbound confidentiality paper from design and evaluation partners, or pulling pricing, forecast and commitment mechanics out of capacity agreements into one sheet.</p>
+<p>Pick one agreement type. Write down the positions you hold on it, including the fallback you will take and the point where you stop arguing. Run the agent across the executed set first, where you can check its output against what you already know, before pointing it at a live negotiation. If it finds something in the signed set that surprises you, that is the proof.</p>
+<p>If it would help to talk through which agreement type to start with, hello@adoptaipartners.com.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>
