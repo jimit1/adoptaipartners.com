@@ -1,0 +1,103 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Fraud Review in Healthcare: Payment Integrity and Special Investigations | Adopt AI Partners</title>
+<meta name="description" content="How payment integrity and special investigations teams use AI agents for provider billing review, case file assembly, overpayment work and appeal-proof narratives.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-fraud-review-in-healthcare/">
+<meta property="og:title" content="AI for Fraud Review in Healthcare: Payment Integrity and Special Investigations"><meta property="og:description" content="How payment integrity and special investigations teams use AI agents for provider billing review, case file assembly, overpayment work and appeal-proof narratives.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-fraud-review-in-healthcare/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1517120026326-d87759a7b63b?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Fraud Review in Healthcare: Payment Integrity and Special Investigations","description":"How payment integrity and special investigations teams use AI agents for provider billing review, case file assembly, overpayment work and appeal-proof narratives.","datePublished":"2026-10-03","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-fraud-review-in-healthcare/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / healthcare</div>
+<article><h1>AI for Fraud Review in Healthcare: Payment Integrity and Special Investigations</h1><div class="meta">3 October 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1517120026326-d87759a7b63b?w=1600&q=80&auto=format&fit=crop" alt="clinician walking a hospital corridor" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>This article is about the desk that looks at claims after somebody suspects they should not have been paid. Not adjudication, which decides coverage and price at speed. The payment integrity and special investigations desk, which takes a provider number and works out whether a billing pattern is a scheme, a sloppy practice, or a coder following guidance nobody wrote down clearly.</p>
+<p>It is harder than other counter-fraud work, because the subject is usually a clinician with a licence and a patient panel, and the evidence that settles it is a medical record written for clinical purposes rather than for you.</p>
+<h2>Intent, rule breaking, necessity and mistake</h2>
+<p>Every case has to land in one of four places. Fraud is intent: billing for a service that did not happen, or for a patient who was not eligible, by a provider who knows it. Abuse breaks the rules without clear intent, such as routinely coding to the highest level the documentation might arguably support. Waste is medically unnecessary volume that was genuinely delivered. Error is a wrong modifier, a transposed code, a duplicate the practice management system retried.</p>
+<p>They route differently. Error goes back as an education letter and a corrected claim. Abuse goes to a pre-payment edit or a provider agreement conversation. Fraud goes to investigation and possibly out of your organisation. If your disposition codes blur these, nothing downstream works, including anything you automate.</p>
+<h2>Pre-payment and post-payment are two different jobs</h2>
+<p>Pre-payment edits stop a claim before money moves. They are cheap to act on and expensive to get wrong, because every false positive is a clinician's cash flow. They have to be rule shaped, explainable in a sentence, and defensible to provider relations.</p>
+<p>Post-payment review is slower and has more evidence available: the claim is paid, the record exists, the pattern has had time to repeat. Recovery means an overpayment notice, a repayment plan or an offset against future claims, each of which a provider can appeal.</p>
+<p>Most of what an agent is good at belongs on the post-payment side, where there is a file to build. On the pre-payment side, let it propose candidate edits with the claim evidence behind them, and have a human decide whether the edit goes live.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1600&q=80&auto=format&fit=crop" alt="colleagues working with laptops at a table" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Assembly and cross-referencing, not scheme detection</h2>
+<p>The honest framing is narrow. An agent does not detect schemes your analytics missed, and it does not decide anything about a provider. It takes over the assembly, cross-referencing, consistency hunting and first-draft writing between a lead arriving and an investigator having a defensible opinion: pulling years of claim lines for a provider number and its related numbers, aligning them against eligibility history, reading scanned records, finding the three dates where the documentation does not support what was billed, and writing it up in a format the appeals unit accepts.</p>
+<p>Evaluate it on several hundred of your own dispositioned cases, run blind, measuring file completeness, factual accuracy of every cited claim line, and agreement with your reviewers.</p>
+<h2>Reviewing a provider's billing pattern</h2>
+<p>Pattern review is where most leads start.</p>
+<p>An agent can profile a provider against peers in the same specialty, place of service and patient mix, and surface the specific claim lines behind each observation rather than a score. The patterns worth assembling evidence for are familiar: a visit level distribution skewed to the highest codes with no matching complexity in the record, components billed separately when a bundled code exists, modifiers applied routinely rather than exceptionally, service minutes or procedure counts that exceed the hours in a working day, services dated when the patient was an inpatient elsewhere or the provider was not practising, and the same encounter appearing under more than one site or group identifier.</p>
+<h3>The cross-references that carry weight</h3>
+<p>An agent is at its best joining data nobody has time to join by hand: claim line against eligibility span, against date of death, against inpatient stay, against provider licensure and sanction status, against another site's claim for the same patient on the same date. Each produces claim lines with dates and amounts, which an investigator can act on. A percentile ranking is not evidence of anything.</p>
+<h3>Scheme shapes in pharmacy and equipment</h3>
+<p>Pharmacy and durable medical equipment supply are high volume and low scrutiny, and the assembly work is distinct enough to build for separately: dispensing records against prescriber records, refills that outpace what the days supply allows, items billed after a date of death, equipment delivered to addresses that recur across unrelated patients, prescriber identifiers used by a supplier the prescriber has never dealt with, and one beneficiary appearing across several suppliers for the same item category.</p>
+<p>Identity and eligibility misuse sits alongside it: a member number used where the member has never been treated, and the hard case where the patient is a participant rather than a victim.</p>
+<h2>Assembling the provider case file</h2>
+<p>Somebody spends weeks building the file before any real investigating happens. This is the best first build, because the evidence checklist usually already exists.</p>
+<p>The agent works that checklist: enrolment record and ownership history, every related provider and group identifier, the claim line extract with paid amounts, the policy, coding guidance and fee schedule version in force on each date of service, prior education letters and audit outcomes, member eligibility spans, and any complaints on file. Every item dated, sourced and linked to the original document. Where something is absent, the file says so, because a missing enrolment attestation or an unwritten local coding policy is itself a finding.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1631557777232-a2632ae3c67d?w=1600&q=80&auto=format&fit=crop" alt="laptop and papers on a wooden desk" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>The medical record request and the clinical read</h2>
+<p>The record request is the pivot of most cases. An agent can select the sample, draft the request with the exact dates of service and documents required, track what came back and chase what did not. When records arrive, it can map each document to the claim line it supposedly supports, extract the elements the code requires, and list every line where the documentation does not contain what was billed, quoting the record and citing the page.</p>
+<p>What it cannot do is decide whether care was medically necessary, or whether a clinician's documented reasoning supports the level billed. That is a qualified clinical reviewer's judgement, and at appeal it is the reviewer's name on it. Keep the agent on the narrower question of whether the documentation says what the claim says.</p>
+<h2>Overpayment calculation and extrapolation</h2>
+<p>Calculation is arithmetic over a defined sample and a defined rule, and an agent should do it: identified overpayment per claim line, applicable interest, and the working shown line by line.</p>
+<p>Extrapolation is not arithmetic in the same sense. Projecting a sample error rate across a universe is a statistical act that providers challenge successfully whenever the sampling method, universe definition or precision is weak. An agent can prepare the sampling frame, document the method and produce the figures. A statistician and your counsel decide whether to extrapolate at all.</p>
+<h2>The letter a provider's lawyer will read for holes</h2>
+<p>Cases end in a document a provider's lawyer will read looking for a hole. An agent can draft it in your format: what was reviewed and over what period, the policy and coding guidance in force, the claim lines at issue with amounts, what the record showed for each, the overpayment calculation, and the provider's prior notice of the rule.</p>
+<p>Two disciplines make the draft usable. Keep findings separate from inference, a line that blurs late in a long case. And have the agent list the strongest arguments against your own position, because the appeal will make them anyway.</p>
+<h3>Referral out of the organisation</h3>
+<p>Referral to a regulator, licensing board or law enforcement is a different document with a different threshold, and a decision a named person makes. An agent can assemble the package to the receiving body's format and flag what is missing against their checklist. It should never be able to issue a referral, send an overpayment notice or suspend payment on its own.</p>
+<h2>Where AI fails here</h2>
+<p>An outlier is not a fraudster. Specialist and tertiary practices look like outliers by definition: they see the complex patients, so their visit levels, procedure counts and costs per patient sit at the top of every distribution for proper reasons. A system that rewards statistical distance will keep pointing you at the hardest working practice in an underserved area.</p>
+<p>Accusing a clinician wrongly is not symmetrical with paying a doubtful claim. The doubtful claim is money. A wrong allegation is a career, a licence enquiry, a practice that may close, and patients losing access to care where there is no alternative. Set thresholds with that asymmetry in front of you.</p>
+<p>Patient data constrains what the agent may see and retain. Minimum necessary access, retention limits and audit of every access apply to an agent exactly as to a person. Build those limits first, not after a pilot.</p>
+<p>Clinical judgement cannot be inferred from a claim line. Whether a service was necessary for this patient on this day is not recoverable from codes, and an agent asked to infer it will produce confident answers that collapse under review.</p>
+<p>Pattern models inherit whatever bias is in your referral history. If particular practice types, locations, ownership structures or provider names were reviewed more readily in the past for reasons you would not defend aloud, a model built on those referrals reproduces the pattern faithfully and at higher volume, with the consistency making it look principled. Test for disparate treatment before deployment and continuously after.</p>
+<p>And an agent cannot fix an inconsistent disposition taxonomy or coding guidance nobody has written down. If two reviewers use one outcome code for different things, or what separates acceptable coding from upcoding lives only in a veteran coder's head, automation gives you the same ambiguity faster and better formatted. That cleanup comes first.</p>
+<h2>Where to start</h2>
+<p>Start with case file assembly on one scheme type where the evidence checklist is already written down. Durable medical equipment or a single procedure family is better first ground than a broad provider profiling programme: the documents are structured and the rule in force is easy to pin to a date. Build the assembly agent only, and live with it for a quarter. Add the documentation-to-claim-line comparison next, then narrative drafting once your reviewers trust the files.</p>
+<p>Adopt AI Partners builds these agents inside the client's own claims, clinical and case systems, and stays until the investigations team owns them. Success is not a convincing demonstration. It is that your investigators reach for it, your cases are better evidenced at appeal, and no finding rests on the machine's word. If you want a grounded view of where this would help first, describe your referral flow to Adopt AI Partners at hello@adoptaipartners.com.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>
