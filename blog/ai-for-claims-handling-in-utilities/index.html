@@ -1,0 +1,102 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Claims Handling in Utilities: Liability, Causation and Recovery on the Same Desk | Adopt AI Partners</title>
+<meta name="description" content="How a utility claims desk can use AI agents to assemble liability evidence, test causation, value damage and build recovery packs against third parties.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-claims-handling-in-utilities/">
+<meta property="og:title" content="AI for Claims Handling in Utilities: Liability, Causation and Recovery on the Same Desk"><meta property="og:description" content="How a utility claims desk can use AI agents to assemble liability evidence, test causation, value damage and build recovery packs against third parties.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-claims-handling-in-utilities/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Claims Handling in Utilities: Liability, Causation and Recovery on the Same Desk","description":"How a utility claims desk can use AI agents to assemble liability evidence, test causation, value damage and build recovery packs against third parties.","datePublished":"2026-10-05","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-claims-handling-in-utilities/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / utilities</div>
+<article><h1>AI for Claims Handling in Utilities: Liability, Causation and Recovery on the Same Desk</h1><div class="meta">5 October 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1600&q=80&auto=format&fit=crop" alt="colleagues working with laptops at a table" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>A claims function inside a water, gas or electricity business is not an insurance operation with a different logo on the letterhead. You own the asset alleged to have caused the damage, the telemetry that records what it was doing, the crew that was standing over the hole and the job pack they worked from. That gives you evidence an insurer would pay to obtain, and an obligation to find it.</p>
+<p>Most claims desks here are not short of evidence. They are short of the hours to join it up before a solicitor's letter hardens into a deadline. That gap is where an AI agent earns its place, and it is narrower than most software pitches admit.</p>
+<h2>Two books that share a queue and nothing else</h2>
+<p>Claims against the utility are a defence problem. Property damage from a burst or a leak, internal flooding, sewer escape, surface water, a driveway or garden left worse after a street works dig, a vehicle damaged by a cover that moved or a trench that was not plated, surge damage to appliances after a voltage event, spoiled food after a long interruption, business interruption from a commercial customer, personal injury from an excavation. Alongside those sits compensation owed automatically on a statutory trigger, whether or not a customer thinks to ask.</p>
+<p>Claims by the utility are a proof problem. Third party damage to buried plant, the contractor or developer who put a bucket through a main or a cable, unmetered supply and abstraction, recovery of reinstatement cost, and the claim that eventually lands with the contractor's own insurer.</p>
+<p>The two books look alike in a case management system and behave nothing alike. Inbound, you test whether an allegation stands up. Outbound, you build something a stranger's insurer cannot shrug off. Different evidential standard, different clock, different tone. One template for both loses money on both.</p>
+<h2>The first notice is rarely a claim form</h2>
+<p>A single incident reaches you as a contact centre call logged as a complaint, a solicitor's letter, a loss adjuster's instruction, a bulk letter from a claims management firm, a street works inspector's note, the crew's own notes, and an email with nine photographs attached and nothing written in the body.</p>
+<p>An agent reads all of those into one structure: who is claiming, where, when, what was damaged, what they say caused it, and what remedy they want. Each field is sourced back to the sentence it came from, so a handler can see why it reads the date of loss as it does. Anything mentioning injury, a vulnerable occupant, a child, or a date close to limitation goes to a named human rather than a queue.</p>
+<h3>Duplicates that arrive weeks apart</h3>
+<p>The call comes on the day of the burst. The solicitor writes a month later and never mentions it. The adjuster's instruction uses the insurer's own reference. An agent matches on place, date of loss and damage description, then proposes a link for a handler to confirm. Two files on one event is how a desk settles twice, or says two different things in writing.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=1600&q=80&auto=format&fit=crop" alt="group of people in a meeting" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>The same house under four references</h2>
+<p>Almost every hard claim here starts as an addressing failure. The claim quotes a postal address. The asset record speaks in streets, nodes and pipe sections. The job pack has a works reference and a grid position. The customer account holds a third version of the same house, usually with the flat number in a different field.</p>
+<p>An agent resolves the claimed location to a single point on your network and shows the chain it used. Where confidence is low it offers both candidates rather than picking one quietly. That is the difference between pulling the pressure trace for the right main and disproving a claim with data from the next street.</p>
+<h2>Assembling the liability file from records you already hold</h2>
+<p>Once the place is fixed, the file assembles from records that already exist: the asset record with its material and age, the pressure or flow trace across the relevant window, the switching and outage log, the job pack and who was on site, the pre-dig survey and the plans issued, the as-built drawing, the inspection and maintenance history, and every previous claim at or near that address.</p>
+<p>The agent retrieves each item for the window around the date of loss and labels it present, absent, or present but inconclusive. The absence list is the part handlers want. Knowing early that there is no pre-dig survey in the pack changes how you run the claim, and it changes it before an adjuster finds the same hole for you.</p>
+<h2>Causation, and the pipe that was never yours</h2>
+<p>Causation is where this desk lives. The water came out of something. Whether that something was your main, the customer's private supply pipe, a drain belonging to the property, another utility's works in the same footway, or rainfall that would have put water through that airbrick anyway, is the whole claim.</p>
+<p>An agent sets out the competing explanations with the evidence that supports and contradicts each. The trace shows no pressure anomaly. The outage log shows a switching operation forty minutes before the reported appliance failure. The inspection record shows the cover was passed six weeks earlier. That is a structured argument with its gaps marked. The agent does not conclude and does not write the word liability. A handler decides from it.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1600&q=80&auto=format&fit=crop" alt="discussion in a modern office" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Apportionment when three organisations dug the same footway</h2>
+<p>Where several parties have opened the same ground inside a year, the agent builds a timeline from street works records, permits, your own job packs and reinstatement dates, then shows which works sat closest to the damage in time and space. It will not tell you the split. It will stop you negotiating one without knowing someone else was in that trench after you were.</p>
+<h2>A third claim at the same address</h2>
+<p>Two things look identical in a claims list. One is an asset that keeps failing, where the third claim at an address is a maintenance signal you are paying for twice. The other is a claimant who has learned the process and works it.</p>
+<p>An agent surfaces both as data: claim frequency at the location, whether the asset has a repair history that matches, whether the damage descriptions evolve, whether the same representative appears across unrelated addresses. It does not label a person. It routes the file to whoever should look at it, which for the first pattern is asset management rather than claims.</p>
+<h2>Deadlines that run whether or not anyone replies</h2>
+<p>The statutory compensation clock runs whether anyone watches it. Legal correspondence carries response deadlines. Limitation is long enough to be forgotten and absolute when it arrives. And there is the quiet one, a claim nobody answered, which does not go away but gets more expensive, because costs accrue and goodwill does not.</p>
+<p>An agent tracks every date it has extracted, counts down, and escalates before a breach rather than reporting one afterwards. It drafts the holding response and the request for missing information. A human sends it.</p>
+<h2>Quantum, betterment and three documents that disagree</h2>
+<p>Quantum arrives as a claimant's estimate, a schedule of works and an adjuster's report, with gaps between them nobody has reconciled. An agent cross-reads the three, lists line items that appear in one and not the others, flags rates outside what you have paid at comparable claims, and marks probable betterment where a new kitchen replaces a twenty year old one.</p>
+<p>It produces a reasoned range with the reasoning visible. It never sets a reserve, approves a payment or signals an offer. Some claims should settle above their strict legal value because the customer relationship or the regulatory exposure makes that the right commercial call, and that judgement belongs to a person who can be asked to defend it.</p>
+<h2>Going after the contractor who struck your plant</h2>
+<p>Outbound recovery fails on evidence packs, not on entitlement. The pack needs the plans that were issued and when, the enquiry record, the survey, the site photographs, the damage report in the crew's own words, the repair cost built up from labour, plant and materials rather than asserted as a total, and the loss of supply consequences.</p>
+<p>An agent assembles the pack to a standard template, names the missing element, and drafts the notification. A crew note reading "struck duct at Elm Road junction 2, no plans on site" is worth more than a paragraph of narrative, and should be carried forward verbatim.</p>
+<h2>Exaggeration, handled as its own queue</h2>
+<p>Some claims are inflated and a small number are invented. Treating that as a moral matter wastes time; treat it as routing. The agent flags internal inconsistency, a date of loss that does not match the trace, damage that predates the works, and duplicate invoicing across claims, then hands the file to the people who investigate. The genuine book moves faster when the awkward files stop sitting in it.</p>
+<h2>Where AI fails here</h2>
+<p>Thin records defeat it. With no trace, no survey and a crew note saying "all fine", an agent can tell you the file is empty but cannot reconstruct what happened, and a confident narrative built on nothing is worse than an honest blank.</p>
+<p>Contradictions need a human. When the crew's note says the ground was already wet and the pressure trace says nothing happened, the resolution is a conversation with the person who was there.</p>
+<p>Photographs promise more than they deliver. Most show a wet carpet with no scale, no date and nothing identifying whose asset is involved. Models will describe them fluently and tell you very little.</p>
+<p>Injury and vulnerability should not be automated at all. Nor should any admission, reserve, offer or payment. These are the places where being confidently wrong costs most, and where the audit trail is read out later by someone who is not on your side.</p>
+<h2>Pick the damage type that recurs most</h2>
+<p>Do not start with the whole desk. Take the single damage type that fills your queue, usually internal flooding from a burst or reinstatement disputes after a dig, and automate intake, location resolution and evidence assembly for that type only. Measure how long a handler spends before they can decide, and whether the missing evidence list is right. When that holds, add the next type. Adopt AI Partners works this way because the claims that matter here are won on the file, and the file is either complete or it is not. If you want to talk it through, hello@adoptaipartners.com reaches us.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>
