@@ -1,0 +1,100 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Claims Handling in Construction: Assembling the Contemporaneous Record Before the Notice Period Closes | Adopt AI Partners</title>
+<meta name="description" content="How an AI agent pulls site diaries, labour returns, RFIs and photographs into one evidenced narrative, and flags the notice trigger while the contractual clock still runs.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-claims-handling-in-construction/">
+<meta property="og:title" content="AI for Claims Handling in Construction: Assembling the Contemporaneous Record Before the Notice Period Closes"><meta property="og:description" content="How an AI agent pulls site diaries, labour returns, RFIs and photographs into one evidenced narrative, and flags the notice trigger while the contractual clock still runs.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-claims-handling-in-construction/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Claims Handling in Construction: Assembling the Contemporaneous Record Before the Notice Period Closes","description":"How an AI agent pulls site diaries, labour returns, RFIs and photographs into one evidenced narrative, and flags the notice trigger while the contractual clock still runs.","datePublished":"2026-10-06","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-claims-handling-in-construction/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / construction</div>
+<article><h1>AI for Claims Handling in Construction: Assembling the Contemporaneous Record Before the Notice Period Closes</h1><div class="meta">6 October 2026 &nbsp;&middot;&nbsp; 7 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600&q=80&auto=format&fit=crop" alt="team meeting around a conference table" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>A claim on a construction project has nothing to do with insurance. It is a contractual entitlement: a variation to be valued, an extension of time to be granted, loss and expense to be recovered, a compensation event to be assessed, or a subcontractor's delay and disruption claim arriving at your desk with four lever arch files behind it. The entitlement is usually not the hard part. Most commercial directors and quantity surveyors can tell you within an hour of a disruptive event whether there is a claim in it and roughly which clause it sits under.</p>
+<p>The hard part is two things. First, the notice period, which is contractual, short, and running whether or not anyone has noticed. Second, the record, which exists in fragments across half a dozen systems and three generations of phone, and which has to be assembled into a dated narrative that a contract administrator or an adjudicator will accept. Claims are won and lost on whether the records were kept at the time. Nothing you write eighteen months later recovers a day that was never written down.</p>
+<h2>The claim is a dated story told in the contract's own words</h2>
+<p>Every entitlement reduces to the same structure. An event occurred. It occurred on a particular date, in a particular location, affecting particular activities. It was notified within the period the contract requires. It caused delay to something that mattered to completion, or additional cost, or both. And the causal link between the event and the effect is demonstrated by records made at the time rather than by reconstruction.</p>
+<p>What makes this painful is that each element of that structure lives somewhere different. The event is in an instruction, a drawing revision, an RFI response that arrived three weeks late, or a note in a site diary about a late-release area. The effect is in labour allocation sheets, plant returns, daywork sheets and the progress photographs. The programme impact is in a programme update that may or may not have been accepted. The notice is in an email that may or may not have gone to the person the contract names, in the form the contract requires.</p>
+<h2>Where the evidence actually lives</h2>
+<p>On a live project the record is scattered by default, and the scattering is not a failure of discipline so much as a consequence of how work is run.</p>
+<ul>
+<li>The document management system holds the formal trail: instructions, RFIs and their response dates, drawing registers with revision history, submittals, the issued programme and its revisions, valuations and payment notices.</li>
+<li>Site diaries, allocation sheets and daywork sheets may be in the DMS, in a site-based app, in a scanned folder, or in a book in the site manager's drawer, often all four across the life of one job.</li>
+<li>Progress photographs sit in phone galleries, in a photo app, and attached to daily reports, with timestamps that are usually reliable and location data that usually is not.</li>
+<li>Email carries the argument, the agreement, and the chronology that nobody else recorded.</li>
+<li>WhatsApp carries the truth. The sequence actually agreed at 7pm on a Thursday, the confirmation that an area was still occupied by another trade, the voice note that explains why the gang stood down. It is the most probative material on many projects and the least likely to be in evidence.</li>
+</ul>
+<p>When a claim is prepared, somebody spends weeks pulling these together, and the recovery often turns on a fortnight of records nobody can find.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1575230167650-dce335edc7f4?w=1600&q=80&auto=format&fit=crop" alt="several tower cranes over a construction site" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>The notice clock is the part that actually costs money</h2>
+<p>Notice provisions differ by form, but they share a shape. Under NEC contracts there is an early warning obligation and a defined period for notifying a compensation event, with consequences where the notification is late. Under JCT forms there are relevant event notices and the requirement to keep the employer's agent informed as matters develop. Subcontracts are frequently drafted back-to-back with periods shorter than the main contract, which means the subcontractor's notice must land early enough for the main contractor to pass it up in time.</p>
+<p>The failure mode is mundane. A change is agreed verbally on site and worked instantly because the programme will not wait. The instruction arrives later or never. The notice period starts from the event, not from the paperwork. Six weeks later the surveyor finds the cost in the labour returns and the clock has already run. Where the contract contains a time bar, the entitlement is gone regardless of merit.</p>
+<h2>What an AI agent can genuinely do here</h2>
+<p>The useful framing is not automated claims. It is an agent that reads the whole intake continuously, so the record is assembled as the job runs rather than reconstructed afterwards.</p>
+<h3>Assemble the record for a date range and a location</h3>
+<p>Given a window and a location, an agent retrieves every site diary entry, allocation sheet, daywork sheet, plant return, photograph, RFI, instruction, drawing revision and message thread that touches it, and returns them in date order with the reference of each document. This is the single largest time saving available, and it is the task AI is most reliably good at, because it is retrieval and normalisation rather than judgement.</p>
+<h3>Spot the notice trigger early</h3>
+<p>An agent reading email and site messaging can recognise the language of a change, a stand-down, an access restriction or a late release, and raise a flag naming the likely clause and the date the period runs from. It will not be right every time. It only has to be right often enough to prompt a surveyor to look, which is cheaper than a time-barred claim.</p>
+<h3>Draft the narrative against the clause</h3>
+<p>Given the clause, the event and the assembled record, an agent can produce a first-draft narrative in the structure the contract expects, with every factual assertion carrying a citation to a document reference and a date. The draft is a starting point for a quantity surveyor, not a submission.</p>
+<h3>Cross reference the correspondence trail</h3>
+<p>An agent can reconcile what was claimed against what the records support, and surface the inconsistencies before the other side does. Labour booked to an activity shown as complete. A delay notice referring to an instruction issued after the notice. A photograph that contradicts a diary entry. Finding these early is worth more than any drafting speed.</p>
+<h2>Defending claims made against you</h2>
+<p>The same capability runs in the other direction, and this is where it often pays first. When a specialist subcontractor submits a delay and disruption claim, the questions are consistent: was notice given in the form and period the subcontract requires, do their own records support the resource they say they deployed, does the delay they claim sit on the critical path of an accepted programme, was there concurrent delay of their own making, and do your records of their progress tell the same story as theirs. An agent can run that comparison across both parties' records in days rather than weeks, and produce a schedule of where the two accounts diverge.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1608783424912-392157b94f59?w=1600&q=80&auto=format&fit=crop" alt="crane on a construction site" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Where AI fails here</h2>
+<h3>It cannot create records that were never kept</h3>
+<p>If the diary for the relevant fortnight was not written, no model recovers it. An agent that produces a confident narrative over a gap in the record is actively dangerous, because it reads as evidence. Insist that gaps are reported as gaps.</p>
+<h3>It cannot decide entitlement</h3>
+<p>Whether a clause bites, whether a notice was valid, whether a time bar is enforceable, whether to claim at all given the commercial relationship: these are matters of contractual and legal judgement, and they belong to your commercial lead and your advisers. An agent that offers a view here is offering a guess in confident prose.</p>
+<h3>It cannot do programme forensics for you</h3>
+<p>Critical path, concurrency and the choice of delay analysis method depend on programme logic, the quality of the baseline, and professional judgement about method. A model can describe what the programme says and where updates diverge. It cannot responsibly conclude that an event caused twenty-three days of critical delay.</p>
+<h3>Deployment failures are as common as model failures</h3>
+<p>Citations that look right and point at the wrong document. Messaging data that was never captured, so the best evidence is invisible to the agent. Access rights that let a drafting tool read privileged material. Scanned handwriting that defeats extraction. Each of these is fixable, and each will sink the work if nobody owns it.</p>
+<h2>If it cannot show its working, it is not evidence</h2>
+<p>Test it against a claim you have already closed, where you know the answer and the outcome. Ask the agent to assemble the record for the same windows and compare what it found against what your team found by hand, including what it missed. Then run notice detection in shadow mode for a quarter on live projects, logging every flag and every flag that should have been raised and was not. Require a document reference and a date behind every assertion, and have a surveyor verify a sample. If the agent cannot show its working, it is not evidence, and evidence is the entire point.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>
