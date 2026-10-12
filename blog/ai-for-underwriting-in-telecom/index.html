@@ -1,0 +1,102 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Underwriting in Telecom: Credit Decisions on a Device You Hand Over Today | Adopt AI Partners</title>
+<meta name="description" content="How telecom credit decisioning changes when an agent resolves identity, aggregates device and airtime exposure across accounts, and records why each answer was given.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-underwriting-in-telecom/">
+<meta property="og:title" content="AI for Underwriting in Telecom: Credit Decisions on a Device You Hand Over Today"><meta property="og:description" content="How telecom credit decisioning changes when an agent resolves identity, aggregates device and airtime exposure across accounts, and records why each answer was given.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-underwriting-in-telecom/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Underwriting in Telecom: Credit Decisions on a Device You Hand Over Today","description":"How telecom credit decisioning changes when an agent resolves identity, aggregates device and airtime exposure across accounts, and records why each answer was given.","datePublished":"2026-10-12","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-underwriting-in-telecom/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / telecom</div>
+<article><h1>AI for Underwriting in Telecom: Credit Decisions on a Device You Hand Over Today</h1><div class="meta">12 October 2026 &nbsp;&middot;&nbsp; 10 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=1600&q=80&auto=format&fit=crop" alt="group of people in a meeting" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>Telecom underwriting is unusual among credit jobs. Each decision is individually cheap, the applicant is often standing at a counter or halfway through a web form, and the volume is high enough that nobody will ever read most of the files. The exposure is an odd shape too: part hardware handed over on the spot, the rest airtime billed month after month to somebody who can walk away from a phone contract far more casually than from a loan.</p>
+<p>The two kinds of error are not symmetrical, and only one is visible. A wrong approval eventually arrives as unrecovered hardware and a written-off balance, with a name attached. A wrong decline arrives as nothing. The applicant does not appeal, does not complain and does not come back. They buy the same device from the operator across the street, and your file records a clean, defensible no.</p>
+<p>Agentic systems fit the work for the same reason they fit underwriting elsewhere: most of the effort is assembly and checking rather than judgement. Resolving who the applicant actually is, reconciling what they typed against what your systems already hold, pulling scattered exposure into one view, and writing down why the answer came out as it did. How much hardware risk you want sitting on thin files stays with people.</p>
+<h2>Identity has to be settled before credit means anything</h2>
+<p>A perfect credit assessment of the wrong person is worthless, and in high volume consumer channels the wrong person is usually an honest mistake. Names are entered with initials, a middle name, a married name or a transliteration. Addresses arrive abbreviated, with the flat number in the wrong field, or as a building since renumbered.</p>
+<p>An agent can do the resolution work properly instead of relying on exact string matching. It normalises the address, searches your own customer base under name and date of birth variants, checks whether the applicant has held an account before and how it ended, and reconciles the submitted details against the documents uploaded with them. The output is a resolved identity, the evidence supporting it, and an explicit confidence position.</p>
+<p>Where resolution is weak, the useful behaviour is to say so and ask for one more piece of evidence rather than proceed on a partial match. A declined applicant who was matched to somebody else's record is the one complaint here that will escalate.</p>
+<h2>A thin file is not the same as a bad one</h2>
+<p>Bureau data is thin or absent for groups of people who are perfectly good customers: the young, recent arrivals to the country, people who have never used revolving credit, and people whose financial life sits with family. Default policy treats silence as risk, so these applicants collect a deposit demand or a decline, then disappear quietly.</p>
+<p>This is where an agent adds commercial value, because the evidence usually exists and is simply not assembled. Prepaid top-up behaviour with you, a previous contract settled in full and closed, a fixed line account at the same address in good standing, the length of the relationship rather than its size. An agent can gather what you lawfully hold, present it as a case with each item sourced, and recommend a position: approve, approve with mitigation, or refer.</p>
+<p>What it should not produce is another score layered on the bureau score. The thin file problem is not solved by more confident arithmetic on less data. It is solved by making the available evidence visible to whoever sets appetite.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1600&q=80&auto=format&fit=crop" alt="colleagues working with laptops at a table" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>The amount at risk is hardware now and airtime later</h2>
+<p>The two components of telecom exposure behave nothing alike. Device value leaves the building at the moment of sale and is rarely recovered in any useful condition. Airtime accrues gradually and can be curtailed. Treating the application as a single credit limit hides the fact that most of the loss sits in the earliest weeks, before the customer has paid anything at all.</p>
+<p>An agent can decompose the exposure the application actually creates: the financed or subsidised device amount, accessories added to the agreement, the contracted tariff commitment, insurance and add-on services, and the open-ended elements such as roaming and premium usage that a spend control would otherwise have to catch. Stated that way, the right mitigation often becomes obvious, and it is frequently not a decline.</p>
+<h3>Counting the same customer once instead of several times</h3>
+<p>Household and business exposure fragments easily. Lines get opened across different channels, under slightly different name spellings, against the same address and sometimes the same payment instrument. Each application passes on its own merits while the aggregate quietly becomes something no underwriter approved.</p>
+<p>An agent can link accounts on address, bill payer, payment instrument and resolved identity, then present total live exposure, including balances outstanding on devices still being paid for. The linking logic has to be inspectable, because a false link between unrelated people living at the same address produces an unfair decline, and an unfair decline here is invisible.</p>
+<h2>Deposits and spend limits are the dial between yes and no</h2>
+<p>A binary approve or decline throws away customers you could have taken safely. The policy toolkit is wider than most decision engines use: a deposit, a lower spend cap, a cheaper device tier, a requirement for direct debit, a staged limit that rises with payment history, or approving the airtime while declining the financed handset.</p>
+<p>An agent is well suited to proposing the mitigated version of a marginal application rather than just rejecting it. It can set out which lever addresses which concern, what the residual exposure looks like under that option, and the wording the advisor can use at the point of sale. The policy defines the ladder and the bounds. The system chooses a rung and shows its reasoning, so a declined applicant becomes a counter-offer the sales channel can actually present.</p>
+<h2>Business applications where the trading entity is not the name on the order</h2>
+<p>Business orders arrive in the name of the brand, while credit attaches to a legal entity that may be a sole trader, a partnership, a recently incorporated company or one subsidiary of a group you already serve. The order form rarely makes the distinction clear, and the person placing it often does not know which entity the finance team considers responsible.</p>
+<p>An agent can resolve the entity properly: match the trading name to a registered entity, read the filing and incorporation history, identify the parent and sibling companies, and check whether a guarantee exists and what it covers. It can then aggregate everything that group already holds with you across accounts, sites and service identifiers, including connections sold by a different channel years earlier.</p>
+<p>Multi-site accounts deserve one credit view rather than one per site. The valuable output is an entity map showing which accounts belong to which company, which company is actually on the hook, and where the aggregate exposure sits once all of it is added up.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600&q=80&auto=format&fit=crop" alt="team meeting around a conference table" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Applications that arrive through someone paid to get them approved</h2>
+<p>A large share of originations come through dealers, retailers and resellers whose commission depends on the sale completing. Most behave well. The incentive still shapes the data, and it does so in patterns rather than in individual cases: income entered at a generous round figure, employer fields filled identically across unrelated applicants, one obliging address reused, an order split so that each part sits under a limit.</p>
+<p>A single application gives you no way to see this. An agent reading a channel's whole stream can, and it can flag the pattern to credit review rather than to the individual customer, which keeps a genuine applicant from being punished for where they walked in. That evidence belongs in channel performance conversations too, alongside the quality metrics the sales organisation already tracks.</p>
+<h2>Reassessment at upgrade, when the customer is already yours</h2>
+<p>An upgrade creates fresh exposure, usually a more expensive device and sometimes a balance still outstanding on the previous one. What makes it different from a new connection is that you now hold the data you lacked originally: how the customer has actually paid you, whether arrears occurred and were cured, how usage has moved, whether bills have surprised them.</p>
+<p>An agent can assemble the reassessment in the time the conversation allows: outstanding balance on the existing agreement, whether the old device is being traded in, total exposure after the upgrade, and how all of that compares to the assumptions behind the original decision. It should flag both directions. A long-standing customer whose payment pattern has quietly deteriorated is being handed a second device on the strength of their tenure. Equally, somebody once approved on strict terms has since earned better ones, and nothing in most systems ever revisits that.</p>
+<h2>A decision record that still makes sense a year later</h2>
+<p>Bureau data refreshes, policy changes, and rules get retired. Re-running an old application through today's stack produces a different answer, which is exactly what you cannot afford when a complaint handler or a regulator asks why a specific person was declined.</p>
+<p>The record has to be a snapshot: the inputs as they stood, which source supplied each one, the policy version in force, the rules that fired, the mitigation offered, and any manual override with its author and stated reason. Producing this is a by-product of an agent doing the assembly, and it is worth having even while the decision itself stays with a person.</p>
+<h3>What you can tell someone who was turned away</h3>
+<p>Reason text should be derived from what actually drove the outcome, expressed in language the applicant can act on, and it should include the route back: the deposit option, what would change the answer, how to query the data behind it. Explanations composed after the fact to sound reasonable are worse than a blunt refusal, because they commit you in writing to a reason the decision did not use.</p>
+<h2>Where AI fails here</h2>
+<p>The training data is censored, and this is the structural limit. You only observe how approved applicants behaved. The people you declined have no outcome, so a model learned from your own history is confident about a population it has never seen. Reject inference is an assumption wearing the clothes of evidence, and it hides the cost of over-tight cut-offs rather than measuring it.</p>
+<p>Alternative data for thin files drifts towards proxies. Device type, handset age, postcode, tenure at address and name patterns all correlate with characteristics you are not permitted to decide on, and a model will reconstruct them from inputs that look innocuous one at a time. Intent is no defence. Outcomes have to be tested across groups, deliberately and on a schedule.</p>
+<p>Confidence delivered at speed becomes instruction. An advisor with a queue in front of them reads a recommendation as an answer, and a system that presents weak identity matches and strong ones in the same typeface guarantees that nobody notices the difference.</p>
+<p>Lastly, the error you most want to measure is the one your metrics cannot see. Bad debt is reported; lost good customers are not. The only honest way to size that is to let a deliberately relaxed cohort through below the usual cut-off and watch how it performs. That costs real money, which is why it is almost never done, and why the cut-off tends to drift tighter every year with nothing to push back.</p>
+<h2>Start where the credit decision is already written down</h2>
+<p>Begin with the part of the policy that exists in a document rather than in somebody's judgement. The deposit and spend limit ladder is a good candidate, as is entity resolution on business applications, because correct answers already exist and can be checked. Run the agent in shadow mode over decisions you have already made and can look back on, and include the declined applicants who later reapplied and were approved, since those are the clearest evidence of how much good business your current cut-off is losing.</p>
+<p>Add the decision record next. It pays for itself in dispute handling whether or not the decisioning itself is ever automated, and it makes every later change measurable. Keep appetite, policy and override authority with people, and insist that every assembled figure can be traced back to the system that supplied it. Adopt AI Partners works with credit and commercial teams on that sequence. If you want to talk it through against your own decline population, write to hello@adoptaipartners.com.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>
