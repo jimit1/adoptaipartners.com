@@ -1,0 +1,111 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Sales Operations in Manufacturing | Adopt AI Partners</title>
+<meta name="description" content="How manufacturers apply AI to the quote to order desk: RFQ packets, customer part numbers, configured pricing, quote expiry, channel orders and rebate tiers.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-sales-operations-in-manufacturing/">
+<meta property="og:title" content="AI for Sales Operations in Manufacturing"><meta property="og:description" content="How manufacturers apply AI to the quote to order desk: RFQ packets, customer part numbers, configured pricing, quote expiry, channel orders and rebate tiers.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-sales-operations-in-manufacturing/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1717386255773-1e3037c81788?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Sales Operations in Manufacturing","description":"How manufacturers apply AI to the quote to order desk: RFQ packets, customer part numbers, configured pricing, quote expiry, channel orders and rebate tiers.","datePublished":"2026-10-15","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-sales-operations-in-manufacturing/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / manufacturing</div>
+<article><h1>AI for Sales Operations in Manufacturing</h1><div class="meta">15 October 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1717386255773-1e3037c81788?w=1600&q=80&auto=format&fit=crop" alt="a large machine in a large industrial building" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>An enquiry lands on Friday afternoon from a buyer at a tier one customer. The subject line is a project code nobody recognises. Attached are a spreadsheet of line items, several drawings at different revisions, a terms document, and a note asking for pricing at two annual volumes by the middle of next week.</p>
+<p>Most of the part numbers are the customer's own. Two lines have no drawing, only a description. One drawing calls out a material grade you do not stock and a tolerance tighter than that family has ever been quoted at.</p>
+<p>Before anyone can price it, someone has to establish what has actually been asked for. That work is sales operations in a manufacturer: not pipeline hygiene and not forecast calls, but the quote to order path, where the volume sits in document handling, number matching and price administration.</p>
+<h2>An enquiry arrives as a folder</h2>
+<p>Requests for quotation arrive as a packet, not as structured demand: an email body with the real requirements in it, a spreadsheet with the customer's column headings, drawings as PDFs, sometimes a bill of materials, sometimes a specification referenced only by number.</p>
+<p>The first pass is clerical: which lines are repeat parts, which are new, and which cannot be priced because the drawing is missing, the finish is unstated or the annual volume is blank.</p>
+<p>An agent can read the packet and produce a line level enquiry record: each requested item, the drawing and revision it maps to, the volume, the requested date, and a separate list of what is missing. The missing list is the valuable half. A desk that raises the clarification on Friday is a week ahead of one that finds the gap in costing.</p>
+<h2>Nobody buys using your catalogue numbers</h2>
+<p>Customers order against their own part numbers, and so do distributors. Add the legacy numbering from an acquisition, the competitor numbers used as shorthand, and the lines carrying no number at all, only a description that half describes the part. Your cross reference table covers the regular accounts and lives partly in a spreadsheet, partly in the head of one long serving person.</p>
+<p>Matching is the most repeated task on the desk. An agent can resolve an inbound line to your internal number from the description, the drawing, the customer's previous orders and your existing cross reference entries, then show the evidence, not only the answer.</p>
+<p>It should also write back. Every confirmed match is a cross reference entry you did not have, and the table stops decaying.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=1600&q=80&auto=format&fit=crop" alt="colleagues working with laptops at a table" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Reading the drawing before anyone prices it</h2>
+<p>Cost on a machined, fabricated or moulded part is set by callouts, not by the part name. Material grade and condition, wall thickness, surface finish, flatness and concentricity tolerances, heat treatment, plating, and inspection requirements that mean a first article pack before anything ships.</p>
+<p>An agent can pull those callouts into a summary, compare them against parts you already make, and flag what matters commercially: a tolerance tighter than the process you would normally quote, a customer specification at a revision you have never been issued, a finish that forces an outside operation.</p>
+<p>That is a prepared engineering review, not a substitute for one.</p>
+<h2>A configured price is a build, not a number</h2>
+<p>A configured price is a build. Material weight and grade at today's cost, offcut allowance, the routing and its cycle times, setup, secondary operations, outside processing, freight, and then the quantity effects: minimum order quantity, batch size, whether the price assumes a release schedule or a single shipment.</p>
+<p>An agent can assemble the first pass build from the routing, the current material price and the comparable quotes in your own history, with the comparisons visible: what this family was quoted at last year, what the material has done since, the margin that implies. The estimator adjusts and owns the number. The lookups are already done, and the basis of the quote is recorded rather than remembered.</p>
+<h2>Tooling, and the charge that gets decided twice</h2>
+<p>Tooling is the part of the quote most likely to be wrong later. A charge is agreed upfront, amortised across an assumed volume, or waived because the programme is expected to run for years. Then the programme runs at a fraction of the forecast, and nobody notices because the recovery was never tracked as a balance.</p>
+<p>An agent can hold that balance against actual releases and show which recoveries are behind the assumption they were priced on, and check whether the tool for a repeat enquiry exists and who owns it.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1652211955967-99c892925469?w=1600&q=80&auto=format&fit=crop" alt="workers on a factory floor" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Validity dates and a material price that will not sit still</h2>
+<p>Quotes expire. Steel, copper, resin and bought in components move, and your quote either carries a firm period, a surcharge clause, an index linkage, or nothing at all. When input prices move, the open quote book splits into quotes still safe to honour and quotes that are now underwater.</p>
+<p>This is monitoring work an agent does well: track open quotes against their expiry and their price basis, recompute the material content when the index moves, and produce the requote list with the exposure on each. Holding a price, passing on an increase or letting a quote lapse stays with a person.</p>
+<h2>The same quote, four revisions deep</h2>
+<p>Quotes get revised because the customer changes the quantity, releases a new drawing revision, or splits the award across two suppliers. Each revision goes out as another PDF, and the authoritative version ends up in somebody's sent items.</p>
+<p>An agent can maintain the revision history as a record rather than a folder: what changed between versions, which revision the customer is holding, what the terms are on the live one. The failure it catches is a purchase order arriving priced against a superseded revision.</p>
+<h2>Three naming conventions and a portal export</h2>
+<p>Channel demand arrives in whatever shape the channel uses. A distributor emails a purchase order as a PDF. Another expects you to log into a portal and export a file. A third sends structured messages that validate cleanly and still describe parts in a naming convention of their own. Line numbering, units of measure and delivery terms differ across all three.</p>
+<p>Turning those into order lines your system accepts, then checking each against the quote behind it, is high volume and low judgement. An agent can normalise, reconcile the price on every line, and separate the clean lines from the exceptions. The exceptions are where the money is: a line priced from an old quote, a quantity below the minimum, a delivery term the account was never set up with.</p>
+<h2>The agreement says one tier and the order line says another</h2>
+<p>Price agreements and rebates are administered by whoever has time. A customer earns a volume tier partway through the year and keeps being invoiced at the old one because the trigger lived in a clause nobody is watching. A distributor submits a claim for price support, and validating it means reading the agreement, matching the resale lines and checking the end customer was in scope.</p>
+<p>An agent can track cumulative volume against every live agreement, flag entitlements as they trigger rather than at year end, prepare the accrual position, and check inbound claims against the agreement text.</p>
+<h2>A price list is a document with a date on it</h2>
+<p>Lists have effective dates, they overlap, and customers have their own versions. An increase letter goes out with a date on it, and orders keep arriving at the old price for months, some legitimately because the customer holds a quote that has not expired, some because the entry was never checked.</p>
+<p>An agent can test every order line against the list in force on that order's date, flag the stale prices, and say which are contractually owed and which are simply unchecked. That is margin recovery with no selling involved.</p>
+<h2>What the CRM calls won and what the plant shipped</h2>
+<p>A won opportunity is a promise. The ERP records what happened: lines partially shipped, a substitution the planner made, a schedule line cancelled, a blanket order whose releases never came. None of that flows back to the opportunity record, so the reported win and the realised revenue describe different quarters.</p>
+<p>An agent can reconcile continuously from quote to order to shipment to invoice and present the differences commercially: this award is behind its volume assumption, this line shipped at a price neither the quote nor the agreement supports.</p>
+<h3>The hold nobody tells the sales team about</h3>
+<p>Credit holds are a finance action with a commercial consequence: the order stops, the customer's expectation does not, and the account manager finds out when the delivery is chased. An agent watching held orders against promised dates turns that into a daily alert.</p>
+<h2>Where AI fails here</h2>
+<p>Pricing is a judgement and stays with a person. An agent can assemble the build and compute the margin. Deciding to take a lower number to hold a programme, or to walk away, involves information that is not in any system.</p>
+<p>Feasibility is not a document task. An agent reading a tolerance cannot tell you whether your process holds it. It will produce a confident quote for a part the plant cannot make repeatably, and that error appears at first article. Engineering review before commitment is not optional.</p>
+<p>Lead times depend on capacity a quoting tool cannot see. The agent can state the standard interval; whether the shop can take the work in that window is a planning answer.</p>
+<p>Cross referencing a safety critical part differs in kind from matching a bracket. A wrong substitution is a product safety event, not a data correction, and needs confirmation by someone qualified.</p>
+<p>The agent cannot repair your master data. Where the cross reference table, the routings or the price lists are wrong, it reconciles confidently against the wrong record and produces clean looking output. It shows the disagreements; fixing them is yours.</p>
+<p>Extraction degrades on bad inputs: scanned drawings, handwritten markups, tables split across pages. Measure accuracy on your own worst packets, not the tidy ones.</p>
+<h2>Where to start</h2>
+<p>Take the RFQ mailbox for one product family and give an agent two jobs only. Resolve every inbound line to an internal part number with the evidence shown, and list what each packet is missing. Leave costing with the estimators. You will soon know what share of enquiry lines resolve without a person, and that figure tells you more about your cross reference data than an audit would.</p>
+<p>The second build is usually the open quote book: expiry dates, price basis and the requote list when material moves. Channel normalisation and rebate tracking follow, once the part numbering is trustworthy.</p>
+<p>Adopt AI Partners builds these agents inside the systems you already run, so a resolved enquiry line lands on the quote in your ERP rather than in another tool. If you want to talk it through, describe how RFQs reach your desk and send it to hello@adoptaipartners.com.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>
