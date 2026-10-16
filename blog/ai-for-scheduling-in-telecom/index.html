@@ -1,0 +1,104 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Scheduling in Telecom | Adopt AI Partners</title>
+<meta name="description" content="How telecom operators apply AI to truck roll scheduling: job types guessed at booking, engineer accreditation, permits, no access events and multi visit work.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-scheduling-in-telecom/">
+<meta property="og:title" content="AI for Scheduling in Telecom"><meta property="og:description" content="How telecom operators apply AI to truck roll scheduling: job types guessed at booking, engineer accreditation, permits, no access events and multi visit work.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-scheduling-in-telecom/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1502921982-f2471545c93b?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Scheduling in Telecom","description":"How telecom operators apply AI to truck roll scheduling: job types guessed at booking, engineer accreditation, permits, no access events and multi visit work.","datePublished":"2026-10-16","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-scheduling-in-telecom/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / telecom</div>
+<article><h1>AI for Scheduling in Telecom</h1><div class="meta">16 October 2026 &nbsp;&middot;&nbsp; 10 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1502921982-f2471545c93b?w=1600&q=80&auto=format&fit=crop" alt="aerial view of a business district" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>At twenty past eight an engineer is parked at the end of a street he cannot get the van down. The job pack says fault, no service, two hour allowance, single operative, and a note copied from a call three days ago: customer says internet stopped working Tuesday. What is wrong is a blocked duct between the footway chamber and the property. Two person job, permit for the footway, traffic management, probably a dig. He is on site eleven minutes, the visit closes as not completed, and the customer, who booked the morning off, is offered another slot in nine days.</p>
+<p>No optimiser made that mistake. The schedule arranged the jobs as they were described, and the description was wrong before anyone looked at a map.</p>
+<h2>The job type is guessed on a phone call and never revisited</h2>
+<p>An appointment is created by an advisor with a customer on the line, a diagnostic saying the line is down somewhere, and a dropdown of job codes. The code picked in that moment sets the duration allowance, the skill requirement, the crew size, the parts and the slot length. It is a guess by someone who has never seen the property, and it is wrong in five directions at once: wrong engineer, too little time, no second pair of hands, missing kit, and a window promised against work that cannot start for a fortnight.</p>
+<p>So the first job for an agent is to re-derive the likely job type before dispatch, from evidence the advisor never had: line test history, network events on that node, the last two visits to the address, whether the premises is a conversion flat on a shared duct. Produce a most likely type with the reason, and reclassify before the van is allocated rather than on the doorstep.</p>
+<h2>Two engineers with the same job title are not interchangeable</h2>
+<p>Field systems hold one skill code per person and the real constraint set is finer. Working at height and pole top rescue. Confined space and chamber entry. A street works card at operative or supervisor level, which decides who signs for the excavation. Fibre splicing, a different competence from copper jointing, held by part of the patch. Power work in a cabinet, asbestos awareness for older duct routes, a vehicle category for the tower wagon.</p>
+<p>Kit is treated as an afterthought and behaves like a hard constraint: a splicer and an OTDR, a ladder long enough for that pole, van stock of terminals, routers and drop cable in the right variant. Cards expire, medicals expire, contractors arrive with paperwork verified once. Reconciling training records, card expiry and last night's van stock into one picture of who can do what tomorrow is tractable, as is flagging every expiry inside the planning horizon.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1600&q=80&auto=format&fit=crop" alt="network cabling in a data centre" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>The window has a price on it</h2>
+<p>An appointment slot is a commitment with money attached. In several markets a missed appointment or late cancellation carries an automatic payment to the customer, and on business circuits the service level agreement turns delay into credits. Neither waits for a complaint; both are triggered by the record.</p>
+<p>So the appointment record is an operational artefact: cancelled or not, by whom, with how much notice, arrived inside the window or not. A dispatcher moving a job at four to rescue the rest of the day is making a financial decision without knowing it, because the cost surfaces two months later in another team's report. An agent touching appointments needs that as a gate: this slot moves at no cost, this one pays out unless the customer asks for the change.</p>
+<h2>Wayleaves, permits and the landlord who holds the key</h2>
+<p>Much of this work is gated long before anyone thinks about vans. A wayleave to cross third party land, with notice periods and conditions in the deed. A managing agent who grants riser access on Thursdays and wants a method statement first. A street works permit with a validity window, a traffic management grade and a charge for overrunning, plus the lights or closure that grade requires.</p>
+<p>The permit reference sits in a street works system the planner never opens and the landlord agreement sits in an attachment, so the booking is made against the engineer calendar, which looks clear, not the permission calendar, which does not exist. Watching the gap between a permit's valid dates and the appointment on the same job is monitoring nobody does, and the drift is found on the morning of, by the person who has driven there.</p>
+<h2>The second visit belongs to a team in a different system</h2>
+<p>Plenty of work is a sequence rather than a visit: survey, civils to clear the duct or plant the pole, then install and commission. The customer sees one order with one date, while the civils stage sits with a subcontractor running its own scheduling on a weekly plan expressed as gangs per area.</p>
+<p>That dependency is held in nobody's calendar, so the failure is predictable. The install is booked against an optimistic civils date, the engineer attends, the duct is still blocked, the job closes as not ready, and the customer goes to the back of the queue. The restraint is the valuable part: do not release the install appointment until there is evidence the civils work completed, then book it within hours of the completion note landing rather than at the next weekly planning cycle.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600&q=80&auto=format&fit=crop" alt="team meeting around a conference table" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Planned works are scheduled against people who did not ask to be involved</h2>
+<p>Network build, node splits, cabinet rearrangement, copper migrations, exchange power maintenance. The question is not which engineer but which window, and the window is defined by whoever loses service while the work happens.</p>
+<p>So you need who sits behind the affected element, which are business circuits with a contracted maintenance window, which have resilient routing and which only believe they do, which households carry a priority services flag, and what notice each is owed. Embargoes belong in the same picture: a city centre event, a retailer's freeze through December, an exam period in a student area. That information exists, spread across inventory, the customer base, contract documents and the memory of one person who has been there fifteen years.</p>
+<h2>The work that can only happen between midnight and five</h2>
+<p>Some jobs are nocturnal: hot cuts, splicing on live traffic, power work on exchange plant. Rest periods remove the same engineer from tomorrow morning's appointments. Access is escorted where the keyholder is a third party with their own hours. There is a rollback point partway through, after which the only safe action is to back the change out and try another night.</p>
+<p>The cost that goes missing is the second day, because committing four engineers to a night job removes their appointment capacity from the following morning, and the tool that books the night rarely tells the tool that books the day.</p>
+<h2>Capacity bought by the day, visible as a single number</h2>
+<p>Subcontract labour is often the swing capacity and it appears in the plan as an aggregate: nine jobs in these postcodes on Tuesday, four gangs next week. Not named people with accreditations, locations and van stock.</p>
+<p>The planner therefore holds two incompatible models at once. You cannot sequence a partner's day, check competence per person or learn durations by individual, and when a job returns unfinished the reason arrives as free text. Normalising that daily declaration into the same object as your own capacity, then comparing promised against completed, tells you which job types each partner finishes first time and how much of Tuesday's number is real.</p>
+<h2>No access at half nine, and what the next ninety minutes are worth</h2>
+<p>Nobody in. Gate locked. Entry phone broken on a block of twelve. The customer at work because the confirmation text went to an old number. The travel is spent, so the only live question is the next ninety minutes.</p>
+<p>Three things should happen at once and usually none happen fast enough: reach the customer while the engineer is still outside, offer a replacement slot that honours the constraints on the original booking rather than the first gap in the diary, and find the standby job held in that area for exactly this, matching the engineer's accreditations and van stock. The no access note decides whether compensation is owed and whether a repeat visit is chargeable, and it is six words written at the end of a long day.</p>
+<h2>What has to be true before a job is safe to put in a slot</h2>
+<p>A schedulable job is a short list of settled facts. Job type derived from evidence rather than chosen from a menu. Duration from your own completion history for that work at that kind of address. The accreditation set and the kit list. Access recorded as who holds the key and a phone number somebody checked. Permit and traffic management status with a reference and valid dates. Any upstream dependency closed, with evidence.</p>
+<p>Almost all of that currently exists as prose, in survey notes, photographs, an email from a managing agent, the last engineer's closing comment. Turning it into fields is the work, and the capacity plan for next Tuesday is only as good as the job packs behind it.</p>
+<h2>Solvers are fine, their inputs are not</h2>
+<p>Route and appointment optimisers solve a well posed problem properly: jobs with durations, locations, windows and skills, engineers with shifts and start points, minimise travel and respect the constraints. If you have one, keep it. The trouble is the question handed to it: duration from a task library that knows nothing about this street, a skill requirement from a job code that was a guess, an access condition in an email, a permit that lapsed.</p>
+<p>So write the commit boundary down before go live. An agent may reclassify jobs, propose assignments, book inside published windows where every constraint is satisfied, send confirmations from approved templates and write status back to the workforce system and the engineer's device. Without a named person it may not dispatch against incomplete safety documentation, commit a window on a job whose permit is unconfirmed, alter a planned outage or relax an accreditation requirement.</p>
+<h2>Where AI fails here</h2>
+<p>It does not create engineers. If you are short of accredited splicers in one region, better scheduling describes the shortage precisely and leaves it where it was. Nor can it make a managing agent answer the phone, a council issue a permit faster or a civils gang turn up, and those bind a large share of this work.</p>
+<p>Duration is heavy tailed and the long tail ruins the day. An estimate good on average is badly wrong on the underground fault that turns into a collapsed duct.</p>
+<p>There is a sharper trap inside reclassification. Train on job types as recorded and you inherit the miscoding you set out to fix, because the code is usually copied from the booking rather than corrected at completion. The labels are part of the bug, so use what the engineer actually did, in parts consumed, time on site and closure notes.</p>
+<p>Safety judgement is not a scheduling input. Whether conditions at a chamber or a pole permit work belongs to the person standing there, and a tight plan quietly argues for pressing on.</p>
+<p>Then the failure that reads like competence: a message telling a customer the engineer is on the way, sent four minutes after that engineer was pulled onto an emergency. Bind every customer message to the state at the moment of sending.</p>
+<h2>Where to start</h2>
+<p>Take one narrow scope. Job type and duration re-derivation at the point of dispatch, run in shadow for a quarter, every prediction compared against what the engineer actually found, seen by nobody but the planners. It reaches no customer and it attacks what causes the failures rather than what looks broken.</p>
+<p>Then add no access recovery and same day rebooking, both exception handling with a verifiable right answer. Leave planned outage scheduling, night works sequencing and anything that commits a window against an unconfirmed permit alone until the first two have survived a bad week in January. Measure first visit fix and appointments kept, not jobs dispatched, and report how often the job type at completion matches the job type booked.</p>
+<p>If your Tuesday plan is assembled from a workforce system, a permit inbox, a partner's capacity email and one planner who knows which jobs are lying, describe it to Adopt AI Partners at hello@adoptaipartners.com and we will say plainly which parts an agent should carry and which it should not.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>

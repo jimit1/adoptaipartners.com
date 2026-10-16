@@ -1,0 +1,104 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Financial Reporting in Professional Services | Adopt AI Partners</title>
+<meta name="description" content="How fee earner firms report: fixed fee revenue recognition, work in progress and provisions, late timesheets, intercompany recharges, lock up and partner allocation.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-financial-reporting-in-professional-services/">
+<meta property="og:title" content="AI for Financial Reporting in Professional Services"><meta property="og:description" content="How fee earner firms report: fixed fee revenue recognition, work in progress and provisions, late timesheets, intercompany recharges, lock up and partner allocation.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-financial-reporting-in-professional-services/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Financial Reporting in Professional Services","description":"How fee earner firms report: fixed fee revenue recognition, work in progress and provisions, late timesheets, intercompany recharges, lock up and partner allocation.","datePublished":"2026-10-16","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-financial-reporting-in-professional-services/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / professional services</div>
+<article><h1>AI for Financial Reporting in Professional Services</h1><div class="meta">16 October 2026 &nbsp;&middot;&nbsp; 9 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1600&q=80&auto=format&fit=crop" alt="discussion in a modern office" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>It is the fourth working day and the draft profit figure is still moving. Finance has a spreadsheet called WIP review final v4 open beside the practice management system. A partner has typed 85 per cent complete against an engagement that was 85 per cent at the last close too. Two senior associates have not submitted last week's time. A counsel fee has arrived by email on a matter billed and closed last period. None of it is a ledger error. All of it changes the reported number.</p>
+<p>In a firm whose only asset walks out at night there is no stock to count and no cost of sales to settle what a job earned. The report is an argument about work in progress, and most of the close is chasing the evidence for that argument, reconciling it and explaining it. That evidence sits in engagement letters, time entries and inboxes, not in the ledger. The explanation is the deliverable.</p>
+<h2>Four ways the firm agreed to be paid, one revenue line</h2>
+<p>Time and materials is nearly mechanical: hours at agreed rates, recognised as worked. A capped fee behaves the same way until the cap comes into view and someone must judge whether the remaining work fits underneath it. A contingent fee is recognised only when it stops being speculative, so the decision rests on whether a case settles. A fixed fee is recognised as the firm performs, which needs a measure of performance no system holds.</p>
+<p>The basis lives in the engagement letter's fee clause, a signed PDF in a document system, often varied by an email agreeing an extra workstream at a different rate. That email rarely reaches finance, so part of every close is working out which deal is in force on each matter.</p>
+<h2>A fixed fee engagement is an estimate wearing a contract</h2>
+<p>The fixed fee job is the one that moves the number. Revenue follows progress, progress is measured as cost incurred over total expected cost, and the denominator is a forecast of effort still to come. That forecast is a partner's answer to how much is left, produced at speed by the person whose profitability it measures.</p>
+<p>Revise expected effort upwards and recognised revenue falls, sometimes reversing amounts already reported, so the estimate moves late and in one step, anchored meanwhile on last month's.</p>
+<p>An agent is useful here because it cannot form the estimate. It can assemble what bears on it and set that beside the typed figure: hours burnt against the budget in the engagement letter, scoped deliverables not yet issued, the milestone schedule and comparable engagements at the same stage. Where that picture contradicts the percentage, it is a question for the engagement partner, not an adjustment.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600&q=80&auto=format&fit=crop" alt="team meeting around a conference table" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Work in progress is a claim, not a balance</h2>
+<p>Unbilled time carried at charge out rates asserts that a client will pay for it; carried at cost it is a weaker claim and a different reported result. Either way it ages, and age is the best evidence of recoverability: time recorded eight months ago on a matter with no billing since is not worth the rate card.</p>
+<p>Every firm has a provisioning policy by age band and fee basis, and a practice that diverges from it because a partner has given an assurance. An agent can run the policy across every open matter and show where the applied provision departs from it and by how much, which turns an unexamined aggregate into positions somebody has taken.</p>
+<h2>The billing meeting decides the result before finance reports it</h2>
+<p>Write offs happen at the monthly billing meeting: a partner reads a draft bill, decides the client will not wear the full amount, and takes the difference off. It is a revenue decision made in a room, and whether it lands in the closing period or the next depends on when the bill is raised.</p>
+<p>An agent can prepare that meeting. Per matter: the WIP balance, the fee basis in force, the recovery rate implied by the proposed bill, whether a fixed fee is already exceeded. Afterwards it records what was decided against which engagement, so next month's provisioning starts from evidence rather than recollection.</p>
+<h2>Time entered on a Monday for a Wednesday three weeks ago</h2>
+<p>The period closes around timesheets still arriving, and the accrual for unsubmitted time is a guess refined by whoever has watched the pattern longest. Then entries land with two word narratives, posted to a code that may not be the right matter, sometimes as a block of eight hours nobody can reconstruct.</p>
+<p>An agent can chase with specifics: the days missing, the matters likely worked, the documents created on those dates. It can model expected submissions per grade against history to give a defensible accrual, and flag narratives that will not survive billing guidelines or an audit sample. None of it posts itself. Reconstructed time is a bill the firm has to be ready to defend.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1631557777232-a2632ae3c67d?w=1600&q=80&auto=format&fit=crop" alt="laptop and papers on a wooden desk" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Disbursements and the cost that arrives after the bill</h2>
+<p>Counsel fees, experts, search fees, travel, filing costs. Some are recoverable in full, some capped by the engagement letter, some agreed by email and recorded nowhere a biller would look, and whether they are shown gross or net varies between offices.</p>
+<p>The recurring failure is the invoice that arrives after the matter is billed. An agent reading supplier invoices and expense claims against open and recently closed matters can match each cost to its engagement, test it against the recoverability terms in the fee clause, and raise the ones the firm will absorb before they appear as unexplained margin movement.</p>
+<h2>Offices that recharge each other, and the rate they use</h2>
+<p>Once a firm has more than one office, staff are borrowed. Hours worked in one country on an engagement billed in another are recharged at a price that must satisfy both the group result and the transfer pricing policy filed with the tax authorities. The cost plus mark up that policy specifies is rarely what the practice management system applies by default.</p>
+<p>Then currency moves. The recharge is raised in one currency and settled in another, the two intercompany balances no longer agree, and elimination at consolidation leaves a residue explained as exchange difference. Reconciling those positions and testing applied rates against policy is pattern work across systems with no shared chart of accounts, which suits an agent and badly suits the week before the group pack is due.</p>
+<h2>The statement every partner reads before anything else</h2>
+<p>Profit allocation is a reporting output almost nobody outside the firm sees and everybody inside reads first. The distributable result runs through a points or lockstep structure, adjusted for office, time in grade and whatever the deed says about bonus pools. Drawings have been paid monthly on an assumption made last year, tax reserves are held centrally for some partners and not others, and capital accounts move accordingly.</p>
+<p>It has to be the same result that reaches the statutory accounts, derived so each partner can follow it. An agent can model allocations under the deed, reconcile drawings to entitlement, and show the effect per partner of a change before the result is announced. The decision is never automated.</p>
+<h2>Earned profit and the cash that has not arrived</h2>
+<p>Lock up combines the days work sits unbilled with the days invoices sit unpaid, and it is what a bank reads beside the profit figure. A firm can report a strong year and borrow to pay partners, and the cause shows in both halves: a billing cycle that lets work age before an invoice exists, and a debtor book nobody chases until quarter end.</p>
+<p>Reporting it well means attributing the movement rather than stating the total: which practice groups, which clients, which partners, and whether the change came from slower billing or slower payment. An agent can produce that attribution monthly with the underlying matters attached, which turns a covenant metric into a list of actions.</p>
+<h2>The rate card and the rate actually applied</h2>
+<p>Engagement profitability depends on what was charged, not on the rate card. Discounts are agreed in proposals, blended rates negotiated on calls, junior work done by seniors because nobody else was free, and recovery falls without any single decision causing it. Engagement level reporting has to compare realised value against standard value and attribute the gap: agreed discount, grade mix, over run, write off, unrecovered disbursement.</p>
+<p>An agent can rebuild that bridge for every matter from time entries, the fee clause, the bills raised and the write offs taken, not just the ten someone has time to examine. Grouped by partner and client, a pattern that repeats is where a pricing decision becomes arguable.</p>
+<h2>Matter level numbers that have to reconcile upwards</h2>
+<p>Partners want profitability by client, matter, sector and office, in the shape they already use. Finance has to produce statutory accounts. These are the same numbers assembled twice in different tools, so a question about a client total cannot be traced to a reported line without a day of work.</p>
+<p>The valuable build is not another dashboard. It is reconciliation: an agent proving the analysis cuts sum to the ledger, finding matters sitting in the wrong office or group, and explaining each difference. Reporting that cannot be reconciled on request gets quietly ignored.</p>
+<h2>Where AI fails here</h2>
+<h3>Estimates cannot be retrieved, only challenged</h3>
+<p>The central judgement in this close is how much work remains on a fixed fee engagement, and that fact exists in no record. A model can triangulate from burn rates and comparable engagements, and it will sometimes be confidently wrong in a way that moves reported revenue. A system that posts its own view of completion has quietly taken over revenue recognition.</p>
+<h3>Fluent explanations and thin inputs</h3>
+<p>Commentary is what firms most want automated and what fails worst, because a well written paragraph attributing a margin movement to grade mix reads exactly like a correct one. Bind every figure in generated commentary to a value read at generation time and require the matters behind it to be listed.</p>
+<p>Source quality caps everything above it: two word narratives entered a fortnight late cannot support good engagement reporting. And some work should stay manual on purpose, including partner allocation, the final provision judgement, and any contingent fee call that depends on how a negotiation is going.</p>
+<h2>Where to start</h2>
+<p>Take the week before the billing meeting. One agent, one scope: for every open matter, assemble the fee basis actually in force, the WIP balance and its age, deliverables outstanding, the policy provision beside the applied provision, and unmatched disbursements. Produce it as an exception pack addressed to named partners. It touches no client and posts no journal.</p>
+<p>Leave the estimates, the write off decisions and the allocation alone. Run the pack alongside the current process for two closes and read where it disagreed with the spreadsheet, because that is the only honest measure of readiness. Adopt AI Partners builds this inside the practice management, billing and finance systems a firm already runs, and stays until the finance team can change it without us. If this matches your close, describe it to us at hello@adoptaipartners.com.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>
