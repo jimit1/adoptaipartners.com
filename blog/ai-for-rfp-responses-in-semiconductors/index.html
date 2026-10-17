@@ -1,0 +1,104 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for RFP Responses in Semiconductors | Adopt AI Partners</title>
+<meta name="description" content="How AI agents turn a design win RFQ into a question register, draft each answer from the current controlled document, and assemble the qualification dossier.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-rfp-responses-in-semiconductors/">
+<meta property="og:title" content="AI for RFP Responses in Semiconductors"><meta property="og:description" content="How AI agents turn a design win RFQ into a question register, draft each answer from the current controlled document, and assemble the qualification dossier.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-rfp-responses-in-semiconductors/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1652211955967-99c892925469?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for RFP Responses in Semiconductors","description":"How AI agents turn a design win RFQ into a question register, draft each answer from the current controlled document, and assemble the qualification dossier.","datePublished":"2026-10-17","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-rfp-responses-in-semiconductors/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / semiconductors</div>
+<article><h1>AI for RFP Responses in Semiconductors</h1><div class="meta">17 October 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1652211955967-99c892925469?w=1600&q=80&auto=format&fit=crop" alt="workers on a factory floor" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>The package arrives from a tier one as six files: forty part numbers wanting price at four volume tiers, a quality questionnaire, a functional safety annex, a longevity form, a materials declaration template and a supplier information sheet. Nothing in it asks what your company believes. It asks for a revision number, a notice period, a failure rate and a signature from someone allowed to give it.</p>
+<h2>A design win package and a volume commitment are two different jobs</h2>
+<p>Two request types arrive in the same mailbox.</p>
+<p>The customer side design win request comes from an automotive or industrial original equipment manufacturer, or the tier one under it. It wants part level commercial terms and, attached to them, a qualification and assurance dossier: how the device was qualified, how it is screened, what you will tell the customer when something changes, how long you will keep building it. The commercial section is short. The dossier is the work.</p>
+<p>The capacity and supply side request behaves differently. There the same team commits volumes, lead times and lifecycle guarantees for years that have no forecast behind them, against capacity bought from other people, and planning owns the answer rather than sales. Treating both as one bid is the first error.</p>
+<h2>The risk is the revision, not the writing</h2>
+<p>Almost every answer already exists: in qualification reports, reliability test summaries, datasheets, errata sheets, process change notices and the last bids this customer sent you. The hard part is not composition. It is that documents move. A report is superseded, a change notice shifts an assembly site, an errata sheet changes a condition of use, a datasheet revision tightens a rating. The answer that was correct eighteen months ago still sits in a folder called Responses, fluent and no longer true.</p>
+<p>So retrieval needs provenance. An agent drafts from the current controlled document and records the document and revision it used, so a reviewer checks a citation instead of reading for plausibility.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1600&q=80&auto=format&fit=crop" alt="network cabling in a data centre" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>A question register with an owner against every line</h2>
+<p>Before anything is drafted the package has to become a list. An agent parses every file, including questions buried in spreadsheet tabs and instructions, and produces one register: the question as asked, where it came from, the parts it covers, the owning function, the due date and the kind of answer required.</p>
+<p>That last field matters most. A fact about a device, a commitment about future behaviour and a legal position are three objects with three approval routes, and sorting them at intake stops a commitment being drafted by whoever had capacity.</p>
+<h2>Qualification evidence, and the word commit</h2>
+<p>Much of the questionnaire covers quality and qualification: automotive qualification of the device family, production part approval submission expectations, quality management system certification, process and product change notification, and the escalation path when a part fails in the field. Many are not asking what you did. They ask whether you will commit, to a notification period before a change, to a submission level, to a corrective action timescale, to a screening flow for this customer alone. The commitment has an owner in the quality organisation who is not in the bid team and never saw the question.</p>
+<p>An agent drafts the factual half from current certificates, qualification records and the change notification procedure, and states the standard commitment. Anything tighter goes to the named owner with the current position and the delta beside it.</p>
+<h2>Hardware metrics belong to one device and one use case</h2>
+<p>Where the application is safety related the annex hardens. The customer wants the safety manual, the failure mode distribution, the hardware metrics, the diagnostic coverage assumptions and a statement of the assumptions of use they must honour at system level. Those figures are specific to one device, one revision, one configuration and an assumed operating profile, and they feed the customer's own safety argument. A number lifted from last year's bid for the neighbouring part is how a wrong figure ships inside a safety case.</p>
+<p>The agent's job here is narrow. Find the current safety documentation for this device and revision, quote rather than paraphrase, and say when no current source exists. It should never derive, interpolate or round a safety figure.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1600&q=80&auto=format&fit=crop" alt="team meeting around a conference table" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>How long you will keep making it, and how much warning you give</h2>
+<p>Automotive and industrial customers ask about longevity because they are designing a board that must be buildable for a decade. The questions concern product longevity programmes, minimum supply periods, end of life and last time buy notice periods, the final build window after notice, and obsolescence policy. A promise made in a bid outlives the person who made it: the engineer who agreed a longer notice period to win a socket will have moved on when the notice falls due, and the obligation will not.</p>
+<p>An agent holds one current statement of committed terms per product family, drafts from it, and flags every request that deviates rather than answering yes. The same register shows what you have actually promised, by customer and by part.</p>
+<h2>Node, assembly site and second source, named or not</h2>
+<p>Then the dependency questions. Which process node, which wafer fabrication source, which assembly and test partners, where they sit geographically, whether a second source exists, and what happens to this part if one site stops. Some of that you disclose freely, some only under agreement, some not at all, and the disclosure level is a company position, not a drafting choice.</p>
+<p>An agent works from the approved position for that account, drafts at that level, and flags any question asking for more. Inventing a site name because the form has a box is an avoidable failure.</p>
+<h3>Volume, lead time and who signs for capacity</h3>
+<p>The same discipline applies to numbers instead of names. An agent assembles what the decision needs: committed lead times, shipment history for the account, capacity already promised elsewhere and the terms offered last cycle. It drafts, and routes to planning. It does not commit wafer starts.</p>
+<h2>Compliance answers are legal positions, not engineering facts</h2>
+<p>Export classification, country of origin determination, restricted party and end use screening and sanctions declarations are positions held by trade compliance. They look like form filling and are not. Country of origin rests on a determination about where substantial transformation occurs, and cannot be inferred from a shipping record. An agent retrieves the position of record for each part with its source, and flags parts with no determination on file. It drafts nothing new here.</p>
+<h3>Materials and minerals declared per part</h3>
+<p>Substance disclosures, conflict minerals reporting and packaging and labelling questions arrive per part, in the customer's own template. The data sits in your compliance system, so the work is mapping it into their format at part level and naming the parts where it is missing or stale. That is mechanical, high volume and well suited to an agent, provided the declaration is signed by its owner.</p>
+<h2>One answer, forty part numbers, one of them wrong</h2>
+<p>The packages that cause trouble ask one question across a long part list. The same question about screening flow, operating temperature range, qualification status or lifecycle stage gets one inherited answer pasted down the column, right for most of the list and wrong for three devices.</p>
+<p>So an agent should hunt divergence: for every question applying to multiple parts, check whether the source data differs and split the question where it does. A reviewer then sees that thirty seven parts share one answer and three need their own, a check nobody runs under deadline.</p>
+<h2>Price tiers, mask and tooling costs, and the assumptions attached</h2>
+<p>The pricing section wants price by volume tier, non recurring engineering, tooling and mask costs where a new or modified device is involved, payment terms and often a commitment on price across the programme life. Every one of those numbers carries assumptions: the currency and rate used, the lead time assumed, the minimum order and packing quantity, the volume each tier depends on. Strip them out and the number becomes a promise you did not intend.</p>
+<p>An agent keeps the assumptions attached to each figure and reproduces them in the submission, so the qualification travels with the price instead of sitting in a model nobody attaches.</p>
+<h2>Checking the pack against itself before anyone signs</h2>
+<p>Assembly is the last mechanical job and a common failure point. The attachment set has to be complete, current and in the demanded form, and the pack has to agree with itself.</p>
+<p>An agent assembles attachments against the register, names what is missing instead of quietly omitting it, and reads the finished pack for contradictions: a lead time in the pricing sheet that differs from the supply annex, a notice period shorter than the one in your quality agreement with the same customer, a lifecycle status that contradicts the datasheet revision cited two files earlier. One approved answer library means a corrected wording propagates to every open bid.</p>
+<h2>Where AI fails here</h2>
+<p>Commitments, legal positions and safety numbers are approved by named owners. That is not a review formality to be optimised away, and an agent that drafts them without routing them has produced a liability with good grammar.</p>
+<p>Some answers should not be automated at all. A longevity term or a liability position you have never offered is a commercial decision, and no source document exists to retrieve because the answer has not been made yet. Questions about parts not qualified for the customer's application need an engineering judgement on feasibility, not a confident paragraph. Where a template is genuinely ambiguous the right output is a clarification request, and agents lean towards answering rather than asking. Where the honest answer is no, or not yet, drafting will dress it up unless the system is built to surface gaps as gaps.</p>
+<p>Tacit knowledge is the other limit. What this customer's quality engineer rejected last time, which questions are scored and which are administrative, how hard they push on second source: that lives in people, and the register should carry it as notes rather than infer it.</p>
+<h2>Where to start</h2>
+<p>Take a package you have already submitted and rebuild it. Parse it into the question register, draft each answer from the current controlled document, then compare. Count how many submitted answers cite a source since superseded, how many came only from a previous bid with no controlled source behind them, how many were commitments no named owner approved, and how many should have differed across part numbers and did not. That count is your business case, built from your own paperwork.</p>
+<p>Adopt AI Partners builds exactly this, inside the document control, quality and planning systems your team already uses: intake and question register, drafting with document and revision provenance, divergence detection across part numbers, attachment assembly and a final contradiction check. If that resembles your last deadline, describe the shape of your packages to hello@adoptaipartners.com and we will say which part is worth automating first.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>

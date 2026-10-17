@@ -1,0 +1,102 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Patient Intake in Government | Adopt AI Partners</title>
+<meta name="description" content="How public bodies can use AI on first contact: reading free text referrals, testing statutory entitlement, naming the clock, and leaving the decision to an officer.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-patient-intake-in-government/">
+<meta property="og:title" content="AI for Patient Intake in Government"><meta property="og:description" content="How public bodies can use AI on first contact: reading free text referrals, testing statutory entitlement, naming the clock, and leaving the decision to an officer.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-patient-intake-in-government/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1581279813180-4dddc1008167?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Patient Intake in Government","description":"How public bodies can use AI on first contact: reading free text referrals, testing statutory entitlement, naming the clock, and leaving the decision to an officer.","datePublished":"2026-10-17","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-patient-intake-in-government/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / government</div>
+<article><h1>AI for Patient Intake in Government</h1><div class="meta">17 October 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1581279813180-4dddc1008167?w=1600&q=80&auto=format&fit=crop" alt="high rise office buildings" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>A school emails the adult social care duty inbox at ten past five on a Friday, subject line "concern about a pupil's grandmother". Six paragraphs down, past the family history and the pastoral lead's name, sits the sentence that matters: the woman has been alone since Tuesday and there is no food in the house. By the time a duty officer opens the case management system, the statutory clock has been running an hour and nobody has recorded when it started.</p>
+<h2>Statutory first contact, programme by programme</h2>
+<p>The phrase comes from healthcare, but much of this work happens in buildings that are not hospitals. Immunisation and school vaccination programmes take consent back from thousands of households in a few weeks. Sexual health and communicable disease services register people who would rather not be, and contact tracing opens an intake on somebody who contacted nobody. Reception into custody or detention includes a health screen within hours of arrival, on a person whose records sit elsewhere. Veterans and serving personnel enrolment keeps readiness records that follow a career. Adult social care and safeguarding take referrals from anyone at all, and school nursing picks up children whose parents never filled in a form.</p>
+<p>They share the shape of the first hour: somebody who is usually not a clinician reads a stranger's account, decides what it is, and starts a legal duty running.</p>
+<h2>Entitlement is set by law, not by a price list</h2>
+<p>A private clinic asks whether somebody will pay. A public body asks whether a duty is owed. Ordinary residence, age, an eligible need, immigration status where the regulations make it relevant, a means test for a contribution: each is a test written in statute or guidance, each carries exceptions, and several cannot be answered from the referral alone.</p>
+<p>An unresolved entitlement question is also not a reason to stop. Urgent treatment, safeguarding enquiries, screening on reception and communicable disease work all continue while entitlement is open, and the record carries both threads: what was provided, and what was still being established.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1581279218277-c91af2a501d5?w=1600&q=80&auto=format&fit=crop" alt="city skyline in daytime" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Three organisations, one person, one lawful basis</h2>
+<p>The referrer, the assessor and the provider often sit in three organisations under three different duties. The police share under one power, a school under another, a charity on consent it may not have recorded, a neighbour with nothing beyond concern. On the receiving side the basis may be a public task, a statutory duty, vital interests in an emergency, or consent that can be withdrawn next week.</p>
+<p>So intake captures more than contact details: who sent this, under what basis, what the person was told, what they agreed to, whether they had capacity to agree, and which parts are restricted from onward sharing. Get that wrong and every later handover either stalls on an unanswerable question or happens anyway and becomes a finding in somebody's report.</p>
+<h2>The urgent detail is in the fourth paragraph</h2>
+<p>Referrals arrive as prose. A police notification written at the end of a shift, a teacher's email, a housing officer's case note, a charity web form, a daughter's phone call typed up by a contact centre agent. There is no fixed format and the chronology is often inside out: background first, the significant fact in the middle, the referrer's view at the end.</p>
+<p>That fact is rarely flagged. No food since Tuesday. A named person who still has keys. An earlier unexplained injury mentioned in passing. Officers skim, because the queue requires it, and skimming is how a buried sentence gets missed. Add scanned handwriting, a forty page bundle in which two pages matter, and the same referral sent twice by two agencies.</p>
+<h2>The duty to assess starts at a moment somebody has to name</h2>
+<p>Most of these programmes run against defined periods. A screen within hours of reception into custody. An assessment begun within a set time of a referral being accepted. A safeguarding decision made promptly, with promptly defined locally and inspected nationally.</p>
+<p>The clock needs a start point and there are at least three candidates: the date of the event described, the date the referral reached a shared inbox, and the date a human opened it. Somebody has to choose, record the choice and defend it. Most breaches are not caused by slow assessment. They are caused by a referral sitting unread in a mailbox nobody owned over a bank holiday.</p>
+<h3>The missing item that stalls everything</h3>
+<p>GP details. A date of birth. A current address. A consent signature. Confirmation of who holds authority to act for the person. The missing item is usually knowable in the first five minutes of reading and discovered on day six, after the case has been queued, allocated and reopened twice.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1502921982-f2471545c93b?w=1600&q=80&auto=format&fit=crop" alt="aerial view of a business district" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>An interpreter booked at intake, not at the appointment</h2>
+<p>Spoken language, sign language, easy read, large print, braille, an advocate, the adjustment somebody needs in order to attend at all. These belong in the intake record, not in a note added after the first visit fails. Capture the need when the referral is read and the first contact works. Miss it and you spend a slot, the person is recorded as not having engaged, and the timescale runs on. Held on the record rather than in an officer's head, it also stops being asked for twice.</p>
+<h2>The same person, four programmes, no shared number</h2>
+<p>Public bodies routinely hold the same person several times over. Variant spellings and transliterations, a married name on one system and a maiden name on another, a date of birth guessed as the first of January, no national health identifier on a charity's referral, no fixed address at all. A child may be known to school nursing, community paediatrics and social care under three slightly different names.</p>
+<p>The risk runs both ways. A wrong merge puts one person's health information into another's file, a breach and a clinical hazard at once. A wrong split hides the pattern: three low level concerns that, read together, are an escalating one.</p>
+<h2>Every field points back to a sentence somebody wrote</h2>
+<p>An agent reads the referral, however it arrived, and populates the structured intake fields, attaching to each the exact sentence it came from. The officer verifies rather than transcribes, which is faster than retyping. Where the referral does not say, the field stays empty and marked as not stated, never filled with a plausible guess.</p>
+<p>That provenance does most of the work downstream. It makes an entry checkable in seconds and safe to correct, because you can see what the agent read and judge how it read it.</p>
+<h2>What the referral evidences, and what it only asserts</h2>
+<p>Entitlement criteria can be held as a written list and the referral checked against it. The output is not a yes or a no but three groups: criteria the referral evidences and where, criteria it asserts without evidence, and criteria it does not address. A referral may state that the person lives in the area while giving no address, or describe a care need without reaching the threshold in guidance.</p>
+<p>The agent can also flag which missing item will stall the statutory timescale, and check the referral against existing records to say whether this is somebody already known to another programme, with matching and conflicting details set out rather than merged.</p>
+<h2>The acknowledgement and the evidence request, drafted not sent</h2>
+<p>Most intake correspondence is formulaic in structure, particular in content. An acknowledgement to the referrer. A request for the one missing item. A holding letter in the format the person asked for. An agent can draft these from the referral and the criteria list, in the service's own wording, for the officer to read, amend and send.</p>
+<p>The decision itself does not move. Accepting, refusing or escalating a referral stays with the named officer, because a refusal carries consequences, appeal and complaint routes, and sometimes the return of the same person in a worse state. Signing it is a human act, and the name on it should belong to somebody who read the words.</p>
+<h2>Written now to be read by an inspector later</h2>
+<p>Every intake record here has several future readers: an inspector, an auditor, the person through a subject access request, a journalist through a freedom of information request, occasionally a coroner. The trail has to be legible without a technical explanation: what was received, what the agent extracted, which sentence each field came from, what the officer changed, when, and what was sent.</p>
+<p>Two consequences. Avoid opaque scores at intake: a number nobody can explain is worse than no number. And keep third party information separable from the start, since much of a referral is somebody else's personal data and has to come out before disclosure.</p>
+<h3>Nobody can change the intake form this quarter</h3>
+<p>The form usually belongs to a case management system under a long contract, and the procurement route to altering it is measured in quarters. So build around it: read the inbox, produce the fields and the drafts, and write back through whatever interface exists, or present the set for an officer to transfer. A project that waits for a new system will not happen.</p>
+<h2>Where AI fails here</h2>
+<p>Some of this should not be automated at any confidence level. Anything indicating immediate risk to life needs a route straight to a person, not a place in a processed queue. Capacity and best interests decisions, child protection thresholds, mental health and deprivation of liberty assessments, and the reading of coercive control, where the signal is what the person avoids saying, turn on judgement that criteria on a page do not capture.</p>
+<p>The model will also misread handwriting, local place names and dialect, and it can be fluently wrong about dates, which matters more here than almost anywhere, because the dates are the clock. It cannot see what the referrer chose not to write down, cannot hear that a caller was frightened, and will not notice when the person's account contradicts the referral. A high volume programme with a stable form, such as immunisation consent, is where this is strongest; the Friday evening referral is where it should only read, extract and draft.</p>
+<h2>Where to start</h2>
+<p>Take one programme and one intake route, with four weeks of history. Measure what you have now: time from arrival to triage decision, and how many cases stalled on one missing item. Then run the agent in shadow, producing the fields, the evidence gaps and the duplicate flags while nobody acts on the output, and compare it against what the officer recorded. Contested referrals, not clean ones, are the ones to score.</p>
+<p>Adopt AI Partners builds this kind of intake agent inside the case management systems, inboxes and referral forms a team already works in. If the delay on your referral route is in the reading rather than the assessing, describe the situation to hello@adoptaipartners.com and we can say whether it is a sensible first candidate.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>
