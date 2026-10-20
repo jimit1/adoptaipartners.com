@@ -1,0 +1,111 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Patient Intake in Manufacturing | Adopt AI Partners</title>
+<meta name="description" content="Manufacturers run patient intake too, and call it occupational health. How an agent can work either side of the clinical confidentiality wall without ever reading inside it.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-patient-intake-in-manufacturing/">
+<meta property="og:title" content="AI for Patient Intake in Manufacturing"><meta property="og:description" content="Manufacturers run patient intake too, and call it occupational health. How an agent can work either side of the clinical confidentiality wall without ever reading inside it.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-patient-intake-in-manufacturing/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Patient Intake in Manufacturing","description":"Manufacturers run patient intake too, and call it occupational health. How an agent can work either side of the clinical confidentiality wall without ever reading inside it.","datePublished":"2026-10-20","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-patient-intake-in-manufacturing/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / manufacturing</div>
+<article><h1>AI for Patient Intake in Manufacturing</h1><div class="meta">20 October 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1600&q=80&auto=format&fit=crop" alt="discussion in a modern office" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>A contract welder signs in at the gate on a Monday, badge printed, induction complete, and walks onto a line where hearing protection has been mandatory for as long as anyone can remember. His last hearing test was arranged by an agency, for a different employer, at a site nobody here has heard of. The plant does not know that and could not read his health record if it had one.</p>
+<h2>A manufacturer with a patient list</h2>
+<p>A factory is not a clinic and it still runs patient intake. The function is occupational health; the patient is the workforce.</p>
+<p>The intake events are specific. Pre-placement health screening and fitness for work assessment, before somebody goes near a machine or takes on a safety critical task. Statutory health surveillance programmes that recur on a calendar: hearing checks for noise exposed roles, lung function testing where there is dust or a respiratory sensitiser, hand arm vibration assessment for tool users, skin checks where hands meet process chemicals. Return to work and workplace adjustment assessment after absence or injury. And screening for safety critical roles, including drug and alcohol programmes.</p>
+<p>Each is a referral in, an assessment, an outcome out: intake, with every failure mode of a hospital front desk plus one no hospital has.</p>
+<h2>Clearance pending, and the task already under way</h2>
+<p>A new starter completes a health questionnaire. It goes to an occupational health provider, who decides whether the person can safely do the job as described, with or without adjustments. In theory that happens before the first shift. In practice it comes back half finished, the provider asks what the role actually involves, somebody emails a recruitment advert, and the assessment waits.</p>
+<p>Meanwhile the line is short handed, so the person starts pending clearance, on the task that required clearance. Everyone knows this is wrong, and nobody has a better option at six in the morning.</p>
+<h3>Safety critical roles and testing programmes</h3>
+<p>Driving inside the yard, operating a crane, entering a confined space, working at height: each carries its own medical standards, recurring checks and often a drug and alcohol programme. The record must be exact about what was tested, when and under which policy.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1716191299980-a6e8827ba10b?w=1600&q=80&auto=format&fit=crop" alt="industrial robot arm on a factory line" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Surveillance programmes recur whether anyone remembers them</h2>
+<p>Health surveillance is not a one off. It is a baseline assessment, then reassessment at an interval set by the hazard, for as long as the exposure continues, plus an exit assessment.</p>
+<p>Every one of those appointments is a small intake: a questionnaire, exposure context the clinician needs, previous results held by the provider rather than by you, and a date to be offered, booked, attended and recorded. Multiply it by several hazards and every exposed role on a rotating shift, and the load is permanent.</p>
+<h2>A confidential record with a wall through the middle</h2>
+<p>The intake record here is clinical and confidential. It belongs to the occupational health clinician, and the employer is not entitled to its contents: not the questionnaire answers, not the diagnosis, not the audiometry trace, not what the person disclosed about medication or mental health.</p>
+<p>That wall is a legal boundary, not a configuration preference. You cannot widen it with a data sharing agreement or an admin role in a system. Any sensible design accepts that there is a middle of this process an agent must never be inside.</p>
+<h2>The fitness line, and nothing either side of it</h2>
+<p>What the plant needs out of an assessment is small. One outcome: fit, fit with stated adjustments, or unfit for this task. Plus a recall date, and sometimes a review date. That is what a supervisor acts on and what a scheduler needs to put the right person on the right machine.</p>
+<p>So an agent has two honest places to work, both outside the wall: the referral going in, which the employer writes and owns, and the outcome coming out, a short non clinical statement the employer is entitled to receive and must act on.</p>
+<p>An agent that ingests clinical notes to summarise them for management is the wrong build, and the easy build, which is why people reach for it. Build the two sides and leave the middle alone.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1627309366653-2dedc084cdf1?w=1600&q=80&auto=format&fit=crop" alt="tall shelving units in a distribution warehouse" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Nothing the clinician asks for lives in one system</h2>
+<p>A good referral is the difference between a useful assessment and a wasted appointment. It needs the role and its real task demands, the exposures, the relevant substance and hazard data, the shift pattern and any adjustments already in place.</p>
+<p>None of that sits in one system. It is spread across risk assessments, the substance register and its safety data sheets, exposure monitoring reports, the shift rota, the authorisation matrix and a note a supervisor wrote after the last absence. Assembling it is reading and typing, which is why referrals go out thin.</p>
+<p>An agent can assemble that pack, quote the source document for each field, and mark anything the records do not state as not stated, never as a guess. A human signs it before it leaves.</p>
+<h3>The task description a clinician can actually use</h3>
+<p>Not the advert. Weights lifted and how often, reach and posture, time standing, whether a respirator is worn and for how long, vibration tool use across a shift, night working, lone working. A clinician judging fitness for a task needs the task, described physically.</p>
+<h2>Exposure decides who is due, and job titles mislead</h2>
+<p>Eligibility for health surveillance is driven by exposure, not by job title. A schedule built from an HR roster is built from titles, which is where most go wrong.</p>
+<p>Titles lie. A role with no noise exposure recorded against it can spend most of a shift next to a press. A fitter whose title says nothing about dust climbs inside a hopper every quarter. Working out who is due means reading exposure assessments, the substance register and real shift and task records, not a list of job families.</p>
+<h2>The register and the recall list have never been read together</h2>
+<p>Here is the villain. People miss their recall because nobody reconciled the exposure register against the surveillance schedule, and the gap surfaces years later, at an inspection or in a civil claim, when the question is whether you can show that this person, with this exposure, was offered an appointment and seen at the right interval.</p>
+<p>That is a reconciliation problem, which is precisely the shape of work an agent does well. Run the exposure data against the surveillance record and produce a difference list: exposed and never enrolled, enrolled and overdue, enrolled against an exposure that ended, left the role with no exit assessment, offered an appointment with no recorded outcome. Not one of those findings needs a clinical fact. All are visible from outside the wall.</p>
+<h2>Labour that rotates through the exposure and off the payroll</h2>
+<p>Agency workers, contractor crews and labour suppliers rotate through the same noise, dust and tools. The obligation follows the exposure, not the payroll, so the people most likely to be missed are those never on your HR system at all.</p>
+<p>The evidence for them sits in gate logs, permit to work records, contractor induction files and whatever the supplier says it holds. An agent can reconcile presence and task against surveillance evidence supplier by supplier, and draft the request for what is missing.</p>
+<h2>Coming back after absence, and the adjustment that has to be negotiated</h2>
+<p>Return to work assessment has the same two sided shape. In goes a referral with the role, the task demands and the absence context. Out comes a fitness line, usually with adjustments.</p>
+<p>Then the adjustment has to survive a production plan. Somebody has to tell the planner this person cannot work nights for a while, tell the supervisor what the lifting limit is without disclosing why, and remember that it lapses. Adjustments quietly become permanent, or quietly disappear when the shift pattern changes. An agent can hold one as a live record with an owner and a review date, and raise it when that date approaches or the person is rostered against it.</p>
+<h2>The question that arrives years later, at a claim</h2>
+<p>Claims and inspections ask the same question long after everyone involved has moved on. Was this person exposed, was surveillance offered at the right interval, were they seen, were the results communicated, and did the employer act on what the programme reported at group level.</p>
+<p>That record either exists or it does not. An agent helps by writing intake and outcome records a stranger can follow years later: dates, intervals, the exposure basis for enrolment, what was offered, what was declined, and what the plant did about it. An offer refused and recorded is defensible. An offer never made is not.</p>
+<h2>Where AI fails here</h2>
+<p>Clinical judgement is not available to a model. Fitness for work is a clinician's decision. An agent that outputs a suggested fitness status, even as a draft, is building a decision somebody will eventually accept without reading.</p>
+<p>The confidentiality wall is a legal boundary. A design that quietly gives the agent read access to clinical notes because it would improve the summary is not a tuning choice, it is a breach waiting to be found.</p>
+<p>Free text triage carries real risk. A questionnaire answer can hint at something that needs a clinician the same day, and an agent routing that text stands between a person and urgent care. If free text is read at all, the only safe rule is escalate broadly to a clinician and accept the false alarms.</p>
+<p>Adjustments are negotiated, not computed. What a person can do, what the line can accommodate and what a supervisor will sustain is a three way conversation. A model can hold the record of it and nothing more.</p>
+<p>Drug and alcohol decisions carry employment law consequences. Testing, results handling and anything following an adverse result stay with named humans and your policy, no agent in the chain.</p>
+<p>And exposure data is often wrong at source. Registers go stale, monitoring is years old, task records do not reflect what people do. An agent reconciling against a bad register produces confident nonsense at speed. The output is a question list for a human, never a conclusion.</p>
+<h2>Where to start</h2>
+<p>Pick one site and one hazard, usually noise, and run a single reconciliation: exposure records against the surveillance schedule, including agency and contractor presence. Output a difference list with a named reason for each row, and have an occupational health adviser work through it. You will learn more about your data quality in one run than in a year of reports.</p>
+<p>Then add referral assembly for the next intake cycle, with a human signing each pack. Then outcome routing: the fitness line, the adjustment and the recall date, delivered to the people who schedule and supervise, clinical middle untouched.</p>
+<p>If you want a second opinion on where the wall should sit in your build, Adopt AI Partners will look at it with you: hello@adoptaipartners.com.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>

@@ -1,0 +1,108 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Fraud Review in Logistics | Adopt AI Partners</title>
+<meta name="description" content="Carrier identity theft, double brokering and fictitious pickup are identity fraud at handover. How AI can help vet, watch and prepare the gate check without blocking real carriers.">
+<link rel="canonical" href="https://adoptaipartners.com/blog/ai-for-fraud-review-in-logistics/">
+<meta property="og:title" content="AI for Fraud Review in Logistics"><meta property="og:description" content="Carrier identity theft, double brokering and fictitious pickup are identity fraud at handover. How AI can help vet, watch and prepare the gate check without blocking real carriers.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://adoptaipartners.com/blog/ai-for-fraud-review-in-logistics/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1200&q=75&auto=format&fit=crop">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#FAF9F6;--panel:#FFFFFF;--text:#16181C;--muted:#4B545E;--faint:#7B838D;--signal:#B4720E;--line:rgba(22,24,28,.12);color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:17px/1.8 Manrope,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--signal);text-decoration:none}a:hover{text-decoration:underline}
+.hdr{border-bottom:1px solid var(--line);padding:18px 0;background:rgba(250,249,246,.92);position:sticky;top:0;backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;max-width:1040px}
+.wm{font-weight:800;font-size:18px;letter-spacing:-.04em;color:var(--text)}.wm i{font-style:normal;color:var(--signal)}
+.hdr nav a{color:var(--muted);margin-left:22px;font-size:14px;font-weight:600}.hdr nav a:hover{color:var(--text);text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.crumb{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin:52px 0 16px}
+h1{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:16px}
+.meta{color:var(--faint);font-size:14.5px;margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.meta b{color:var(--muted);font-weight:600}
+article h2{font-size:27px;font-weight:800;letter-spacing:-.02em;margin:48px 0 14px;line-height:1.2}
+article h3{font-size:20px;font-weight:700;margin:32px 0 10px}
+article p{margin:0 0 20px;color:#2A313A}
+article>p:first-of-type{font-size:19px;color:var(--muted)}
+article ul,article ol{margin:0 0 20px 22px;color:#2A313A}article li{margin-bottom:8px}
+article blockquote{border-left:3px solid var(--signal);padding:6px 0 6px 18px;margin:0 0 20px;color:var(--muted)}
+article strong{color:var(--text)}
+.cta{border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:28px;margin:56px 0;box-shadow:0 18px 40px -30px rgba(22,24,28,.25)}
+.cta h2{margin:0 0 8px;font-size:22px}.cta p{color:var(--muted);margin-bottom:18px}
+.btn{display:inline-block;background:var(--signal);color:#fff;font-weight:700;font-size:15px;padding:12px 22px;border-radius:7px}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.ftr{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 56px;color:var(--faint);font-size:13.5px}
+.ftr .wrap{max-width:1040px}
+.bwrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.bhero{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.bhero h1{margin-bottom:10px}
+.bhero p{color:var(--muted);font-size:18px}
+.list{padding:14px 0 30px}
+.post{display:block;padding:26px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.post:hover{text-decoration:none}
+.post:hover h2{color:var(--signal)}
+.pmeta{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--faint);margin-bottom:8px}
+.pmeta b{color:var(--signal);font-weight:600}
+.post h2{font-size:23px;font-weight:800;letter-spacing:-.02em;line-height:1.25;margin-bottom:8px;transition:color .15s}
+.post p{color:var(--muted);font-size:16px;max-width:64ch}
+.post{display:grid;grid-template-columns:1fr 220px;gap:26px;align-items:center}
+.post .thumb{width:220px;height:138px;object-fit:cover;border-radius:9px;background:var(--panel)}
+@media(max-width:640px){.post{grid-template-columns:1fr}.post .thumb{width:100%;height:170px;order:-1}}
+.fig{margin:34px 0}
+.fig img{width:100%;max-height:430px;object-fit:cover;border-radius:10px;display:block}
+.fig figcaption{font-size:12.5px;color:var(--faint);margin-top:8px}
+article>.fig:first-of-type{margin-top:0}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"AI for Fraud Review in Logistics","description":"Carrier identity theft, double brokering and fictitious pickup are identity fraud at handover. How AI can help vet, watch and prepare the gate check without blocking real carriers.","datePublished":"2026-10-20","author":{"@type":"Organization","name":"Adopt AI Partners"},"publisher":{"@type":"Organization","name":"Adopt AI Partners"},"mainEntityOfPage":"https://adoptaipartners.com/blog/ai-for-fraud-review-in-logistics/"}</script>
+</head><body><header class="hdr"><div class="wrap"><a class="wm" href="/">ADOPT<i> AI</i> PARTNERS</a><nav><a href="/blog/">Insights</a><a href="/#/systems">Systems</a><a href="/#/contact">Contact</a></nav></div></header><main class="wrap">
+<div class="crumb"><a href="/blog/">Insights</a> / logistics</div>
+<article><h1>AI for Fraud Review in Logistics</h1><div class="meta">20 October 2026 &nbsp;&middot;&nbsp; 8 minute read &nbsp;&middot;&nbsp; <b>Adopt AI Partners</b></div><figure class="fig"><img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1600&q=80&auto=format&fit=crop" alt="discussion in a modern office" loading="eager" fetchpriority="high"><figcaption>Photo via Unsplash</figcaption></figure>
+<p>A driver arrives at a shipper's gate on a Thursday morning with a rate confirmation, a bill of lading, an operating authority number and a certificate of insurance. The security guard checks the name against the appointment list. It matches. The trailer is loaded, the seal goes on, the vehicle leaves. The phone call comes nine days later from the carrier whose name was on all of that paperwork, asking why they have been invoiced for a load they never ran.</p>
+<p>Fraud in logistics is not card fraud and it is not payment fraud. There is no transaction to score, no authorisation to decline, no chargeback window. It is identity fraud at the point of handover, and it ends with a load gone. Somebody impersonated a real company for long enough to be handed physical goods, and the only moment at which that could have been caught was while a vehicle was sitting at a barrier.</p>
+<p>That changes the job completely. Everything useful about fraud review in logistics happens before and around the handover, not in a case queue afterwards, and almost none of the evidence lives in the finance system.</p>
+<h2>Somebody else's authority, somebody else's phone number</h2>
+<p>The dominant pattern is carrier identity theft. Someone books a load using a legitimate carrier's legal name, operating authority and insurance certificate, substituting only a telephone number and an email address they control. Every credential you check out comes back clean, because every credential is real. It simply is not theirs.</p>
+<p>The real carrier finds out when it is accused. By then your cargo has been sold, your customer wants an explanation, and the company whose identity was borrowed is defending a reputation it did nothing to damage.</p>
+<h2>A second broker nobody agreed to</h2>
+<p>Double brokering is quieter and more common. The carrier you vetted takes the load and re-brokers it to a carrier you never saw, usually at a margin, sometimes to one that cannot legally run it.</p>
+<p>The freight may well arrive. The problem surfaces when something goes wrong, because the chain of liability now has a party in it who has no contract with you, no insurance you have seen, and no reason to answer the phone. A cargo claim argument that was straightforward becomes an argument about who actually had custody, and your insurer is entitled to ask why you cannot say.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?w=1600&q=80&auto=format&fit=crop" alt="group of people in a meeting" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>Correct paperwork, wrong hands</h2>
+<p>Fictitious pickup is the version that happens at the gate. The document pack is plausible and often perfect: the right reference, the right consignee, the right commodity, a rate confirmation on the right letterhead. Everything about the paperwork is correct except who is holding it.</p>
+<p>Nobody at a barrier is equipped to spot that. The guard is comparing a name to a list under time pressure, with vehicles behind. The only way that check improves is if the thing they are comparing against gets better.</p>
+<h2>Claims that run back towards you</h2>
+<p>The same identity problem works in reverse. Damage claims get submitted against you, or against a real carrier, for goods that were never in the condition described. Staged damage appears after delivery. Loads are reported short when the missing cases were never loaded. Occasionally a claim is filed twice by two parties who both believe they are owed.</p>
+<p>These are not gate decisions and there is time to work them properly, but they depend on the same question: was the party making this claim the party who actually had the freight.</p>
+<h2>The quieter patterns, billed rather than stolen</h2>
+<p>Alongside the theft sits a set of commercial and internal patterns that are less dramatic and cost real money. Invented accessorial charges for detention that nobody recorded. The same movement invoiced twice, once against the customer reference and once against the internal load number. Ghost loads tendered, billed and never moved. Deductions taken by a customer in collusion with someone inside your operation. A vendor bank detail change arriving the day before a payment run.</p>
+<h3>The pass that can afford to be slow</h3>
+<p>This family is the easiest honest win, because latency does not matter here and volume does. Reconciling accessorials against what the yard and the telematics actually show, and matching invoices across every reference a single move can carry, is work you can do after the fact, at full coverage, without anybody standing at a gate waiting for an answer.</p>
+<figure class="fig"><img src="https://images.unsplash.com/photo-1678182451047-196f22a4143e?w=1600&q=80&auto=format&fit=crop" alt="stacked shipping containers" loading="lazy"><figcaption>Photo via Unsplash</figcaption></figure><h2>The evidence window closes when the trailer pulls out</h2>
+<p>In most fraud functions the review happens in a queue, measured in days, on a transaction that has already been captured and can be reversed. Here there is nothing to reverse. Once the vehicle leaves the yard, your options are an insurance claim and a police report.</p>
+<p>So any detection work that takes an afternoon has already watched the load go. The useful design target is the few minutes between awarding a load and the driver reaching the barrier, which is also the only window in which a refusal costs you nothing more than a re-tender.</p>
+<h2>What one telephone number across unrelated carriers tells you</h2>
+<p>The signals that matter are relational, not transactional. None of them is a number on an invoice and no model scoring documents in isolation will see them.</p>
+<p>A newly registered operating authority on a carrier presenting years of experience. A telephone number appearing across several carrier records with no corporate connection. An email domain registered last month. An insurance certificate whose broker cannot be reached on the number printed on it. A dispatcher address that does not match the registered address. A load appearing back on a public board minutes after you awarded it.</p>
+<p>Every one of those comes from joining records that nobody joins today: the registry, the certificate, the load history, the board, the contact details in the booking thread. The joining is the work, and it is exactly the kind of work an agent is good at.</p>
+<h2>Refusing a real carrier late on a Friday</h2>
+<p>The asymmetry here runs the wrong way for automation. In card fraud a false positive annoys a stranger for a moment. Here it means telling a legitimate haulier, with a driver already dispatched, that they are suspected of impersonation, on the afternoon when you have no replacement capacity and a customer expecting delivery.</p>
+<p>Operations desks tolerate that roughly twice. A detector with a false positive habit gets switched off inside a week, whatever its hit rate on real cases. Design for that constraint from the first day or the project dies of being correct.</p>
+<h2>Onboarding checks have gone stale by the time the load moves</h2>
+<p>Most carrier vetting happens once, at onboarding, and is never looked at again. The fraud happens at award, often months later, against a record that has drifted.</p>
+<p>The honest build is to assemble the carrier file at the moment of award: the current registry record, the insurance certificate and its stated validity, the prior load history with you, and the contact details actually used in this booking conversation rather than the ones on the master record. Then flag the handful of relational mismatches, with the evidence attached, so a person can read the reason rather than a score.</p>
+<h2>A watchlist short enough that someone reads it</h2>
+<p>Separately from award, a small set of change events deserves an interruption. Vendor bank detail changes sit at the top, with a hard rule that a change is verified out of band against a number you already held, never against the one in the request.</p>
+<p>Below that: a sudden shift in a carrier's contact details, an insurance certificate approaching lapse on a carrier currently holding your freight, an authority status change, a dormant account becoming active again. Keep the list tight. A watchlist that generates more than a few items a day is a watchlist nobody opens.</p>
+<h2>Something to check against at the barrier</h2>
+<p>The last piece is the cheapest and probably the highest value. Before arrival, produce a short pack for whoever is at the gate: the carrier name, the driver and tractor details supplied at booking, the verified callback number, the reference, and a plain statement of what should match.</p>
+<p>The guard is then comparing documents against something specific instead of against memory, and has a named person to call when it does not match. That is a documentation and timing improvement rather than a clever one, which is why it tends to work.</p>
+<h2>Where AI fails here</h2>
+<p>A refusal accuses a real company of theft. Getting that wrong has commercial and legal consequences, so the agent recommends and a named person decides. There is no autonomous configuration of this that is defensible.</p>
+<p>Registry and insurance data is stale and incomplete. A confident conclusion built on a certificate that was accurate last quarter is worse than an open question, because it stops anyone looking further. The agent has to be willing to say the record does not support a view.</p>
+<p>The gate decision belongs to a person under time pressure, often outside your employment, who will route around anything slow or noisy. If the pack is not ready before the vehicle arrives, it does not exist.</p>
+<p>A sophisticated double broker leaves no document anomaly whatsoever, because every document is genuine. No amount of extraction accuracy finds that. It shows up in behaviour and relationships or it does not show up at all.</p>
+<p>And the pattern changes as soon as your criteria are inferred. A static rule set has a short life, and a model trained on last year's confirmed cases inherits the blind spots of the criteria that caught them. Whatever you build needs someone reviewing what it missed, permanently.</p>
+<h2>Where to start</h2>
+<p>Begin with the after the fact reconciliation, because it is safe, it pays, and it teaches you what your own data can support. Accessorials against yard and telematics evidence, duplicate references across a quarter, and ghost loads with no movement record behind them.</p>
+<p>Then build the award time carrier file, as a read only brief that sits beside the existing process without blocking it. Measure it against loads you have already run, including the ones that went wrong, before it is allowed to stop anything.</p>
+<p>Only then take it to the gate, and take it as a pack rather than a verdict.</p>
+<p>Adopt AI Partners works this problem in that order deliberately, starting from the loads you have already lost rather than from a generic fraud model. If you want to talk it through against your own lanes, write to hello@adoptaipartners.com.</p></article><div class="cta"><h2>Tell us what your teams keep redoing</h2><p>One conversation is enough to say whether there is a system worth building, and what would make it fail.</p><a class="btn" href="mailto:hello@adoptaipartners.com?subject=A%20process%20worth%20looking%20at">Describe your process</a></div></main><footer class="ftr"><div class="wrap">Adopt AI Partners. Production AI agents, built inside your business. <a href="mailto:hello@adoptaipartners.com">hello@adoptaipartners.com</a></div></footer></body></html>
